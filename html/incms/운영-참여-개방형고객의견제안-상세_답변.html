@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>CMS 통합관리자</title>
+	<link rel="shortcut icon" href="../../asset/incms/images/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../asset/incms/css/style.css" media="all">
+	<script src="../../asset/incms/js/jquery-1.12.0.min.js"></script>
+	<script src="../../asset/incms/js/calendar.js"></script>
+	<script src="../../asset/incms/js/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+		<article id="content">
+			<p id="page_loc">
+				<a href="#none" class="ico_home">HOME</a>
+				<span>&gt;</span>
+				<a href="#none">depth1</a>
+				<span>&gt;</span>
+				<a href="#none">depth2</a>
+				<span>&gt;</span>
+				<strong>depth3</strong>
+			</p>
+
+			<h2 id="tit_page">개방형 고객의견제안</h2>
+
+			<div class="view_tit">
+				<div class="v_box mb10">
+					<div class="l v_txt">
+						<span class="color-red bold">[답변대기]</span>
+						<!-- <span class="color-blue bold">[답변완료]</span> -->
+						<strong>[Category #1] 한국어촌어항공단에 제안드립니다.</strong>
+					</div>
+					<div class="r">
+						<span><input type="checkbox" name="multi_itm_array" id="multi_itm_array1" value="" onchange="pop();"></span>
+						<span class="mgr6"><label for="multi_itm_array1">비공개처리</label></span>
+					</div>
+				</div>
+				<div class="v_box">
+					<div class="l">
+						<ul>
+							<li>
+								<span class="bold">제안기간 :</span>
+								2022-07-01 ~ 2022-12-31
+							</li>
+							<li>
+								<span class="bold">제안인 :</span>
+								홍길동
+							</li>
+						</ul>
+					</div>
+					<div class="r">[<span class="bold">공감 :</span> 50 / <span class="bold">댓글 :</span> 100]</div>
+				</div>
+			</div>
+			<div class="bbs_article">
+				Editor로 작성된 내용
+			</div>
+			<div class="btn_area">
+				<div class="fl"><a href="#n" class="btn btn_lg basic"><i class="fa fa-list-ul"></i> 목록</a></div>
+			</div>
+
+			<div class="mt30">
+				<a href="#" class="btn act com_hide" style="width: 100%;">댓글 감추기</a>
+				<!-- <a href="#" class="btn act com_show" style="width: 100%;">댓글 보기</a> -->
+			</div>
+			<div class="comment_box">
+				<div class="com_list">
+					<div class="l">
+						<div class="mem_info">
+							<span class="bold">홍길동</span>
+							2022-07-11
+						</div>
+						<div class="com_txt">정말 좋은 의견이네요, 공감을 안 누를 수가 없네요~ 공감 꾸~욱 누르고 갑니다~</div>
+					</div>
+					<div class="r">
+						<span class="bold">댓글공감</span> <span class="com_ico">♥</span> (2명)
+						<span class="ml10"><input type="checkbox" name="" id="comment1" value="" onchange="pop();"></span>
+						<span class="mgr6"><label for="comment1">비공개처리</label></span>
+					</div>
+				</div>
+				<div class="com_list">
+					<div class="l">
+						<div class="mem_info">
+							<span class="bold">홍길동</span>
+							2022-07-11
+						</div>
+						<div class="com_txt">정말 좋은 의견이네요, 공감을 안 누를 수가 없네요~ 공감 꾸~욱 누르고 갑니다~</div>
+					</div>
+					<div class="r">
+						<span class="bold">댓글공감</span> <span class="com_ico">♥</span> (2명)
+						<span class="ml10"><input type="checkbox" name="" id="comment2" value="" onchange="pop();"></span>
+						<span class="mgr6"><label for="comment2">비공개처리</label></span>
+					</div>
+				</div>
+			</div>
+			<div class="pagination">
+				<a href="#" class="direction first">처음</a>
+				<a href="#" class="direction prev">이전</a>
+				<strong>1</strong>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+				<a href="#" class="direction next">다음</a>
+				<a href="#" class="direction last">끝</a>
+			</div>
+
+			<h3 class="tit1 mt30 list_status">답변 직원 선택</h3>
+			<table class="tb_write">
+				<colgroup>
+					<col style="width:160px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>답변 직원 선택</th>
+						<td>
+							<a href="#popup2" class="btn" onclick="openLayer(this);"><i class="fa fa-search"></i> 직원 검색</a>
+							<span class="ml10">· 정보화전략팀 이순신 팀장</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 class="tit1 mt25 list_status">답변등록</h3>
+			<table class="tb_write">
+				<colgroup>
+					<col style="width:160px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>답변자</th>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<th>답변내용</th>
+						<td><textarea name="" id="" style="height: 200px;"></textarea></td>
+					</tr>
+					<tr>
+						<th>첨부파일</th>
+						<td>
+							<ul class="attach_list">
+								<li>
+									<span class="mr5"><input type="file"></span>
+									<a href="#n"><i class="fa fa-file-image-o" aria-hidden="true"></i> test.png</a>
+									<a href="#n">[다운로드]</a>
+								</li>
+								<li>
+									<span class="mr5"><input type="file"></span>
+									<a href="#n"><i class="fa fa-file-image-o" aria-hidden="true"></i> test.png</a>
+									<a href="#n">[다운로드]</a>
+								</li>
+								<li>
+									<span class="mr5"><input type="file"></span>
+									<a href="#n"><i class="fa fa-file-image-o" aria-hidden="true"></i> test.png</a>
+									<a href="#n">[다운로드]</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="btn_area">
+				<div class="fl"><a href="#n" class="btn btn_lg basic"><i class="fa fa-list-ul"></i> 목록</a></div>
+				<div class="fr">
+					<button type="button" class="btn btn_lg act">답변등록</button>
+				</div>
+			</div>
+
+			<!-- 비공개처리 팝업 -->
+			<div id="popup1" class="layer_popup modal cus_popup" style="width: 500px; height: 270px;">
+				<!-- // 레이어 크기 변경시 사이즈 지정 style="width:600px; height:500px;" -->
+				<div class="bg"></div>
+				<h2 class="tit_layer">비공개처리</h2>
+				<div class="layer_cont">
+					<p>해당 제안을 비공개 처리하시겠습니까?</p>
+					<p class="mt10">비공개 처리 시 비공개 처리 사유를 입력하셔야 합니다.</p>
+					<p class="mt10 bold">&lt;비공개 처리사유&gt;</p>
+					<p class="mt5"><input type="text" style="width: 100%;"></p>
+					<div class="btn_area ac">
+						<button type="submit" class="btn btn_lg act" onclick="closeLayer(this);">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn_layer_close" onclick="closeLayer(this);">레이어닫기</button>
+			</div>
+			<!-- // 비공개처리 팝업 -->
+
+			<!-- 직원 검색 팝업 -->
+			<div id="popup2" class="layer_popup modal" style="width: 1000px; height: 700px;">
+				<!-- // 레이어 크기 변경시 사이즈 지정 style="width:600px; height:500px;" -->
+				<div class="bg"></div>
+				<h2 class="tit_layer">직원 검색</h2>
+				<div class="layer_cont">
+					<div class="menu_tree_box">
+						<div class="l">
+							<div style="width: 300px; height: 530px; background: #ddd;">트리메뉴 영역</div>
+						</div>
+						<div class="r">
+							<div class="search_area">
+								<table class="tb_search">
+									<caption>검색조건</caption>
+									<colgroup>
+										<col style="width:120px">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th><label for="subject">키워드</label></th>
+											<td>
+												<select id="subject">
+													<option>이름</option>
+												</select>
+												<input type="text" title="검색어" style="width: 350px;">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="btn_area ac">
+								<button type="submit" class="btn btn_lg act"><i class="fa fa-search"></i> 검색</button>
+							</div>
+							<h3 class="tit1 mt35 list_status">정보정보화전략팀</h3>
+							<table class="tb_list">
+								<thead>
+									<tr>
+										<th>사번</th>
+										<th>이름</th>
+										<th>직위</th>
+										<th>부서</th>
+										<th>선택</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>505050</td>
+										<td>홍길동</td>
+										<td>팀장</td>
+										<td>정보화전략팀</td>
+										<td>
+											<input type="radio" name="" id="" value="">
+										</td>
+									</tr>
+									<tr>
+										<td>505050</td>
+										<td>홍길동</td>
+										<td>팀장</td>
+										<td>정보화전략팀</td>
+										<td>
+											<input type="radio" name="" id="" value="">
+										</td>
+									</tr>
+									<tr>
+										<td>505050</td>
+										<td>홍길동</td>
+										<td>팀장</td>
+										<td>정보화전략팀</td>
+										<td>
+											<input type="radio" name="" id="" value="">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="btn_area ac">
+						<button type="submit" class="btn btn_lg act" onclick="closeLayer(this);">확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn_layer_close" onclick="closeLayer(this);">레이어닫기</button>
+			</div>
+			<!-- // 직원 검색 팝업 -->
+
+			<script>
+				// 비공개처리 팝업 실행
+				function pop() {
+					$('html').addClass('no_scroll');
+					$('#popup1').show();
+				}
+			</script>
+
+		</article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

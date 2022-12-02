@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 9);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어촌어항재생사업</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>어촌어항재생사업</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-어촌어항재생사업-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-어촌어항재생사업-조성계획·추진체계.html" class="active">조성계획 · 추진체계</a></li>
+							<li><a href="사업소개-활력있는어촌-어촌어항재생사업-관련자료.html">관련자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">조성계획</h4>
+							<ul class="list_square">
+								<li><span class="bold">사업규모 :</span> 300개소</li>
+								<li><span class="bold">사업비 :</span> 지역특성에 따른 사업규모에 따라 개소당 평균 100억원</li>
+								<li><span class="bold">지원조건 :</span> 국비 70%(농어촌구조개선특별회계), 지방비 30%</li>
+								<li><span class="bold">대상지 사업기간 :</span> 3년 이내</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업 추진체계도</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_newdeal2_1.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_newdeal2_1_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

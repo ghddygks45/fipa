@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(9, 3);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">안전제안</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>안전경영</li>
+								<li>안전제안</li>
+								<li>안전제도란</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<ul class="tab">
+						<li><a href="#;" class="active">안전제도란</a></li>
+						<li><a href="#;">안전 고객의견제안</a></li>
+					</ul>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+
+						<div class="top_info_box bg_safe">
+							<strong class="tit">2022 안전관리 상시 제안제도 운영알림</strong>
+							<p>
+								공단 내 모든 근로자(관계수급인 근로자 포함)와 공단 안전관리에 관심이 있는 전 국민을 대상으로 공단 사업안전 개선과제 또는 안전관리 아이디어 공모를 위해 아래와 같이 안전관리 상시
+								제도를 운영하고자 하오니 많은 참여 요청 드립니다.
+							</p>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">일정</h4>
+							<ul class="list_square">
+								<li>제안서 제출기간 : 2022년 11월 30일까지 (평가 후 채택 시 개별알림)</li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">제안대상</h4>
+							<ul class="list_square">
+								<li>공단 내 모든 근로자(관계수급인 근로자 포함) 및 국민 누구나</li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">제안과제</h4>
+							<ul class="list_square">
+								<li>공단 사업 안전 개선과제 또는 안전관리 아이디어 제안
+									<ul class="list_arr">
+										<li>안전사고 및 재해 예방에 적용 가능한 제안 등</li>
+										<li>작업 중 유해위험요인을 발굴하고 개선한 사례 등</li>
+									</ul>
+								</li>
+								<li>아차사고 경험 및 아차사고 발굴보고서(대책포함) 제안
+									<ul class="list_arr">
+										<li>불안전 행동이나 불안전 상태로 발생했던 아차사고 경험 등</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">참여방법</h4>
+							<ul class="list_square">
+								<li>홈페이지 내 &lt;안전 고객의견제안&gt;에서 신청 <a href="#;" class="color_navy txt_underline fwr">[바로가기]</a></li>
+								<li>제안제도 양식을 작성하시어 안전보건팀 이메일(safety@fipa.or.kr) 로 제출 <a href="#;"
+										class="color_navy txt_underline fwr">[양식 다운로드]</a></li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">포상</h4>
+							<ul class="list_square">
+								<li>공단 안전경영에 도움이 되거나 실질적으로 활용 가능한 아이디어는 채택 시 소정의 상품 제공
+									<br>※내부검토 후 포상 결정
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

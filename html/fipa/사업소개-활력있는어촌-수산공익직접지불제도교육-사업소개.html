@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 8);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">수산공익직접지불제도교육</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>수산공익직접지불제도교육</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-수산공익직접지불제도교육-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-수산공익직접지불제도교육-추진계획·체계.html">추진계획 · 체계</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							<ul class="list_square">
+								<li>공익기능 증진을 위한 어업인의 역할과 준수사항을 교육하여 제도의 사업효과를 제고하고 부정수급 사전방지 도모</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>2021년 1월 ~ 계속</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>교육운영팀</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>「수산직불제법」(이하 법) 제19조, 동법 시행령 제12조, 동법 시행규칙 제17조</li>
+													<li>「수산업·어촌 공익기능 증진을 위한 어업인 교육 및 교육기관 지정 등에 관한 고시」제2조</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<div class="sub_section">
+								<h5 class="tit02">교육대상 : 약 2만여 명</h5>
+								<ul class="list_square">
+									<li>조건불리지역 180백여명</li>
+									<li>수산자원보호 11백여명</li>
+									<li>친환경수산물 생산지원 7백여명
+										<div class="sm-mt-3 lg-mt-5">※ 매년 직불금 신청 결과 및 중복 수급 등에 따라 교육인원 변동 가능</div>
+									</li>
+								</ul>
+
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">교육방법</h5>
+								<ul class="list_square">
+									<li>온라인 및 현장교육</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">교육일정</h5>
+								<ul class="list_square">
+									<li>각 직불금 지급 대상자 선정일 ~ 해당연도 직불금 지급전</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">교육과정</h5>
+								<div class="img_box">
+									<img src="../../asset/fipa/images/img_marine01.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+									<img src="../../asset/fipa/images/img_marine01_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+									<div class="blind">
+										<div>
+											직불제 소개
+											<ul>
+												<li>수산업과 어촌의 공익적기능
+													<ul>
+														<li>수산업 · 어촌의 공익적 기능에 관련한 개념과 사례</li>
+														<li>수산공익직불제 소개</li>
+													</ul>
+												</li>
+												<li>조건불리지역
+													<ul>
+														<li>개념 및 지급대상</li>
+														<li>준수의무 및 신청제외 대상 안내</li>
+													</ul>
+												</li>
+												<li>경영이양
+													<ul>
+														<li>직불제의 신청자격 및 지급액</li>
+														<li>직불제의 신청방법 및 준수사항</li>
+													</ul>
+												</li>
+												<li>수산자원보호
+													<ul>
+														<li>직불제의 지급대상 및 준수 의무</li>
+														<li>직불금 지급액 및 지급 예시</li>
+													</ul>
+												</li>
+												<li>친환경수산물 생산지원
+													<ul>
+														<li>직불제의 개념 및 지급대상</li>
+														<li>직불금 지급방식 및 예시</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<div>
+											공통 준수 사항
+											<ul>
+												<li>지급제한
+													<ul>
+														<li>다양한 부정수급 사례 및 지급제한</li>
+														<li>명예감시원 및 신고포상금 제도 소개</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

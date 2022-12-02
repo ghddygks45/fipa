@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">질문과 답변</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>질문과 답변</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="tbl_tit">
+							<div class="l_con">
+								<h4 class="tit01">질문내용</h4>
+							</div>
+						</div>
+						<div class="board_write default_th">
+							<div class="row">
+								<div class="div_th">공개여부</div>
+								<div class="div_td">공개</div>
+							</div>
+							<div class="row">
+								<div class="div_th">성명</div>
+								<div class="div_td">홍길동</div>
+							</div>
+							<div class="row">
+								<div class="div_th">휴대폰</div>
+								<div class="div_td">010-1234-5678</div>
+							</div>
+							<div class="row">
+								<div class="div_th">이메일</div>
+								<div class="div_td">test@test.com</div>
+							</div>
+							<div class="row">
+								<div class="div_th">제목</div>
+								<div class="div_td">안전점검 수행기관 지정 공고(남해군 장포항)</div>
+							</div>
+							<div class="row">
+								<div class="div_th">내용 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+								<div class="div_td">안전점검 수행기관 지정 공고(남해군 장포항) 안전점검 수행기관 지정 공고(남해군 장포항)</div>
+							</div>
+							<div class="row">
+								<div class="div_th">첨부파일</div>
+								<div class="div_td txt_td">
+									<ul class="view_add_file">
+										<li>
+											첨부된 파일명.hwp
+											<a href="#;" class="color_navy txt_underline fwr">[다운로드]</a>
+										</li>
+										<li>
+											첨부된 파일명.hwp
+											<a href="#;" class="color_navy txt_underline fwr">[다운로드]</a>
+										</li>
+										<li>
+											첨부된 파일명.hwp
+											<a href="#;" class="color_navy txt_underline fwr">[다운로드]</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap">
+							<div class="l">
+								<a href="참여-질문과답변-목록.html" class="btn bg_gray">목록</a>
+							</div>
+						</div>
+
+
+						<!-- 질문 등록 완료 팝업 -->
+						<div class="layer_popup_box" data-popup="popup1" tabindex="0">
+							<div class="popup popup_size_540" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">질문 등록 완료</h4>
+								</div>
+								<div class="popup_content">
+									<div class="complete_txt">
+										<p><strong class="str">고객님의 질문이 정상적으로 등록되었습니다.</strong></p>
+										<p class="sm-mt-7 lg-mt-10">
+											해당 질문은 담당자가 확인 후 답변 드리도록 하겠습니다.<br>
+											※답변기간은 3~5 영업일 입니다.
+										</p>
+									</div>
+									<div class="btn_wrap txt_c">
+										<button type="button" class="btn bg_blue" onclick="fn_hide_popup('popup1');">확인</button>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('popup1');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // 질문 등록 완료 팝업 -->
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

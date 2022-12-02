@@ -1,0 +1,219 @@
+@use '../use'as *;
+
+.content {
+	.content_top {
+		margin-bottom: 30px;
+		@include clearboth();
+
+		.depth_tit {
+			border-bottom: 1px solid #d9d9d9;
+			padding-right: 150px;
+			padding-bottom: 8px;
+			font-weight: 600;
+			font-size: 25px;
+			color: #222;
+		}
+
+		.unit_button {
+			margin-top: -40px;
+			float: right;
+
+			>li {
+				position: relative;
+				display: inline-block;
+				margin-left: 2px;
+
+				.share_wrap {
+					display: none
+				}
+
+				>button {
+					display: block;
+					width: 26px;
+					height: 26px;
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					background-size: 26px;
+
+					&.btn_print {
+						background-image: url(../images/btn_print.png);
+					}
+
+					&.btn_pdf_download {
+						background-image: url(../images/btn_pdf_download.png);
+					}
+
+					&.btn_img_download {
+						background-image: url(../images/btn_img_download.png);
+					}
+
+					&.btn_copy_link {
+						background-image: url(../images/btn_copy_link.png);
+					}
+
+					&.btn_share {
+						background-image: url(../images/btn_share.png);
+
+						&.close {
+							background-image: url(../images/btn_share_close.png);
+
+							+.share_wrap {
+								position: absolute;
+								top: 31px;
+								left: 0;
+								display: block;
+								border-radius: 26px;
+								padding: 12px 0;
+								background: #f6f6f6;
+								box-shadow: 6px 10px 12px 0px rgba(0, 0, 0, 0.1);
+
+								>li {
+									>a {
+										display: block;
+										width: 26px;
+										height: 26px;
+										background-repeat: no-repeat;
+										background-position: center;
+
+										&.btn_share_facebook {
+											background-image: url(../images/share_facebook.png);
+											background-size: 7px;
+										}
+
+										&.btn_share_twitter {
+											background-image: url(../images/share_twitter.png);
+											background-size: 15px;
+										}
+
+										&.btn_share_kakaostory {
+											background-image: url(../images/share_kakao.png);
+											background-size: 7px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.location {
+			border-bottom: 1px solid #666;
+			min-height: 40px;
+			padding: 8px 0 10px;
+
+			ul {
+				@include clearboth();
+
+				>li {
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 12px;
+
+					.btn_home {
+						display: block;
+						width: 17px;
+						height: 17px;
+						background: url(../images/ico_home.gif) no-repeat 0 0/17px;
+					}
+
+					&:not(:first-child) {
+						margin-left: 5px;
+						padding-left: 12px;
+						background: url(../images/bg_arrow_right.gif) no-repeat 0 6px/4px;
+					}
+
+					&:last-child {
+						font-weight: 400;
+						color: #2471ac;
+					}
+				}
+			}
+		}
+	}
+
+	.ctn {
+		//padding-top: 30px;
+	}
+
+	@include res--pc-ctn {
+		width: 1120px;
+		margin: 0 auto;
+
+		.content_top {
+			margin-bottom: 50px;
+
+			.depth_tit {
+				margin-top: -12px;
+				padding-right: 230px;
+				padding-bottom: 17px;
+				font-size: 38px;
+			}
+
+			.unit_button {
+				margin-top: -61px;
+
+				>li {
+					button {
+						width: 41px;
+						height: 41px;
+						background-size: auto;
+
+						&.btn_share {
+							&.close {
+								+.share_wrap {
+									top: 46px;
+									border-radius: 41px;
+									padding: 17px 0;
+
+									>li {
+										>a {
+											width: 41px;
+											height: 41px;
+											background-size: auto !important;
+										}
+									}
+
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.location {
+				height: 50px;
+				padding: 10px 0 12px;
+
+				>ul {
+					>li {
+						font-size: 15px;
+						vertical-align: middle;
+
+						.btn_home {
+							width: 18px;
+							height: 18px;
+							background-size: auto;
+						}
+
+						&:not(:first-child) {
+							margin-left: 8px;
+							padding-left: 15px;
+							background-size: auto;
+							background-position: 0 7px;
+						}
+					}
+				}
+			}
+		}
+
+		.ctn {
+			//padding-top: 50px;
+		}
+	}
+
+	@include res--pc {
+		float: right;
+	}
+}

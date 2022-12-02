@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2, 5);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">국가어항 기초조사</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>쾌적한 어항</li>
+								<li>국가어항 기초조사</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-쾌적한어항-국가어항기초조사-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-쾌적한어항-국가어항기초조사-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-쾌적한어항-국가어항기초조사-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_nation02_1.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_nation02_1_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<ul>
+										<li>2022년 1분기 - 사업세 부추진계획수립, 관계기관 자료 협조 요청</li>
+										<li>2022년 2분기 - 빅테이터 활용 관련 조사 외주 설계, 어항이용실태 현지조사</li>
+										<li>2022년 3분기 - 빅테이터 활용결과분석, 국가어항 기초자료 DB구축 1차 완료</li>
+										<li>2022년 4분기 - 국가어항 이용실태 현지 조사 결과 정리·신뢰성 검토 및 분석 등</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_nation02_2.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_nation02_2_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<div>
+										해양수산부
+										<ul>
+											<li>사업계획수립</li>
+											<li>사업발주</li>
+										</ul>
+									</div>
+									<div>
+										한국어촌어항공단
+										<ul>
+											<li>사업총괄관리</li>
+											<li>기초조사자료 문헌조사</li>
+											<li>이용실태현지조사</li>
+											<li>기초조사 DB 구축</li>
+											<li>실적보고</li>
+										</ul>
+									</div>
+									<div>
+										외부 전문가 자문단
+										<ul>
+											<li>조사항목 분야별 자문</li>
+											<li>DB 신뢰성 확보방안 자문</li>
+											<li>DB 구축 및 시스템 연계, 활용방안 자문</li>
+										</ul>
+									</div>
+									<div>
+										전문조사기관
+										<ul>
+											<li>리서치기관 : 고객만족도 조사</li>
+											<li>통신사 : 어항 방문객 조사</li>
+											<li>카드사 : 어항 매출액 조사</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

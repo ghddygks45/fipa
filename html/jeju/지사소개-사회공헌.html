@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/jeju/css/style.css">
+	<script src="../../asset/jeju/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/jeju/js/jquery-ui.js"></script>
+	<script src="../../asset/jeju/js/jQuery.print.js"></script>
+	<script src="../../asset/jeju/js/html2canvas.min.js"></script>
+	<script src="../../asset/jeju/js/jspdf.min.js"></script>
+	<script src="../../asset/jeju/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/jeju/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">사회공헌</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>지사소개</li>
+								<li>사회공헌</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_visual_box section">
+							<div class="con">
+								<div class="tit">
+									<em>혼저옵서예,</em>
+									<strong>한국어촌어항공단 <span>제주지사</span>입니다.</strong>
+								</div>
+								<p>제주지사는 제주권역의 다양한 어촌 · 어항 · 어장 사업을<br>
+									보다 긴밀하고 효율적으로 수행하기 위해 설립되었습니다.
+								</p>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">해바라기 지역아동센터 (후원금 : 1,000,000원)</h4>
+							<ul class="img_list">
+								<li><img src="../../asset/jeju/images/img_social01.jpg" alt="해바라기 지역아동센터"></li>
+								<li><img src="../../asset/jeju/images/img_social02.jpg" alt="해바라기 지역아동센터"></li>
+								<li><img src="../../asset/jeju/images/img_social03.jpg" alt="해바라기 지역아동센터"></li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

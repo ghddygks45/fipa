@@ -1,0 +1,214 @@
+@use '../use'as *;
+
+
+// history
+.history_wrap {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0%;
+		left: 58px;
+		width: 2px;
+		height: 100%;
+		background: #e3e3e3;
+		z-index: -1;
+	}
+
+	.history_tit {
+		position: relative;
+		width: 127px;
+		height: 127px;
+		background: url(../images/img_history_tit.png) no-repeat 0 0/100%;
+	}
+
+	>dd {
+		position: relative;
+		margin-top: 20px;
+		padding-left: 98px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 8px;
+			left: 52px;
+			width: 14px;
+			height: 14px;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: 100%;
+		}
+
+		.history_year {
+			font-weight: 600;
+			font-size: 19px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 15px;
+				left: 67px;
+				border-top: 1px dashed #ccc;
+				width: 20px;
+			}
+		}
+
+		.history_list {
+			@include clearboth();
+
+			>li {
+				margin-top: 5px;
+			}
+
+			.history_month {
+				margin-right: 12px;
+				font-weight: 500;
+				color: #222;
+				float: left;
+			}
+
+			.history_cont {
+				overflow: hidden;
+			}
+		}
+
+		&:nth-child(even) {
+			.history_year {
+				color: #203d5a;
+			}
+
+			&:before {
+				background-image: url(../images/bg_history_dot_blue.png);
+			}
+		}
+
+		&:nth-child(odd) {
+			.history_year {
+				color: #00aaa0;
+			}
+
+			&:before {
+				background-image: url(../images/bg_history_dot_green.png);
+			}
+		}
+
+		&:last-child {
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 52px;
+				width: 14px;
+				height: calc(100% - 23px);
+				background: #fff;
+			}
+		}
+	}
+
+	@include res--pc-ctn {
+		overflow: hidden;
+
+		&:before {
+			left: 50%;
+			margin-left: -1px;
+		}
+
+		.history_tit {
+			width: 205px;
+			height: 205px;
+			margin: 0 auto;
+			transform: translateX(8px);
+		}
+
+		>dd {
+			margin-top: 30px;
+			padding-left: 0;
+
+			&:before {
+				top: 11px;
+				left: auto;
+				width: 18px;
+				height: 18px;
+			}
+
+			.history_year {
+				font-size: 26px;
+
+				&:before {
+					top: 20px;
+					left: auto;
+					width: 30px;
+				}
+			}
+
+			&:nth-of-type(odd) {
+				width: calc(50% + 1px);
+				padding-left: 56px;
+				float: right;
+
+				&:before {
+					left: -8px;
+				}
+
+				.history_year {
+					&:before {
+						left: 11px;
+					}
+				}
+			}
+
+			&:nth-of-type(even) {
+				width: calc(50% + 1px);
+				padding-right: 56px;
+				text-align: right;
+				float: left;
+
+				&:before {
+					right: -8px;
+				}
+
+				.history_year {
+					&:before {
+						right: 11px;
+					}
+				}
+
+				.history_list {
+					.history_month {
+						margin-right: 0;
+						margin-left: 20px;
+						float: right;
+					}
+				}
+			}
+
+			.history_list {
+				@include clearboth();
+
+				>li {
+					margin-top: 8px;
+				}
+
+				.history_month {
+					margin-right: 20px;
+				}
+			}
+
+			&:last-child {
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					border-right: 2px solid #fff;
+					border-left: 2px solid #fff;
+					width: 100%;
+					height: calc(100% - 29px);
+					background: transparent;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+}

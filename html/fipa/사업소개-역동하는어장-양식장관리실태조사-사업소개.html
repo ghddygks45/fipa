@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">양식장 관리 실태조사</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>역동하는 어장</li>
+								<li>양식장 관리 실태조사</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-역동하는어장-양식장관리실태조사-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-역동하는어장-양식장관리실태조사-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-역동하는어장-양식장관리실태조사-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							<ul class="list_square">
+								<li>귀어‧귀촌, 신규 전입자 대상 임대 및 공공임대형 양식기술 교육장으로 활용하기 위한 유휴‧적지 양식장 발굴</li>
+								<li>면허심사‧평가제 도입(‘25년) 대비 기초자료 축적</li>
+								<li>양식장 정비 및 재해 예방 관련 기초자료 축적</li>
+								<li>양식생산물 수급 안정화 등을 위한 생산현황 및 경영현황 등 파악‧분석</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>2022년 ~ (연단위)</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>어장생태본부 어장생태팀</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>양식산업발전법 제8조(실태조사), 시행령 제53조(위탁)</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<h5 class="tit02">양식장 관리 실태조사</h5>
+							<ul class="list_square">
+								<li>조사주기 : 1년</li>
+								<li>기준시점 : 조사 전년도 1월 ~ 12월</li>
+								<li>조사대상 : 전국 해면 양식업 면허어장 중 표본 추출된 양식장</li>
+							</ul>
+							<div class="table sm-mt-10 lg-mt-15">
+								<table class="m_scroll">
+									<caption>사업내용 표로 구분, 조사항목, 세부항목 정보 제공</caption>
+									<colgroup>
+										<col style="width: 220px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">조사항목</th>
+											<th scope="col">세부항목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">양식업권 현황</th>
+											<td>
+												<ul class="list_square">
+													<li>면허번호, 양식면적, 양식품종 및 방법, 시설, 양식장 관리선, 행사계약 현황 등</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">양식장 관리현황</th>
+											<td>
+												<ul class="list_square">
+													<li>어장청소 현황, 벌칙 및 과태료 부과 여부, 어장환경평가 실시 여부 등</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">양식장 생산현황</th>
+											<td>
+												<ul class="list_square">
+													<li>양식기간, 종자, 사료, 약품투입 현황, 생산현황, 재해피해 현황, 질병 폐사 현황 등</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">양식장 경영현황</th>
+											<td>
+												<ul class="list_square">
+													<li>운영경력, 인력수급, 판매량, 판매방법, 생산비, 재해복구비수급 등</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">양식장 운영 현황</th>
+											<td>
+												<ul class="list_square">
+													<li>어장휴식 및 휴업 여부, 공공임대 의사, 친환경/스마트 양식 전환 의사, 애로사항 등</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">관련 제도 인식 현황</th>
+											<td>
+												<ul class="list_square">
+													<li>양식산업발전법 관련 제도 인식 여부 </li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">정책사업 지원에 관한 사항</th>
+											<td>
+												<ul class="list_square">
+													<li>양식장관리 정책자금 지원 및 지원사업 등에 관한 사항</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

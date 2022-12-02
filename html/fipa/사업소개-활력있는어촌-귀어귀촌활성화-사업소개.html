@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">귀어귀촌 활성화</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>귀어귀촌 활성화</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-귀어귀촌활성화-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-귀어귀촌활성화-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-활력있는어촌-귀어귀촌활성화-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							<ul class="list_square">
+								<li>귀어‧귀촌인에 필요한 귀어귀촌 관련 상담, 홍보, 박람회, 교육, 컨설팅 등을 종합적으로 제공하여 귀어‧귀촌 활성화 도모</li>
+								<li>관련근거 : 「귀농어ㆍ귀촌 활성화 및 지원에 관한 법률」제14조 (박람회 등의 개최)</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>계속</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>귀어귀촌종합센터</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>귀농어‧귀촌 활성화 및 지원에 관한 법률 제26조</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<ul class="list_busi_step">
+								<li class="bg01">
+									<span>STEP 1</span>
+									<strong>관심단계 (상담, 박람회, 홈페이지, 홍보)</strong>
+									<ul class="list_square">
+										<li>전화, 대면, 온라인 상담 및 수산관련 박람회, 행사 등지에서 이동상담 운영</li>
+										<li>귀어귀촌 박람회 개최를 통한 정보제공 및 저변확대 유도(매년 6월)</li>
+										<li>귀어귀촌 홈페이지 등 종합정보시스템 운영으로 정보 접근편의성 제고</li>
+										<li>언론매체, SNS, 인쇄물 등을 통한 귀어귀촌 홍보 실시</li>
+									</ul>
+								</li>
+								<li class="bg02">
+									<span>STEP 2</span>
+									<strong>준비단계 (교육)</strong>
+									<ul class="list_square">
+										<li>귀어귀촌 희망자, 귀어업인 대상 이론교육 실시</li>
+										<li>귀어귀촌 온라인 교육 확대</li>
+									</ul>
+								</li>
+								<li class="bg03">
+									<span>STEP 3</span>
+									<strong>정착단계 (컨설팅, 네트워크, 해외연수, 실태조사)</strong>
+									<ul class="list_square">
+										<li>귀어귀촌(희망)인의 안정적인 정착을 도모하기 위한 1:1 전문가 컨설팅 어촌정착상담사 제도 운영</li>
+										<li>관계자 업무협의회 개최 및 우수사례 발굴</li>
+										<li>귀어귀촌 실태조사 및 만족도 조사 등 실시</li>
+										<li>창업 및 주택구입 자금 안내 등 어촌정착 지원</li>
+										<li>귀어업인 등 해외연수 교육 프로그램 운영</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

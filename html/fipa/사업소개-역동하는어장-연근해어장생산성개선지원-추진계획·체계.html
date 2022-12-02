@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">연근해어장 생산성 개선 지원</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>역동하는 어장</li>
+								<li>연근해어장 생산성 개선 지원</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-역동하는어장-연근해어장생산성개선지원-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-역동하는어장-연근해어장생산성개선지원-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-역동하는어장-연근해어장생산성개선지원-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<ul class="list_square">
+								<li>(1월~2월) 기본계획수립(해수부)</li>
+								<li>(2월) 사업대행계약 체결, 시행계획 수립 및 사업비 교부 신청(해수부↔공단), 시행계획 승인 및 사업비 교부(해수부)</li>
+								<li>(3월) 관리정책 업무협의회 개최(해수부 외 관계기관), 사업대상지 우선순위 결정(해수부, 공단 및 관계기관)</li>
+								<li>(3월~4월) 기본조사 및 실시설계 추진(공단)</li>
+								<li>(5월) 설계결과 보고(공단)</li>
+								<li>(6월~11월) 유실·침적어구 수거·처리 및 교육·홍보 실시(공단)</li>
+								<li>(12월~익년 1월) 사업결과 및 정산보고(공단)</li>
+								<li>(익년 1월) 사업결과 검토 및 승인(해수부)</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_coastal01.jpg" alt="하단에 내용 참고 바랍니다.">
+								<a href="../../asset/fipa/images/img_coastal01.jpg" class="btn_img_size">크게보기</a>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

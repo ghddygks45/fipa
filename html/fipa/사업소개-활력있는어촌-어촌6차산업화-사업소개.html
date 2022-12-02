@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어촌6차산업화</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>어촌6차산업화</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-어촌6차산업화-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-어촌6차산업화-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-활력있는어촌-어촌6차산업화-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							어촌의 유·무형 자원을 활용, 어촌주민 주도로 특화계획에 따라 1·2·3차 산업과 융합·연계를 통해 새로운 부가가치를 창출함으로써 어촌경제 활성화에 기여
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>2017년 1월 ~ 2020년 12월</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>(두어마을) 어촌해양개발팀</li>
+													<li>(전도마을) 동남해지사 수산사업팀</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>「수산업 · 어촌 발전 기본법」 제38조 </li>
+													<li>「어촌특화발전지원 특별법」 제4조</li>
+													<li>「농어업인 삶의 질 향상 및 농어촌지역 개발촉진에 관한 특별법」 제31조</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_energy_cont2.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_energy_cont2_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									6차 산업추진
+									<ul>
+										<li>두어마을 - 장어, 베리류 엑기스 가공시설, 체험 식당 및 카페 조성
+											<ul>
+												<li>장어</li>
+												<li>가공시설</li>
+												<li>식당</li>
+											</ul>
+										</li>
+										<li>전도마을 - 멸치액젓 가공공장 현대화, 갯벌체험장 연꽃밭 조성
+											<ul>
+												<li>멸치</li>
+												<li>갯벌</li>
+												<li>연꽃</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

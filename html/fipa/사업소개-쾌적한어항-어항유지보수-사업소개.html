@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어항 유지보수</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>쾌적한 어항</li>
+								<li>어항 유지보수</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-쾌적한어항-어항유지보수-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-쾌적한어항-어항유지보수-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-쾌적한어항-어항유지보수-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							<ul class="list_square">
+								<li>국가어항 시설물 유지보수를 통해 어항시설 이용자의 안전 확보 및 시설물 내구연한 증대</li>
+								<li>태·폭풍 등에 의한 시설물 재해예방 강화</li>
+								<li>지역어민의 민원해결 및 어항이용의 안전과 활성화에 기여</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>2011년 ~ 계속</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>어항안전팀</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>어촌어항법 제56조</li>
+													<li>동법 시행령 제44조 제2항</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<div class="list_busi_info">
+								<div class="bg_info_pleasant01">
+									<strong class="tit">기본시설물 유지보수</strong>
+									<ul class="list_square">
+										<li><span class="color_black fwr">외곽시설 :</span> 방파제, 방사제, 파제제, 도제, 호안, 돌제</li>
+										<li><span class="color_black fwr">계류시설 :</span> 물양장, 안벽, 선양장, 선착장, 부잔교, 도선장, 선류장, 부두</li>
+										<li><span class="color_black fwr">기타시설 :</span> 도로, 준설, 기타</li>
+									</ul>
+								</div>
+								<div class="bg_info_pleasant02">
+									<strong class="tit">안전시설물 신규설치 및 유지보수</strong>
+									<ul class="list_square">
+										<li><span class="color_black fwr">안전시설 :</span> 안전난간, 조명시설, 차막이, 안전표지판, 구난시설</li>
+										<li><span class="color_black fwr">부대시설 :</span> 방충재, 모서리보호공, 계선주, 우수관 덮개</li>
+										<li><span class="color_black fwr">기타시설 :</span> 부잔교(도교, 함선, 앵커), 영상감시시스템, 기타</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/jeju/css/style.css">
+	<script src="../../asset/jeju/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/jeju/js/jquery-ui.js"></script>
+	<script src="../../asset/jeju/js/jQuery.print.js"></script>
+	<script src="../../asset/jeju/js/html2canvas.min.js"></script>
+	<script src="../../asset/jeju/js/jspdf.min.js"></script>
+	<script src="../../asset/jeju/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/jeju/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">관할구역</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>관할구역</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_visual_box section">
+							<div class="con">
+								<div class="tit">
+									<em>혼저옵서예,</em>
+									<strong>한국어촌어항공단 <span>제주지사</span>입니다.</strong>
+								</div>
+								<p>제주지사는 제주권역의 다양한 어촌 · 어항 · 어장 사업을<br>
+									보다 긴밀하고 효율적으로 수행하기 위해 설립되었습니다.
+								</p>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">제주특별자치도 내 국가어항 및 어촌마을</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>제주특별자치도 내 국가어항 및 어촌마을 표로 사업운영팀, 개소, 세부사업지 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%">
+										<col style="width:15%">
+										<col style="width:15%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">사업운영팀</th>
+											<th scope="col">개소</th>
+											<th scope="col" colspan="2">세부사업지</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">국가어항관리사업</th>
+											<td>5</td>
+											<td colspan="2">김녕항, 위미항, 모슬포항, 도두항, 신양항(추자)</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">어촌뉴딜사업</th>
+											<td rowspan="2">9</td>
+											<td>제주시</td>
+											<td>함덕항,비양도항,고내항,하우목동권역,종달항,묵리항(추자)</td>
+										</tr>
+										<tr class="txt_c">
+											<td>서귀포시</td>
+											<td>하예항,태흥2리항,온평항,하효항,사계항,세화2리항(가마포구)</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">일반농산어촌개발사업</th>
+											<td rowspan="2">3</td>
+											<td>제주시</td>
+											<td>한림읍 금능리</td>
+										</tr>
+										<tr class="txt_c">
+											<td>서귀포시</td>
+											<td>성산읍 신양리, 성산읍 고성리</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

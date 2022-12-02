@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(9, 4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">안전제안</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>안전경영</li>
+								<li>안전제안</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="search_board">
+							<div class="inr">
+								<div class="select_box">
+									<div>
+										<select name="" id="" title="검색 카테고리 선택">
+											<option value="">제목</option>
+										</select>
+									</div>
+								</div>
+								<div class="input_box">
+									<input type="text" name="" id="" value="" placeholder="검색어를 입력해주세요." title="검색어 입력">
+									<button type="submit" class="btn_search">검색</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="board_top">
+							<div class="total">
+								전체 <span>2,106</span>건
+							</div>
+							<div class="list_number">
+								<select name="" id="" title="목록 개수 선택">
+									<option value="">10개씩</option>
+								</select>
+								<button type="button">이동</button>
+							</div>
+						</div>
+						<div class="list_board question">
+							<div class="board_box">
+								<div class="cate">
+									<span>No.</span>
+									<strong>4,894</strong>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<span class="que_selection">채택</span>
+										<a href="열린경영-안전경영-안전고객의견제안-나의제안현황-상세.html">2022년 FiPA 서포터즈(휘파랑이2기) 모집 공고</a>
+										<span class="post_new"><span class="blind">새 글</span></span>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+								<div class="r_area">
+									<span class="reply_y">답변완료</span>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span>No.</span>
+									<strong>4,894</strong>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<span class="que_selection">채택</span>
+										<a href="열린경영-안전경영-안전고객의견제안-나의제안현황-상세.html">안전점검 수행기관 지정 공고(남해군 장포항)</a>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+								<div class="r_area">
+									<span class="reply_y">답변완료</span>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span>No.</span>
+									<strong>4,894</strong>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="열린경영-안전경영-안전고객의견제안-나의제안현황-상세.html">거제시 성포항 어촌어항재생사업 건축설계용역 설계공모</a>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+								<div class="r_area">
+									<span class="reply_n">답변대기</span>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span>No.</span>
+									<strong>4,894</strong>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="열린경영-안전경영-안전고객의견제안-나의제안현황-상세.html">양양군 인구항 어촌어항재생사업 건축설계용역 설계공모</a>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+								<div class="r_area">
+									<span class="reply_n">답변대기</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="#;" class="btn bg_blue">고객의견제안 등록</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<link rel="stylesheet" href="../../asset/fipa/css/swiper.min.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+	<script src="../../asset/fipa/js/swiper-bundle.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">유류피해지역 환경개선</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>역동하는 어장</li>
+								<li>유류피해지역 환경개선</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-역동하는어장-유류피해지역환경개선-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-역동하는어장-유류피해지역환경개선-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-역동하는어장-유류피해지역환경개선-성과및자료.html" class="active">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">주요성과</h4>
+							<div class="table">
+								<table>
+									<caption>주요성과 표로 유류피해지역 환경개선사업(마을어장, 수산종자발생장, 어선어업수역) 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" colspan="3">유류피해지역 환경개선사업</th>
+										</tr>
+										<tr>
+											<th scope="col" class="tbl_bg_gray">마을어장</th>
+											<th scope="col" class="tbl_bg_gray">수산종자발생장</th>
+											<th scope="col" class="tbl_bg_gray">어선어업수역</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="v_top">
+												<ul class="list_square">
+													<li>투석, 유생착저시설, 모래살포, 폐지주제거, 어장바닥경운 등 유류피해 어장에 환경개선사업을 추진하여 어장환경 복원</li>
+													<li>2010~2020년 기준 수산종자발생장 2,286ha의 오염어장 환경 복원</li>
+												</ul>
+											</td>
+											<td class="v_top">
+												<ul class="list_square">
+													<li>유생착저시설, 모래살포, 패류 모래살포, 모낙지 살포, 조위망시설 등 유류피해 어장에 환경개선사업을 추진하여 어장환경 복원</li>
+													<li>2010~2019년 기준 수산종자발생장 의 2,286㏊ 오염어장 환경 복원</li>
+												</ul>
+											</td>
+											<td class="v_top">
+												<ul class="list_square">
+													<li>2010~2019년 12개 시군 폐어업기자재 7,958톤 수거·처리</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">관련자료</h4>
+							<div class="slider_wrap">
+								<div class="busi_data_slider swiper-container">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_oil_pic1.jpg" alt="">
+											</div>
+											<div class="txt">마을어장 환경개선사업</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_oil_pic2.jpg" alt="">
+											</div>
+											<div class="txt">수산종자발생장 환경개선사업</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_oil_pic3.jpg" alt="">
+											</div>
+											<div class="txt">어선어업수역 환경개선사업</div>
+										</li>
+									</ul>
+								</div>
+								<div class="busi_thumb_slider swiper-container">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_oil_pic1.jpg" alt="">
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_oil_pic2.jpg" alt="">
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_oil_pic3.jpg" alt="">
+											</div>
+										</li>
+									</ul>
+									<button type="button" class="swiper-button swiper-prev"><span class="blind">이전
+											슬라이드</span></button>
+									<button type="button" class="swiper-button swiper-next"><span class="blind">다음
+											슬라이드</span></button>
+								</div>
+							</div>
+						</div>
+						<script>
+							var swiperNum = $('.busi_thumb_slider').find('.swiper-slide');
+
+							mySwiper = new Swiper('.busi_data_slider', {
+								slidesPerView: 'auto',
+								loop: true,
+								loopedSlides: swiperNum.length,
+								speed: 800,
+								navigation: {
+									prevEl: $('.swiper-prev'),
+									nextEl: $('.swiper-next'),
+								},
+							})
+
+							thumbSwiper = new Swiper('.busi_thumb_slider', {
+								slidesPerView: 3,
+								spaceBetween: 15,
+								direction: 'vertical',
+								loop: true,
+								loopedSlides: swiperNum.length,
+								speed: 800,
+								slideToClickedSlide: true,
+								breakpoints: {
+									1137: {
+										direction: 'horizontal',
+										spaceBetween: 10,
+									}
+								},
+							})
+
+							mySwiper.controller.control = thumbSwiper;
+							thumbSwiper.controller.control = mySwiper;
+						</script>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

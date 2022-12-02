@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 8);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">수산공익직접지불제도교육</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>수산공익직접지불제도교육</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-수산공익직접지불제도교육-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-수산공익직접지불제도교육-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<ul class="list_square">
+								<li>수산분야 공익직불금 지급 대상자에 대한 비대면 온라인 교육 및 현장교육 실시</li>
+								<li>표준 강의 교안, 온라인 교육 콘텐츠, 교육 안내 리플릿 등 개발·제작</li>
+								<li>교육 및 정책 정보 제공, 교육대상·이수자 관리, 온라인 교육, 이수증 발급 등 온라인 교육관리시스템 구축·운영</li>
+								<li>교육 안내·신청, 불편사항 접수 등 직불제 지급 대상자 및 지자체 업무담당자를 위한 상담센터 운영</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_marine02.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_marine02_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<div>
+										해양수산부
+										<ul>
+											<li>사업시행지침 수립 및 시달</li>
+											<li>점검 및 평가</li>
+										</ul>
+									</div>
+									<ul>
+										<li>지자체 - 교육대상자 관리</li>
+										<li>한국어촌어항공단
+											<ul>
+												<li>교육계획 수립</li>
+												<li>교육개발 및 관리시스템 구축</li>
+												<li>교육 운영 및 관리</li>
+												<li>상담센터 운영</li>
+											</ul>
+										</li>
+										<li>교육대상자 - 교육신청 및 이수</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

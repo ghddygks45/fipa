@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			currentPage(1, 1);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">일반농산어촌개발(어촌)</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>일반농산어촌개발(어촌)</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-일반농산어촌개발(어촌)-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-일반농산어촌개발(어촌)-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-활력있는어촌-일반농산어촌개발(어촌)-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							<ul class="list_square">
+								<li>어촌지역 주민 소득 및 기초생활수준 향상</li>
+								<li>어촌 인구유지 및 특화 마을 조성에 기여</li>
+								<li>유·무형 자원을 기반으로 주민주도형 특화개발사업 추진</li>
+								<li>맞춤형 지역주민 역량강화 프로그램을 통해 현장 중심의 지역특성에 맞는 프로그램 발굴·교육</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>2018년 2월 ~ 계속</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>어촌해양개발팀</li>
+													<li>서남해지사 수산사업팀</li>
+													<li>동남해지사 수산사업팀</li>
+													<li>제주지사 사업운영팀</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>「국가균형발전 특별법」</li>
+													<li>「수산업·어촌 발전 기본법」</li>
+													<li>「어촌·어항법」</li>
+													<li>「어촌특화발전 지원 특별법」</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<div class="list_busi_info">
+								<div class="bg_info01_cont01">
+									<strong class="tit">기초생활기반 확충 : 정주여건 개선</strong>
+									<ul class="list_square">
+										<li>어촌지역 정주여건 개선을 통한 주민의 기본적 생활수준 향상</li>
+										<li>어촌지역 필수 복지서비스 충족을 통한 주민 만족도 제고</li>
+									</ul>
+								</div>
+								<div class="bg_info01_cont02">
+									<strong class="tit">지역소득증대 : 지역특화개발을 통한 소득증대</strong>
+									<ul class="list_square">
+										<li>지역특화전략 수립과 소득증대방안 마련을 통한 산업육성기반 조성</li>
+										<li>어촌지역 고유의 생태·역사·문화 등을 반영한 어촌관광 기반 조성</li>
+										<li>어촌지역 고유의 특색을 드러낼 수 있고, 고부가가치 창출이 가능한 대표 브랜드 개발과 이를 활용한 마케팅 전략 수립‧실행</li>
+									</ul>
+								</div>
+								<div class="bg_info01_cont03">
+									<strong class="tit">지역경관개선 : 경관 및 환경개선</strong>
+									<ul class="list_square">
+										<li>어촌지역 고유의 경관적 가치를 살리기 위한 보존‧관리 확대</li>
+										<li>경관이 훼손되어 정비가 필요한 경우 지역적 특성에 맞는 디자인적 요소를 반영한 친환경적 공간재생 등 아름다운 어촌 가꾸기 추진</li>
+										<li>어촌환경 개선을 위한 환경정화시설 확충</li>
+										<li>수산업 기반시설의 위생관리 방안 마련</li>
+									</ul>
+								</div>
+								<div class="bg_info01_cont04">
+									<strong class="tit">지역역량강화 : 지역주민 경쟁력 강화</strong>
+									<ul class="list_square">
+										<li>사업의 효율적 준비·시행, 지속가능한 유지·관리 등을 위한 기획, 경영, 디자인, 홍보·마케팅 등 교육·컨설팅 프로그램 실시</li>
+										<li>사업 추진 시 예상되는 주민 등 이해관계자 간 갈등을 효과적으로 해결·관리하기 위한 갈등관리 프로그램 확대 시행</li>
+										<li>시·군 역량강화와 달리 기능별 사업의 지역역량강화는 전문가 양성, 사업운영 전문경영, 소비자 니즈(Needs) 분석을 통한 홍보·마케팅 전략 등 심도 있는 프로그램 실시
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

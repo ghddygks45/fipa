@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2, 4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어촌어항관리시스템 구축</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>쾌적한 어항</li>
+								<li>어촌어항관리시스템 구축</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-쾌적한어항-어촌어항관리시스템구축-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-쾌적한어항-어촌어항관리시스템구축-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-쾌적한어항-어촌어항관리시스템구축-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<ul class="list_square">
+								<li>(2013년 ~ 2014년) 어촌어항관리시스템 구축 ISP 수립 및 시범 구축</li>
+								<li>(2015년 ~ 2018년) 운영관리시스템 구축 완료</li>
+								<li>(2019년 ~ 2020년) 안전관리시스템 구축 완료</li>
+								<li>(2021년) 환경관리시스템 구축 완료</li>
+								<li>(2022년) 건설관리시스템 구축 중</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_fishingsystem_pc.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_fishingsystem_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<dl>
+										<dt>해양수산부 어촌어항과</dt>
+										<dd>총괄관리</dd>
+										<dd>사업시행지침 수립 및 시달</dd>
+										<dd>사업관리방향 설정</dd>
+										<dt>수요기관 (지자체/지방청)</dt>
+										<dd>자문 및 시스템 사용</dd>
+										<dt>한국어촌어항공단</dt>
+										<dd>사업관리 및 운영</dd>
+										<dd>사업 모니터링 및 결과 보고</dd>
+										<dt>수행업체</dt>
+										<dd>시스템 개발 및 구축</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

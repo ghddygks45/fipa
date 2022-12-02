@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb3.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">입찰공고</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>소식/홍보</li>
+								<li>입찰공고</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="detail_search">
+							<div class="row">
+								<div class="cell_l"><strong>업무구분</strong></div>
+								<div class="cell_r">
+									<span class="rd-lb">
+										<input type="radio" id="rd1" name="radio1" class="blind" checked="">
+										<label for="rd1">전체</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd2" name="radio1" class="blind">
+										<label for="rd2">용역</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd2" name="radio1" class="blind">
+										<label for="rd2">물품</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd2" name="radio1" class="blind">
+										<label for="rd2">공사</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd2" name="radio1" class="blind">
+										<label for="rd2">외자</label>
+									</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell_l"><strong>공고게시일자</strong></div>
+								<div class="cell_r">
+									<div class="date">
+										<span class="date-inp"><input type="text" class="datepicker" title="시작일 입력"></span>
+										<span class="date_char">~</span>
+										<span class="date-inp"><input type="text" class="datepicker" title="종료일 입력"></span>
+									</div>
+									<div class="inline_txt lg-ml-12">※ 검색기간은 최대 3개월까지 가능합니다.</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell_l"><strong>공고명</strong></div>
+								<div class="cell_r">
+									<div class="search_word">
+										<input type="text" placeholder="검색어를 입력해주세요." title="검색어를 입력해주세요.">
+										<button type="submit">검색</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="board_top">
+							<div class="total">
+								전체 <span>2,106</span>건
+							</div>
+							<div class="list_number">
+								<select name="" id="" title="목록 개수 선택">
+									<option value="">10개씩</option>
+								</select>
+								<button type="button">이동</button>
+							</div>
+						</div>
+
+						<div class="table">
+							<table class="m_scroll">
+								<caption>입찰공고 표로 업무, 공고번호-차수, 공고명, 공고기관명, 계약방법, 입찰서마감일시, 입찰방법 정보 제공</caption>
+								<colgroup>
+									<col style="width:6%">
+									<col style="width:7%">
+									<col style="width:14%">
+									<col>
+									<col style="width:15%">
+									<col style="width:10%">
+									<col style="width:14%">
+									<col style="width:9%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">No.</th>
+										<th scope="col">업무</th>
+										<th scope="col">공고번호-차수</th>
+										<th scope="col">공고명</th>
+										<th scope="col">공고기관명</th>
+										<th scope="col">계약방법</th>
+										<th scope="col">입찰서마감일시</th>
+										<th scope="col">입찰방법</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="txt_c">
+										<td>7</td>
+										<td>용역</td>
+										<td>20220719453-00</td>
+										<td>
+											<a href="#;" title="새창으로 열림" target="_blank" class="color_navy">2022년 군산시 어장정화, 정비 지원용역</a>
+										</td>
+										<td>한국어촌어항공단</td>
+										<td>제한(총액)</td>
+										<td>2022-07-25 10:00</td>
+										<td>전자입찰</td>
+									</tr>
+									<tr class="txt_c">
+										<td>6</td>
+										<td>용역</td>
+										<td>20220719453-00</td>
+										<td>
+											<a href="#;" title="새창으로 열림" target="_blank" class="color_navy">2022년 군산시 어장정화, 정비 지원용역</a>
+										</td>
+										<td>한국어촌어항공단</td>
+										<td>제한(총액)</td>
+										<td>2022-07-25 10:00</td>
+										<td>전자입찰</td>
+									</tr>
+									<tr class="txt_c">
+										<td>5</td>
+										<td>용역</td>
+										<td>20220719453-00</td>
+										<td>
+											<a href="#;" title="새창으로 열림" target="_blank" class="color_navy">당진시 한진포구 어촌어항재생300사업 폐기물처리 용역</a>
+										</td>
+										<td>한국어촌어항공단</td>
+										<td>제한(총액)</td>
+										<td>2022-07-25 10:00</td>
+										<td>전자입찰</td>
+									</tr>
+									<tr class="txt_c">
+										<td>4</td>
+										<td>용역</td>
+										<td>20220719453-00</td>
+										<td>
+											<a href="#;" title="새창으로 열림" target="_blank" class="color_navy">2022년 군산시(2권역) 해양쓰레기 정화사업 수거용역</a>
+										</td>
+										<td>한국어촌어항공단</td>
+										<td>제한(총액)</td>
+										<td>2022-07-25 10:00</td>
+										<td>전자입찰</td>
+									</tr>
+									<tr class="txt_c">
+										<td>3</td>
+										<td>용역</td>
+										<td>20220719453-00</td>
+										<td>
+											<a href="#;" title="새창으로 열림" target="_blank" class="color_navy">2022년 군산시(1권역) 해양쓰레기 정화사업 수거용역</a>
+										</td>
+										<td>한국어촌어항공단</td>
+										<td>제한(총액)</td>
+										<td>2022-07-25 10:00</td>
+										<td>전자입찰</td>
+									</tr>
+									<tr class="txt_c">
+										<td>2</td>
+										<td>용역</td>
+										<td>20220719453-00</td>
+										<td>
+											<a href="#;" title="새창으로 열림" target="_blank" class="color_navy">2022년 어항관리선 어항제주1호 정기수리</a>
+										</td>
+										<td>한국어촌어항공단</td>
+										<td>제한(총액)</td>
+										<td>2022-07-25 10:00</td>
+										<td>전자입찰</td>
+									</tr>
+									<tr class="txt_c">
+										<td>1</td>
+										<td>용역</td>
+										<td>20220719453-00</td>
+										<td>
+											<a href="#;" title="새창으로 열림" target="_blank" class="color_navy">한국어촌어항공단 어장산업팀 업무용 차량 임차(렌트)</a>
+										</td>
+										<td>한국어촌어항공단</td>
+										<td>수의(총액)소액-견적입찰(2인 이상 견적 제출)</td>
+										<td>2022-07-25 10:00</td>
+										<td>전자입찰</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">제안하기</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>국민참여 모니터링</li>
+								<li>제안하기</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="top_info_box bg_monitor01">
+							<strong class="tit">'명품 어촌·어항 개발을 위한 국민 제안을 받습니다'</strong>
+							<p>
+								한국어촌어항공단에서는 국민 여러분의 아이디어와 제안을 바탕으로 행복한 어촌·어항을 만들고자 합니다.<br>
+								여러분이 생각하시는 행복한 어촌·어항은 어떤 모습인지 혹은 앞으로 어떻게 변했으면 하는지 의견을 제안해주시기 바랍니다.<br>
+								개인정보의 수집은 하지 않으며, 게시글에 실명·전화번호·주민번호 등의 개인정보는 기재하지 마십시오.<br>
+								개인정보 기재 시 해당 제안은 삭제조치 되며, 별도의 통보를 하지 않습니다.
+							</p>
+						</div>
+
+						<div class="btn_wrap sm-mb-20 lg-mb-40">
+							<div class="r">
+								<a href="참여-국민참여모니터링-제안하기-나의제안현황-목록.html" class="btn bg_gray">나의 제안현황</a>
+								<a href="참여-국민참여모니터링-제안하기-등록.html" class="btn bg_blue">제안하기</a>
+							</div>
+						</div>
+
+						<div class="search_board">
+							<div class="inr">
+								<div class="select_box">
+									<div>
+										<select name="" id="" title="검색 카테고리 선택">
+											<option value="">제목</option>
+										</select>
+									</div>
+								</div>
+								<div class="input_box">
+									<input type="text" name="" id="" value="" placeholder="검색어를 입력해주세요." title="검색어 입력">
+									<button type="submit" class="btn_search">검색</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="board_top">
+							<div class="total">
+								전체 <span>2,106</span>건
+							</div>
+							<div class="list_number">
+								<select name="" id="" title="목록 개수 선택">
+									<option value="">10개씩</option>
+								</select>
+								<button type="button">이동</button>
+							</div>
+						</div>
+						<div class="list_board question">
+							<div class="board_box">
+								<div class="cate">
+									<span>No.</span>
+									<strong>4,894</strong>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="참여-국민참여모니터링-제안하기-상세.html">한국어촌어항공단에 제안드립니다.</a>
+										<span class="lock"><span class="blind">비밀글</span></span>
+										<span class="post_new"><span class="blind">새 글</span></span>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+								<div class="r_area">
+									<span class="reply_y">답변완료</span>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span>No.</span>
+									<strong>4,894</strong>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="참여-국민참여모니터링-제안하기-상세.html">한국어촌어항공단에 제안드립니다.</a>
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+								<div class="r_area">
+									<span class="reply_y">답변완료</span>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span>No.</span>
+									<strong>4,894</strong>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="참여-국민참여모니터링-제안하기-상세.html">한국어촌어항공단에 제안드립니다.</a>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+								<div class="r_area">
+									<span class="reply_n">답변대기</span>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span>No.</span>
+									<strong>4,894</strong>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="참여-국민참여모니터링-제안하기-상세.html">한국어촌어항공단에 제안드립니다.</a>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+								<div class="r_area">
+									<span class="reply_n">답변대기</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

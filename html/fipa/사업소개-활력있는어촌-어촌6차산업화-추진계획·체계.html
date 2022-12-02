@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어촌6차산업화</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>어촌6차산업화</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-어촌6차산업화-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-어촌6차산업화-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-활력있는어촌-어촌6차산업화-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<ul class="list_square">
+								<li>(2016년 5월) 고창 두어마을, 남해 전도마을 어촌6차산업화 시범마을(2차) 선정</li>
+								<li>(2016년 12월) 고창 두어마을 업무협약 체결(고창군)</li>
+								<li>(2016년 12월) 남해 전도마을 업무협약 체결(남해군)</li>
+								<li>(2018년 2월) 고창 두어마을 기본계획 승인</li>
+								<li>(2018년 2월) 남해 전도마을 기본계획 승인</li>
+								<li>(2018년 12월) 고창 두어마을 시행계획 승인</li>
+								<li>(2019년 2월) 고창 두어마을 준공완료</li>
+								<li>(2019년 11월) 남해 전도마을 착공</li>
+								<li>(2020년 12월) 남해 전도마을 준공완료</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_busi_infographic2.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_busi_infographic2_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									어촌 6차 산업화
+									<div>
+										<h5>6차 산업이란?</h5>
+										<p>어촌에 존재하는 모든 유무형의 자원을 바탕으로 어업과 식품, 특산품제조 가공(2차산업) 및
+											유통·판매, 문화, 체험, 관광, 서비스(3차산업) 등을 연계함으로서 새로운 부가가치를 창출하는 산업입니다.</p>
+										<ul>
+											<li>생산 - 어업생산,특산물 수집 기타 유무형 자원</li>
+											<li>가공 - 수산물, 특산물, 공산품제조가공</li>
+											<li>판매 · 유통 · 관광 - 특산물 판매유통, 전시, 체험,관광,축제,서비스</li>
+											<li>6차 산업</li>
+										</ul>
+									</div>
+									<div>
+										<div>
+											1차
+											<ul>
+												<li>어촌 특화 자원 생산 - 거제시 어촌마을</li>
+												<li>선별·수집 - 해조류/동백열매</li>
+												<li>조직구성 - 해금강 동백이야기 마을공동체 회사</li>
+											</ul>
+										</div>
+										<div>
+											2차
+											<ul>
+												<li>동백열매 공예전문가 협업</li>
+												<li>인근 지역의 관광자원 연계·활용 - 해조류/동백기름 가공</li>
+												<li>동백제품 전문기술 제휴</li>
+											</ul>
+										</div>
+										<div>
+											3차
+											<ul>
+												<li>운영프로그램 연계 · 서비스 - 해금강 유람선</li>
+												<li>특산물 전시·판매·유통 체험·축제 - 동백마을 축제</li>
+												<li>부가가치 창출 주민소득 증대 - 일자리 창출 </li>
+											</ul>
+										</div>
+										<div>6차</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

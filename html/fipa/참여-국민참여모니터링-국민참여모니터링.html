@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">국민참여 모니터링</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>국민참여 모니터링</li>
+								<li>국민참여 모니터링</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">웹사이트 및 홍보콘텐츠 점검대상 및 주기</h4>
+							한국어촌어항공단이 제공하는 웹사이트 정보, 홍보콘텐츠(보도자료,포토뉴스 등) /수시
+						</div>
+						<div class="section">
+							<h4 class="tit01">웹사이트 및 홍보콘텐츠 점검항목</h4>
+							<div class="table">
+								<table>
+									<caption>웹사이트 및 홍보콘텐츠 점검항목 표로 구분, 점검내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:18%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">점검내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">텍스트 자료</th>
+											<td>
+												<ul class="list_square">
+													<li>맞춤법 준수, 오탈자‧비속어 유무 등 올바른 국어표현 사용여부</li>
+													<li>외국어, 신조어, 전문용어 등에 대한 설명글‧한글표현 병기여부</li>
+													<li>정확한 용어 사용여부(일본해→동해, 다케시마→독도 등)</li>
+													<li>경영·사업 파트 용어, 수치 최신화 여부</li>
+													<li>미활용 카테고리 삭제조치, 활성화 여부</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">이미지/영상 자료</th>
+											<td>
+												<ul class="list_square">
+													<li>이미지·영상 품질(화질, 음성 등) 내용 전달 적합여부</li>
+													<li>장애인, 고령자 등의 자료접근과 이용편익 증진여부</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">지도(map)자료</th>
+											<td>
+												<ul class="list_square">
+													<li>독도표기 등 우리나라 영토 표기 정확성</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+						<div class="section">
+							<h4 class="tit01">의견접수 및 처리절차</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_monitoring01.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_monitoring01_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<ul>
+										<li>이용자 - 의견등록(본인인증 후 게시글 작성)</li>
+										<li>담당자 - 의견접수</li>
+										<li>담당부서 - 내용검토(1.문제확인 2. 이상없음)</li>
+										<li>담당부서 - 내용반영(콘텐츠 수정)</li>
+										<li>담당자 - 결과통보</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">담당자 및 담당부서</h4>
+							<div class="contact_person">경영기획본부 기획조정실(T. 02-6098-0713)</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

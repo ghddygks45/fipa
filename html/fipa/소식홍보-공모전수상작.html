@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(8);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb3.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">공모전 수상작</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>소식/홍보</li>
+								<li>공모전 수상작</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="contest_top_info">
+							<div class="tit">제1회 풍요로운 어촌 사진·영상 공모전</div>
+							<div class="inp_box">
+								<select name="" id="" title="지난 공모전 선택">
+									<option value="">지난 공모전 보기</option>
+								</select>
+								<button type="submit" class="btn bg_lightgray">이동</button>
+							</div>
+						</div>
+						<ul class="list_contest">
+							<li class="grand_prize">
+								<span class="badge_cate badge01">대상</span>
+								<button type="button" onclick="fn_open_popup('popup1');">
+									<img src="../../asset/fipa/images/img_contest01.jpg" alt="잡은 고기가 아니고 버려지는 고기입니다.">
+								</button>
+								<strong>“잡은 고기가 아니고 버려지는 고기입니다”</strong>
+								<p>정지우님</p>
+							</li>
+							<li>
+								<span class="badge_cate badge02">우수</span>
+								<button type="button" onclick="fn_open_popup('popup1');">
+									<img src="../../asset/fipa/images/img_contest02.jpg" alt="겉으로는 보이지 않기에">
+								</button>
+								<strong>겉으로는 보이지 않기에</strong>
+								<p>천지훈님</p>
+							</li>
+							<li>
+								<span class="badge_cate badge02">우수</span>
+								<button type="button" onclick="fn_open_popup('popup1');">
+									<img src="../../asset/fipa/images/img_contest02.jpg" alt="겉으로는 보이지 않기에">
+								</button>
+								<strong>겉으로는 보이지 않기에</strong>
+								<p>천지훈님</p>
+							</li>
+							<li>
+								<span class="badge_cate badge02">우수</span>
+								<button type="button" onclick="fn_open_popup('popup1');">
+									<img src="../../asset/fipa/images/img_contest02.jpg" alt="겉으로는 보이지 않기에">
+								</button>
+								<strong>겉으로는 보이지 않기에</strong>
+								<p>천지훈님</p>
+							</li>
+							<li>
+								<span class="badge_cate badge02">우수</span>
+								<button type="button" onclick="fn_open_popup('popup1');">
+									<img src="../../asset/fipa/images/img_contest02.jpg" alt="겉으로는 보이지 않기에">
+								</button>
+								<strong>겉으로는 보이지 않기에</strong>
+								<p>천지훈님</p>
+							</li>
+							<li>
+								<span class="badge_cate badge03">장려</span>
+								<button type="button" onclick="fn_open_popup('popup1');">
+									<img src="../../asset/fipa/images/img_contest02.jpg" alt="겉으로는 보이지 않기에">
+								</button>
+								<strong>겉으로는 보이지 않기에</strong>
+								<p>천지훈님</p>
+							</li>
+							<li>
+								<span class="badge_cate badge03">장려</span>
+								<button type="button" onclick="fn_open_popup('popup1');">
+									<img src="../../asset/fipa/images/img_contest02.jpg" alt="겉으로는 보이지 않기에">
+								</button>
+								<strong>겉으로는 보이지 않기에</strong>
+								<p>천지훈님</p>
+							</li>
+							<li>
+								<span class="badge_cate badge03">장려</span>
+								<button type="button" onclick="fn_open_popup('popup1');">
+									<img src="../../asset/fipa/images/img_contest02.jpg" alt="겉으로는 보이지 않기에">
+								</button>
+								<strong>겉으로는 보이지 않기에</strong>
+								<p>천지훈님</p>
+							</li>
+						</ul>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+
+						<!-- 이미지 크게보기 팝업 -->
+						<div class="layer_popup_box" data-popup="popup1">
+							<div class="popup popup_size_720" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">크게보기</h4>
+								</div>
+								<div class="popup_content">
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_contest_popup.jpg" alt="">
+									</div>
+									<div class="btn_wrap txt_c">
+										<button type="button" class="btn bg_blue" onclick="fn_hide_popup('popup1');">닫기</button>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('popup1');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // 이미지 크게보기 팝업  -->
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

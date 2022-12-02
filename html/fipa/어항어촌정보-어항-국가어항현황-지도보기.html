@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb2.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">국가어항 현황</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>어항/어촌 정보</li>
+								<li>어항</li>
+								<li>국가어항 현황</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="어항어촌정보-어항-국가어항현황-지도보기.html" class="active">지도로 보기</a></li>
+							<li><a href="어항어촌정보-어항-국가어항현황-목록보기.html">목록으로 보기</a></li>
+						</ul>
+						<div class="map_view_box">
+							<img src="../../asset/fipa/images/img_map_view.jpg" alt="" class="pc_content">
+							<img src="../../asset/fipa/images/img_map_view_m.jpg" alt="" class="m_content">
+							<div class="map_popup">
+								<button type="button" class="btn_close"><span class="blind">닫기</span></button>
+								<div class="tit"><span class="color_blue">[육지(국가어항)]</span> 대진항</div>
+								<div class="con">
+									<div class="img">
+										<img src="../../asset/fipa/images/map_img.jpg" alt="">
+									</div>
+									<div class="txt">
+										<ul class="list_square">
+											<li>경북 영덕군 영해면 대진리</li>
+											<li><span class="fwr color_black">어업인구 : </span>776명</li>
+											<li><span class="fwr color_black">가구 : </span>392호</li>
+											<li><span class="fwr color_black">관리청 : </span>영덕군</li>
+											<li><span class="fwr color_black">지정일 : </span>1971년 12월 21일</li>
+										</ul>
+										<a href="#;" class="btn md bg_green sm-mt-12 lg-mt-15">자세히 보기</a>
+									</div>
+								</div>
+							</div>
+							<div class="map_pin"><span class="blind">지도 핀</span></div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

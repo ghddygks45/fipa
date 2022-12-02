@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb2.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어촌정책추진방향</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>어항/어촌 정보</li>
+								<li>어촌</li>
+								<li>어촌정책추진방향</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="img_box">
+							<img src="../../asset/fipa/images/img_fishing02.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+							<img src="../../asset/fipa/images/img_fishing02_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+							<div class="blind">
+								<div>
+									<div>비전 - 어촌을 신명나는 삶터로, 어항을 활력있는 경제거점으로</div>
+									<div>키워드 - 통합재생과 균형발전, 특화개발과 지역혁신</div>
+								</div>
+								<div>
+									성과목표
+									<ul>
+										<li>
+											<strong>도시 - 어촌 소득 비율</strong>
+											‘18년 80% -> ‘24년 85%
+										</li>
+										<li>
+											<strong>어촌지역 관광객수</strong>
+											‘18년 1.6억명 -> ‘24년 2억명
+										</li>
+										<li>
+											<strong>어촌어항 종합만족도</strong>
+											‘18년 67점 -> ‘24년 77점
+										</li>
+									</ul>
+								</div>
+								<div>
+									<table>
+										<caption>어촌정책추진방향 표로 정책방향, 추진전략 정보 제공</caption>
+										<tbody>
+											<tr>
+												<th scope="row">정책방향</th>
+												<td>통합재생 - 가고싶고 살고싶은 어촌 · 어항 재생</td>
+												<td>균형발전 - 고르게 발전하는 어촌 · 어항 개발</td>
+												<td>특화개발 - 특색있고 활력있는 어촌 · 어항 조성</td>
+												<td>지역혁신 - 안전하고 스마트한 어촌 · 어항 혁신</td>
+											</tr>
+											<tr>
+												<th scope="row">추진 전략</th>
+												<td>
+													<ul>
+														<li>어촌·어항 통합 재생 인프라 확충</li>
+														<li>어촌·어항 유휴자원 재생</li>
+														<li>모두가 살기좋은 어촌·어항 조성</li>
+													</ul>
+												</td>
+												<td>
+													<ul>
+														<li>균형있게 발전하는 어촌 · 어항 조성</li>
+														<li>더불어 잘사는 어촌 기반 구축</li>
+														<li>지역성장을 주도하는 어항의 기능 강화</li>
+													</ul>
+												</td>
+												<td>
+													<ul>
+														<li>특색있는 어촌경제 활성화</li>
+														<li>새로운 활력을 창출하는 어항개발</li>
+														<li>매력있는 어촌·어항을 위한 경쟁력 강화</li>
+													</ul>
+												</td>
+												<td>
+													<ul>
+														<li>안전한 어촌·어항 기반 구축</li>
+														<li>깨끗한 어촌 · 어항 만들기</li>
+														<li>편리한 어촌 · 어항 개발</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="sm-mt-10 lg-mt-15">※ 출처: 제3차 어촌어항발전기본계획</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>CMS 통합관리자</title>
+	<link rel="shortcut icon" href="../../asset/incms/images/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../asset/incms/css/style.css" media="all">
+	<script src="../../asset/incms/js/jquery-1.12.0.min.js"></script>
+	<script src="../../asset/incms/js/calendar.js"></script>
+	<script src="../../asset/incms/js/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+		<article id="content">
+			<p id="page_loc">
+				<a href="#none" class="ico_home">HOME</a>
+				<span>&gt;</span>
+				<a href="#none">depth1</a>
+				<span>&gt;</span>
+				<a href="#none">depth2</a>
+				<span>&gt;</span>
+				<strong>depth3</strong>
+			</p>
+
+			<h2 id="tit_page">SMS 통보설정</h2>
+
+			<ul class="tab_menu">
+				<li class="on"><a href="#">고객발송</a></li>
+				<li><a href="#">담당자 발송</a></li>
+			</ul>
+
+			<table class="tb_write">
+				<caption>등록</caption>
+				<colgroup>
+					<col style="width:250px">
+					<col>
+					<col style="width:120px">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>상황</th>
+						<th>메시지 내용</th>
+						<th>관리</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="ac">고객의견제안 등록 시</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">[한국어촌어항공단] 고객님께서 등록하신 제안이 정상적으로 접수되었습니다.30명 이상 공감을 받으시면 담당부서장이 직접 답변드리도록  하겠습니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+					<tr>
+						<th class="ac">고객의견제안 답변 등록 시</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">[한국어촌어항공단] 고객님께서 등록하신 제안의 답변이 등록되었습니다. [나의 제안현황]을 통해 확인하실 수 있습니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+					<tr>
+						<th class="ac">질문과 답변 [글] 등록 시</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">[한국어촌어항공단] 고객님께서 등록하신 질문이 정상적으로 접수되었습니다. 처리기한은 담당부서 접수시로 부터 3일 이내이며, 최대한 빠른 시간내에 답변 드리겠습니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+					<tr>
+						<th class="ac">질문과 답변 [답변] 등록 시</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">[한국어촌어항공단] 고객님께서 등록하신 질문의 답변이 등록되었습니다. [나의 질문현황]을 통해 확인하실 수 있습니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+					<tr>
+						<th class="ac">모니터링 제안 등록 시</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">[한국어촌어항공단] 고객님께서 등록하신 모니터링 의견이 정상적으로 접수되었습니다. 해당 내용을 담당부서에 이관하여 최대한 빠른 시간내에 답변 드리겠습니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+					<tr>
+						<th class="ac">모니터링 제안 답변 등록 시</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">[한국어촌어항공단] 고객님께서 등록하신 모니터링 의견에 답변이 등록되었습니다. [나의 제안현황]을 통해 확인하실 수 있습니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

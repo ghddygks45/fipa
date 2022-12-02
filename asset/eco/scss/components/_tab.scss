@@ -1,0 +1,76 @@
+@use '../use'as *;
+
+.category_tab {
+	margin-bottom: 25px;
+
+	>ul {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: -10px;
+
+		>li {
+			flex: 0 0 50%;
+			margin-bottom: 10px;
+			padding-right: 5px;
+
+			@at-root {
+				.mobile &:nth-child(2n) {
+					padding: 0 0 0 5px;
+				}
+			}
+
+			>a {
+				display: flex;
+				height: 38px;
+				padding: 0 40px 0 12px;
+				border: 1px solid #d9d9d9;
+				border-radius: 10px;
+				background: url(../images/ico_arrow_check_off.png) no-repeat calc(100% - 13px) 50% / 15px;
+				align-items: center;
+
+				&:hover,
+				&.active {
+					border-color: #2471ac;
+					background-color: #2471ac;
+					background-image: url(../images/ico_arrow_check_on.png);
+					transition: .2s ease;
+					font-weight: 500;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@include res--pc-ctn {
+	.category_tab {
+		&.full>ul>li {
+			flex: 1;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		margin-bottom: 40px;
+
+		>ul {
+			>li {
+				flex: 0 0 216px;
+				margin-right: 10px;
+				padding: 0;
+
+				&:nth-child(5n) {
+					margin-right: 0;
+				}
+
+				>a {
+					height: 52px;
+					background-size: auto;
+
+
+				}
+			}
+		}
+	}
+}

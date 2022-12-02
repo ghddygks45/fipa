@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <link rel="stylesheet" href="../../asset/fipa/css/style.css"> -->
+	<link rel="stylesheet" href="../../asset/eco/css/style.css">
+	<link rel="stylesheet" href="../../asset/eco/css/swiper.min.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+	<script src="../../asset/fipa/js/swiper-bundle.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/eco/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단 친환경·스마트 양식</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">스마트 양식</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>친환경스마트 양식</li>
+								<li>스마트 양식</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">스마트 양식</h4>
+							<div class="img_box">
+								<img src="../../asset/eco/images/img_smart_form.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/eco/images/img_smart_form_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<p>
+										4차 산업혁명 기술을 접목하여 자동화∙지능화를 통한 생산 효율 극대화 및 규모화, 친환경화가 구현된 양식 시스템 에서
+										첨단 기술 융∙복합을 통해 기존 노동집약적 양식산업을 기술∙자본집약적 지식산업으로 재편
+									</p>
+									<ul>
+										<li>
+											<strong>IoT 기반 양식장 모니터링</strong>
+											(원격감시 + 원격제어)<br>
+											의사결정주체 : 사람<br>
+											무선 네트워크 기반 양식장 수조 감시 시스템
+										</li>
+										<li>
+											<strong>데이터 기반 양식장 자동제어 시스템</strong>
+											(복합환경제어 + 자동제어)<br>
+											의사결정주체 : 사람 + 컴퓨터<br>
+											양식장 환경 자동제어시스템
+										</li>
+										<li>
+											<strong>AI 기반 양식장 자율제어 시스템</strong>
+											(로봇자동화 + 자율제어)<br>
+											의사결정주체 : 컴퓨터<br>
+											개체적응형 자동사료공급(노르웨이 사료공급선)
+										</li>
+										<li>
+											<strong>디지털트윈 기반 자율경영 시스템</strong>
+											(생산 자율관리 + 자율경영)<br>
+											의사결정주체 : 컴퓨터<br>
+											양식생산 자율관리 및 경영지원시스템 (노르웨이 aM社)
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

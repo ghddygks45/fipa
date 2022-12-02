@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<link rel="stylesheet" href="../../asset/fipa/css/swiper.min.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+	<script src="../../asset/fipa/js/swiper-bundle.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 3);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">마을·양식어장 보전</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>역동하는 어장</li>
+								<li>마을·양식어장 보전</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-역동하는어장-마을·양식어장보전-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-역동하는어장-마을·양식어장보전-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-역동하는어장-마을·양식어장보전-성과및자료.html" class="active">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">주요성과</h4>
+							<ul class="list_square">
+								<li>패류양식어업 기반구축(해상작업처리장, 가리비 양식시설 등)</li>
+								<li>고소득 패류종자 방류(새꼬막, 바지락 등)</li>
+								<li>패류종자 발생장 조성(마을어장 11개소(22ha))</li>
+								<li>수산종자 방류(조피볼락, 넙치, 점농어, 대하 등)</li>
+								<li>주꾸미 산란장 조성(산란장 5개소(40ha), 사후관리(1식))</li>
+								<li>패류 위생관리용 수상화장실 설치(3개소)</li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">관련자료</h4>
+							<div class="slider_wrap">
+								<div class="busi_data_slider swiper-container">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_dynamic4_data01.jpg" alt="">
+											</div>
+											<div class="txt">종패살포</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_dynamic4_data02.jpg" alt="">
+											</div>
+											<div class="txt">모패살포</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_dynamic4_data03.jpg" alt="">
+											</div>
+											<div class="txt">김양식 시설</div>
+										</li>
+									</ul>
+								</div>
+								<div class="busi_thumb_slider swiper-container">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_dynamic4_data01.jpg" alt="">
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_dynamic4_data02.jpg" alt="">
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="img">
+												<img src="../../asset/fipa/images/img_dynamic4_data03.jpg" alt="">
+											</div>
+										</li>
+									</ul>
+									<button type="button" class="swiper-button swiper-prev"><span class="blind">이전
+											슬라이드</span></button>
+									<button type="button" class="swiper-button swiper-next"><span class="blind">다음
+											슬라이드</span></button>
+								</div>
+							</div>
+						</div>
+						<script>
+							var swiperNum = $('.busi_thumb_slider').find('.swiper-slide');
+
+							mySwiper = new Swiper('.busi_data_slider', {
+								slidesPerView: 'auto',
+								loop: true,
+								loopedSlides: swiperNum.length,
+								speed: 800,
+								navigation: {
+									prevEl: $('.swiper-prev'),
+									nextEl: $('.swiper-next'),
+								},
+							})
+
+							thumbSwiper = new Swiper('.busi_thumb_slider', {
+								slidesPerView: 3,
+								spaceBetween: 15,
+								direction: 'vertical',
+								loop: true,
+								loopedSlides: swiperNum.length,
+								speed: 800,
+								slideToClickedSlide: true,
+								breakpoints: {
+									1137: {
+										direction: 'horizontal',
+										spaceBetween: 10,
+									}
+								},
+							})
+
+							mySwiper.controller.control = thumbSwiper;
+							thumbSwiper.controller.control = mySwiper;
+						</script>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

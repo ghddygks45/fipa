@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(5);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">경영공시</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>경영공시</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info_manage01">
+							<p>경영공시는 공공기관의 경영에 대한 중요한 정보를 국민에게 제공함으로써 경영의 투명성을 제고하고,<br>
+								국민의 참여기회를 확대하여 대국민 서비스의 질을 향상시키기 위해 실시하는 제도입니다.
+							</p>
+							<p class="sm-mt-7 lg-mt-10">
+								우리 공단의 경영공시는 ALIO 사이트를 통해 제공되며, 아래의 항목을 클릭 시 ALIO 사이트의 해당항목으로 이동합니다.
+							</p>
+						</div>
+
+						<div class="manage_cont">
+							<div>
+								<div class="manage_box">
+									<div class="tit bg01">Ⅰ.일반현황</div>
+									<ul class="list_square">
+										<li><a href="#;">일반현황</a></li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="manage_box">
+									<div class="tit bg02">Ⅱ.기관운영</div>
+									<ul class="list_square">
+										<li><a href="#;">임직원수</a></li>
+										<li><a href="#;">임원현황</a></li>
+										<li><a href="#;">신규채용, 청년인턴채용, 유연근무 현황</a></li>
+										<li><a href="#;">임원연봉</a></li>
+										<li><a href="#;">직원 평균보수</a></li>
+										<li><a href="#;">기관장 업무추진비</a></li>
+										<li><a href="#;">복리후생비</a></li>
+										<li><a href="#;">그밖의 복리후생제도 등의 운영현황</a></li>
+										<li><a href="#;">임원 국외출장 내역</a></li>
+										<li><a href="#;">노동조합 관련현황</a></li>
+										<li><a href="#;">내부규정</a></li>
+										<li><a href="#;">징계현황</a></li>
+										<li><a href="#;">소송 및 법률자문 현황</a></li>
+										<li><a href="#;">일 · 가정 양립 지원제도 운영현황</a></li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="manage_box">
+									<div class="tit bg01">Ⅲ.주요사업 및 경영성과</div>
+									<ul class="list_square">
+										<li><a href="#;">요약 재무상태표</a></li>
+										<li><a href="#;">요약 손익계산서</a></li>
+										<li><a href="#;">수입·지출현황</a></li>
+										<li><a href="#;">주요사업</a></li>
+										<li><a href="#;">투자집행내역</a></li>
+										<li><a href="#;">자본금 및 주주현황</a></li>
+										<li><a href="#;">장단기 차입금현황</a></li>
+										<li><a href="#;">투자 및 출자현황</a></li>
+										<li><a href="#;">연간 출연 및 증여</a></li>
+										<li><a href="#;">경영부담비용 추계</a></li>
+										<li><a href="#;">중장기 재무관리계획</a></li>
+										<li><a href="#;">12개 주요기관의 상세부채 정보</a></li>
+										<li><a href="#;">납세정보현황</a></li>
+										<li><a href="#;">감사보고서</a></li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="manage_box">
+									<div class="tit bg02">Ⅳ.대내외 평가</div>
+									<ul class="list_square">
+										<li><a href="#;">국회 지적사항</a></li>
+										<li><a href="#;">감사원/주무부처 지적사항</a></li>
+										<li><a href="#;">경영실적 평가결과</a></li>
+										<li><a href="#;">경영평가 지적사항</a></li>
+										<li><a href="#;">고객만족도 조사결과</a></li>
+										<li><a href="#;">감사직무실적 평가결과</a></li>
+										<li><a href="#;">이사회회의록, 내부감사결과</a></li>
+									</ul>
+								</div>
+								<div class="manage_box">
+									<div class="tit bg01">Ⅴ.공지사항</div>
+									<ul class="list_square">
+										<li><a href="#;">경영혁신사례</a></li>
+										<li><a href="#;">임직원 채용정보</a></li>
+										<li><a href="#;">계약정보</a></li>
+										<li><a href="#;">연구보고서</a></li>
+										<li><a href="#;">안전관리 현황</a></li>
+										<li><a href="#;">기타정보공개</a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

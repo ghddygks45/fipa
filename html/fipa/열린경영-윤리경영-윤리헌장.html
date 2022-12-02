@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(7, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">윤리헌장</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>윤리경영</li>
+								<li>윤리헌장</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info_ethics01">
+							<p>우리 한국어촌어항공단은 어촌·어항의 개발 및 관리와 어장의 보전 및 이용 등을 효율적으로 수행하여 해양수산의 미래가치를 창출하고 국가 균형발전과 국민의 삶의 질 향상에 기여해 온
+								자랑스러운 공공기관이다.</p>
+							<p class="sm-mt-7 lg-mt-10">
+								우리는 이러한 긍지와 자부심을 가지고 윤리경영과 준법경영을 통해 국민의 사랑과 신뢰를 받는 한국어촌어항공단이 되고자 한다.
+							</p>
+						</div>
+						<div class="section">
+							<div class="cus_txt service1 service_con service3">
+								<h5 class="txt_c sm-mb-20 lg-mb-35">윤리헌장</h5>
+								<div class="service_txt">
+									<ul>
+										<li>
+											<span>하나</span>
+											<p>우리는 임직원 개개인의 인격을 존중하고 차별대우를 하지 않으며, 공평한 기회와 공정한 평가를 받도록 하는 한편 임직원의 건강과 삶의 질 향상을 위해 노력한다.</p>
+										</li>
+										<li>
+											<span>하나</span>
+											<p>우리는 창의적 사고와 도전적 정신으로 우리의 사명을 달성하고 높은 윤리적 가치관을 바탕으로 정직하고 공정한 자세로 업무를 처리하며 부패방지와 깨끗한 공직풍토조성을 위해
+												노력한다.</p>
+										</li>
+										<li>
+											<span>하나</span>
+											<p>우리는 고객인 어업인과 국민에게 최고의 서비스를 제공하며 고객만족과 새로운 가치 창조의 경영을 통하여 고객 제일주의를 실천한다.</p>
+										</li>
+										<li>
+											<span>하나</span>
+											<p>우리는 국내법과 국제규정을 준수하고 자유경쟁의 시장 질서를 존중하며, 모든 이해관계자와 상호 협력하는 공동체적인 관계를 구축하여 공동의 번영을 추구한다.</p>
+										</li>
+										<li>
+											<span>하나</span>
+											<p>우리는 사회의 일부분으로써 공익활동에 적극적으로 참여하고, 끊임없이 새로운 가치를 창조하여 국가와 사회의 발전에 공헌한다.</p>
+										</li>
+										<li>
+											<span>하나</span>
+											<p>우리는 생명을 존중하고 쾌적한 어항·어장, 어촌의 환경보호 활동에 앞장서서 깨끗한 자연환경을 후세에 전하도록 최선을 다한다.</p>
+										</li>
+									</ul>
+								</div>
+								<div class="service_btm">
+									<strong>- 부칙 -</strong>
+									제1조(시행일) 이 윤리헌장은 2019년 08월 07일부터 시행한다.<br>
+									제2조(경과조치) 이 지침 시행 이전에 행한 사항은 이 지침에 의하여 시행된 것으로 본다.
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <link rel="stylesheet" href="../../asset/fipa/css/style.css"> -->
+	<link rel="stylesheet" href="../../asset/eco/css/style.css">
+	<link rel="stylesheet" href="../../asset/eco/css/swiper.min.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+	<script src="../../asset/fipa/js/swiper-bundle.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/eco/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단 친환경·스마트 양식</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb3.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">사업개요</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>친환경양식One-Stop창업지원</li>
+								<li>사업개요</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							친환경 양식창업을 구상에서 실현까지 One-Stop으로 지원하여 청년층 등을 양식업계 진입을 유도하여 신규 일자리 창출 도모 및 어업인 소득증대 기여
+						</div>
+						<div class="section">
+							<h4 class="tit01">근거법령</h4>
+							<ul class="list_square">
+								<li>「수산업·어촌발전기본법」제25조(친환경수산업 등의 촉진)</li>
+								<li>「양식산업발전법」제61조(양식산업 관련 기술개발지원) 및 제62조(양식산업전문인력의 육성)</li>
+								<li>「수산 종자산업육성법」제8조(전문인력의 육성)</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">주요내용</h4>
+							<div class="list_busi_info">
+								<div class="bg_info01_cont01">
+									<strong class="tit">친환경양식 창업지원</strong>
+									<ul class="list_square">
+										<li>친환경 양식창업에 필요한 인허가, 양식시설 등에 대한 컨설팅</li>
+										<li>친환경 양식 전략품종 등에 대한 기술이전 등</li>
+									</ul>
+								</div>
+								<div class="bg_info01_cont02">
+									<strong class="tit">경영역량강화</strong>
+									<ul class="list_square">
+										<li>양식창업자의 경영안정화 등을 위한 1:1 맞춤형 컨설팅</li>
+										<li>친환경양식 창업자 대상 사후관리 모니터링 및 성과분석</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">친환경 기술이전 교육</h4>
+							<div class="sub_section">
+								<h5 class="tit02">교육분야</h5>
+								<ul class="list_square">
+									<li>바이오플락 (흰다리새우)</li>
+									<li>아쿠아포닉스(민물어종)</li>
+									<li>해수 순환여과</li>
+									<li>스마트양식</li>
+									<li>큰징거미 새우</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h2 class="tit02">교육내용</h2>
+								<div class="table">
+									<table>
+										<caption>교육내용 표로 교육과정, 교육내용 정보 제공</caption>
+										<colgroup>
+											<col style="width: 120px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">교육과정</th>
+												<th scope="col">교육내용</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">기본과정</th>
+												<td>
+													<ul class="list_square">
+														<li>
+															친환경 양식장 현장 견학과 궁금한 사항 해소 위주의 교육과정<br>
+															* 1주 이내 / 5회 내외 / 100명 내외 (회당 20명 내외)<br>
+															※심화과정(4주) 교육의 참여 여부 판단과 중도포기의 사전 예방 차원의 교육
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">심화과정</th>
+												<td>
+													<ul class="list_square">
+														<li>
+															친환경 양식 기술이전 현장 실습 위주의 맞춤형 교육과정<br>
+															* 4주 이내 / 3회 내외 / 60명 내외 (회당 20명 내외)
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">실전과정</th>
+												<td>
+													<ul class="list_square">
+														<li>
+															교육생이 양식장 수조를 직접 관리 운영하는 체험 교육과정<br>
+															* 5개월 / 1회 / 10명 내외 (월 2회 전문가 피드백 및 노하우 전수)
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">교육추진절차</h5>
+								<div class="img_box">
+									<img src="../../asset/fipa/images/img_onestop1_1_pc.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+									<img src="../../asset/fipa/images/img_onestop1_1_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+									<div class="blind">
+										<ol>
+											<li>
+												교육생 공모
+												<ul>
+													<li>
+														기본과정(100명/5회/1주)
+														공모기간 : ’22. 2 ~ 6
+													</li>
+													<li>
+														심화과정(60명/3회/4주)
+														공모기간 : ’22. 3 ~10
+													</li>
+													<li>
+														실전과정(10명/1회/5개월)
+														공모기간 : ’22. 2 ~ 3
+													</li>
+												</ul>
+											</li>
+											<li>
+												교육생 선발
+												<ul>
+													<li>
+														기본과정(이론교육)
+														교육기간 : ’22. 3 ~ 6
+													</li>
+													<li>
+														심화과정(실습교육)
+														교육기간 : ’22. 3 ~ 9
+													</li>
+													<li>
+														실전과정(생애주기체험)
+														체험기간 : ’22. 2 ~ 3
+													</li>
+												</ul>
+											</li>
+											<li>
+												교육과정 운영
+												<ul>
+													<li>
+														기본과정(이론 / 현장견학)
+														공모기간 : ’22. 3 ~ 6 (5회)
+													</li>
+													<li>
+														심화과정(이론 / 실습병행)
+														공모기간 : ’22. 5 ~ 11 (3회)
+													</li>
+													<li>
+														실전과정(수조 운영 관리)
+														공모기간 : ’22. 3 ~ 7 (1회)
+													</li>
+												</ul>
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">친환경 양식 종류와 방법</h4>
+							<div class="category_tab full">
+								<ul>
+									<li><a href="#tab_box1" class="active">바이오플락</a></li>
+									<li><a href="#tab_box2">순환여과식</a></li>
+									<li><a href="#tab_box3">아쿠아포닉스</a></li>
+								</ul>
+							</div>
+							<script>
+								$('.category_tab a').on('click', function () {
+									var boxId = $(this).attr('href').split('#')[1];
+									$(this).addClass('active').parent().siblings().find('> a').removeClass();
+									$('[data-tab-box]').hide();
+									$('[data-tab-box=' + boxId + ']').show();
+									mySwiper.update();
+									thumbSwiper.update();
+									return false;
+								});
+							</script>
+
+							<!-- 바이오플락 -->
+							<div data-tab-box="tab_box1">
+								<h5 class="tit02">바이오플락(Biofloc)</h5>
+								<div class="img_box">
+									<img src="../../asset/fipa/images/img_onestop1_2.jpg" alt="하단에 내용 참고 바랍니다.">
+									<a href="../../asset/fipa/images/img_onestop1_2.jpg" class="btn_img_size">크게보기</a>
+									<div class="blind">
+
+									</div>
+								</div>
+								<ul class="list_square mt-15">
+									<li>양식생물 양성시 생기는 사료찌꺼기, 배설물 등을 미생물이 질화과정을 거쳐 사육수를 정화하며, 증식한 미생물을 다시 양식생물이 섭취하여 사료와 사육수를 절약하는 기술</li>
+								</ul>
+							</div>
+							<!-- // 바이오플락 -->
+
+							<!-- 순환여과식 -->
+							<div data-tab-box="tab_box2" style="display: none;">
+								<h5 class="tit02">순환여과식(Recirculating Aquaculture System, RAS)</h5>
+								<div class="img_box">
+									<img src="../../asset/fipa/images/img_onestop1_3.jpg" alt="하단에 내용 참고 바랍니다.">
+									<a href="../../asset/fipa/images/img_onestop1_3.jpg" class="btn_img_size">크게보기</a>
+									<div class="blind">
+
+									</div>
+								</div>
+								<ul class="list_square mt-15">
+									<li>
+										순환여과식시스템이란?
+										<ul class="list_arr">
+											<li>양식생물 사육 시 사용한 물을 버리지 않고 사육수에 포함된 각종 고형물이나 용존성 유기물, 대사성 배설물을 물리·생물학적 여과과정을 거쳐 사육용수로 다시 사용하는
+												방식의
+												양식
+											</li>
+										</ul>
+									</li>
+									<li>
+										순환여과의 목적
+										<ul class="list_arr">
+											<li>독립생태환경 관리</li>
+											<li>수온,수질,수량, 에너지관리</li>
+											<li>사료효율관리</li>
+											<li>방역관리</li>
+											<li>배출,유입수관리</li>
+											<li>HACCP 관리</li>
+											<li>연중 생산(무병) 등</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!-- // 순환여과식 -->
+
+							<!-- 아쿠아포닉스 -->
+							<div data-tab-box="tab_box3" style="display: none;">
+								<h5 class="tit02">아쿠아포닉스(Aquaponics)란?</h5>
+								<div class="img_box">
+									<img src="../../asset/fipa/images/img_onestop1_4.jpg" alt="하단에 내용 참고 바랍니다.">
+									<a href="../../asset/fipa/images/img_onestop1_4.jpg" class="btn_img_size">크게보기</a>
+									<div class="blind">
+
+									</div>
+								</div>
+								<ul class="list_square mt-15">
+									<li>양식(Aquaculture) + 수경재배(Hydroponics)</li>
+									<li>
+										양식 : 어류 및 기타 수산 동,식물을 통제된 조건에서 가두어 양성하여 생산<br>
+										※ 가두리, 못양식, 유수식 양식, 순환여과식 양식<br>
+										※ 순환여과식 양식(Recirculating aquaculture system, RAS) 사육수가 정화 및 여과 과정을 거친 뒤 재사용됨
+									</li>
+									<li>
+										수경재배 : 토양을 사용하지 않고 작물을 재배하는 무토양 재배방법<br>
+										※토양 대신 배지(양액)를 통해 식물을 지지하고 수분을 보충함<br>
+										※해충 및 질병통제 가능, 배지의 재사용, 토양피폐화 극복
+									</li>
+								</ul>
+								<div class="section lg-mt-50">
+									<h4 class="tit01">친환경 창업지원 컨설팅</h4>
+									<div class="sub_section">
+										<h5 class="tit02">친환경 창업지원 컨설팅 사업개요</h5>
+										<div class="table">
+											<table>
+												<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+												<colgroup>
+													<col style="width: 120px;">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">내용</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">분야</th>
+														<td>창업‧경영, 행정서비스, 수산물유통, 생산/시설, 양식장 HACCP 인증</td>
+													</tr>
+													<tr>
+														<th scope="row">대상</th>
+														<td>친환경양식 기술이전 교육과정 수료한 예비 양식창업인 또는 양식 창업을 준비 중인 사람 등</td>
+													</tr>
+													<tr>
+														<th scope="row">기간</th>
+														<td>2022. 03 ~ 2022. 11.</td>
+													</tr>
+													<tr>
+														<th scope="row">인원</th>
+														<td>75명/ 150회 이내(1인 2회 이내)</td>
+													</tr>
+													<tr>
+														<th scope="row">방법</th>
+														<td>컨설턴트를 지정 신청하면 공단에서 검토하여 1:1 컨설팅 진행</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="sub_section">
+										<h5 class="tit02">추진절차</h5>
+										<div class="img_box">
+											<img src="../../asset/fipa/images/img_onestop1_5_pc.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+											<img src="../../asset/fipa/images/img_onestop1_5_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+											<div class="blind">
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="section">
+									<h4 class="tit01">친환경 양식장 사후관리 모니터링</h4>
+									<div class="sub_section">
+										<h5 class="tit02">사업개요</h5>
+										<div class="table">
+											<table>
+												<caption>친환경 양식장 사후관리 모니터링 사업개요 표로 구분, 내용 정보 제공</caption>
+												<colgroup>
+													<col style="width: 120px;">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">내용</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">분야</th>
+														<td>경영, 유통, 행정서비스, 생산기술/시설, HACCP 인증</td>
+													</tr>
+													<tr>
+														<th scope="row">대상</th>
+														<td>
+															친환경 양식 창업 업체(신규 창업한 1~2년 차 업체 우선 지원)<br>
+															※ 친환경양식 원스톱 창업지원 사업에 참여 후 창업 운영 중인 양식장 대상 우선 수행
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">기간</th>
+														<td>2022. 03 ~ 2022. 11.</td>
+													</tr>
+													<tr>
+														<th scope="row">전문가</th>
+														<td>친환경 창업지원 컨설턴트 활용 또는 모니터링 전문가 선발</td>
+													</tr>
+													<tr>
+														<th scope="row">방법</th>
+														<td>전문가 양식장 방문 창업업체 취약부분 컨설팅과 병행하여 수행</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="sub_section">
+										<h5 class="tit02">추진절차</h5>
+										<div class="img_box">
+											<img src="../../asset/fipa/images/img_onestop1_6_pc.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+											<img src="../../asset/fipa/images/img_onestop1_6_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+											<div class="blind">
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="section">
+									<h4 class="tit01">주요성과</h4>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_onestop1_7_pc.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+										<img src="../../asset/fipa/images/img_onestop1_7_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+										<div class="blind">
+
+										</div>
+									</div>
+								</div>
+								<div class="section">
+									<h4 class="tit01">관련자료</h4>
+									<div class="slider_wrap">
+										<div class="busi_data_slider swiper-container">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide">
+													<div class="img">
+														<img src="../../asset/eco/images/img_smart_data1.jpg" alt="">
+													</div>
+													<div class="txt">아쿠아포닉스(1)</div>
+												</li>
+												<li class="swiper-slide">
+													<div class="img">
+														<img src="../../asset/eco/images/img_smart_data2.jpg" alt="">
+													</div>
+													<div class="txt">아쿠아포닉스(2)</div>
+												</li>
+												<li class="swiper-slide">
+													<div class="img">
+														<img src="../../asset/eco/images/img_smart_data3.jpg" alt="">
+													</div>
+													<div class="txt">아쿠아포닉스(3)</div>
+												</li>
+												<li class="swiper-slide">
+													<div class="img">
+														<img src="../../asset/eco/images/img_smart_data4.jpg" alt="">
+													</div>
+													<div class="txt">아쿠아포닉스(4)</div>
+												</li>
+											</ul>
+										</div>
+										<div class="busi_thumb_slider swiper-container">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide">
+													<div class="img">
+														<img src="../../asset/eco/images/img_smart_data1.jpg" alt="">
+													</div>
+												</li>
+												<li class="swiper-slide">
+													<div class="img">
+														<img src="../../asset/eco/images/img_smart_data2.jpg" alt="">
+													</div>
+												</li>
+												<li class="swiper-slide">
+													<div class="img">
+														<img src="../../asset/eco/images/img_smart_data3.jpg" alt="">
+													</div>
+												</li>
+												<li class="swiper-slide">
+													<div class="img">
+														<img src="../../asset/eco/images/img_smart_data4.jpg" alt="">
+													</div>
+												</li>
+											</ul>
+											<button type="button" class="swiper-button swiper-prev"><span class="blind">이전
+													슬라이드</span></button>
+											<button type="button" class="swiper-button swiper-next"><span class="blind">다음
+													슬라이드</span></button>
+										</div>
+									</div>
+									<script>
+										var swiperNum = $('.busi_thumb_slider').find('.swiper-slide');
+
+										mySwiper = new Swiper('.busi_data_slider', {
+											slidesPerView: 'auto',
+											loop: true,
+											loopedSlides: swiperNum.length,
+											speed: 800,
+											navigation: {
+												prevEl: $('.swiper-prev'),
+												nextEl: $('.swiper-next'),
+											},
+										})
+
+										thumbSwiper = new Swiper('.busi_thumb_slider', {
+											slidesPerView: 3,
+											spaceBetween: 15,
+											direction: 'vertical',
+											loop: true,
+											loopedSlides: swiperNum.length,
+											speed: 800,
+											slideToClickedSlide: true,
+											breakpoints: {
+												1137: {
+													direction: 'horizontal',
+													spaceBetween: 10,
+												}
+											},
+										})
+
+										mySwiper.controller.control = thumbSwiper;
+										thumbSwiper.controller.control = mySwiper;
+									</script>
+								</div>
+							</div>
+							<!-- // 아쿠아포닉스 -->
+
+						</div>
+					</div>
+					<!-- // ctn -->
+
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

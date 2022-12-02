@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">규제입증요청</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>규제입증요청</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">개요</h4>
+							<ul class="list_square">
+								<li>공단은 업무담당자에게 해당 규제를 유지해야 하는 이유를 입증하도록 요청하는 ‘공단 입증요청제도’를 운영하고 있습니다.</li>
+								<li>공단의 사업 관련하여 ‘입증요청’이 있으면 아래의 업무처리 절차를 참고하시어 이용 바랍니다.</li>
+								<li>단순민원 등 비규제 사항은 규제입증이 불가하므로 ‘질문과 답변’으로 접수해 주시기 바랍니다.</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">업무처리 절차</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_proof01.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_proof01_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<ul>
+										<li>규제입증 요청</li>
+										<li>접수</li>
+										<li>검토</li>
+										<li>위원회 상정</li>
+										<li>최종결과 회신(요청 이후 60일 이내)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">규제입증요청 양식 및 접수방법</h4>
+							<a href="#;" class="btn btn_download bg_blue txt_default">규제입증요청 양식 - 다운로드</a>
+							<ul class="list_square sm-mt-10 lg-mt-15">
+								<li>위 양식을 다운로드 후 작성</li>
+								<li>작성된 양식을 이메일로 전송</li>
+								<li>경영기획본부 기획조정실(02-6098-0715 / khe033@fipa.or.kr)</li>
+							</ul>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

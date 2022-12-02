@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(5);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb6.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">CI소개</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>기관소개</li>
+								<li>CI소개</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">Basic Design</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_ci01.jpg" alt="FiPA 한국어촌어항공단 CI" class="pc_content">
+								<img src="../../asset/fipa/images/img_ci01_m.jpg" alt="FiPA 한국어촌어항공단 CI" class="m_content">
+							</div>
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="#;" class="btn bg_green btn_download">FiPA CI 다운로드</a>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">Color</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_ci02.jpg" alt="FiPA 한국어촌어항공단 CI" class="pc_content">
+								<img src="../../asset/fipa/images/img_ci02_m.jpg" alt="FiPA 한국어촌어항공단 CI" class="m_content">
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">Emblem</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_ci03.jpg" alt="FiPA 한국어촌어항공단 CI" class="pc_content">
+								<img src="../../asset/fipa/images/img_ci03_m.jpg" alt="FiPA 한국어촌어항공단 CI" class="m_content">
+							</div>
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="#;" class="btn bg_green btn_download">FiPA Emblem 다운로드</a>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">캐릭터소개</h4>
+							<h5 class="tit02">어촌어항지킴이 휘파랑(Fiparang)</h5>
+							한국어촌어항공단의 대표 캐릭터 <strong class="fwr color_black">휘파랑</strong>은 공단의 아이콘 마크를 활용한 디자인으로 아이콘의 으뜸을 상징하는 이미지가 손과
+							팔이 되어 유동적으로 늘어나고 줄어듦으로써 우리의 어촌·어항·어장을 안전하게 보호하고 안아주는 의미로 상징성 있게 개발되었다.
+							<ul class="list_character">
+								<li class="bg01">
+									<div class="txt">
+										<strong>Fiparang</strong>
+										<p>Main</p>
+									</div>
+								</li>
+								<li class="bg02">
+									<div class="txt">
+										<strong>Type A</strong>
+										<p>“사랑합니다”</p>
+									</div>
+								</li>
+								<li class="bg03">
+									<div class="txt">
+										<strong>Type B</strong>
+										<p>“사랑합니다”</p>
+									</div>
+								</li>
+								<li class="bg04">
+									<div class="txt">
+										<strong>Type C</strong>
+										<p>“안전합니다”</p>
+									</div>
+								</li>
+								<li class="bg05">
+									<div class="txt">
+										<strong>Type D</strong>
+										<p>“환영합니다”</p>
+									</div>
+								</li>
+								<li class="bg06">
+									<div class="txt">
+										<strong>Type E</strong>
+										<p>“반갑습니다”</p>
+									</div>
+								</li>
+							</ul>
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="#;" class="btn bg_green btn_download">FiPA 캐릭터 다운로드</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

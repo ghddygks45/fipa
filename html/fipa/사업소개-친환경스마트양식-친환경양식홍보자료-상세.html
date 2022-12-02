@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(4, 5);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">친환경 양식 홍보자료</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>친환경/스마트양식</li>
+								<li>친환경 양식 홍보자료</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="view_wrap">
+							<div class="view_tit">
+								<strong>창업지원 홍보영상 <span class="post_new"><span class="blind">새 글</span></span></strong>
+								<ul class="list_square">
+									<li><span class="fwr color_black">작성자 :</span> 관리자</li>
+									<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+									<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+								</ul>
+							</div>
+							<div class="view_con">
+								<p>(서울=연합뉴스) 이한승 기자</p>
+								<p class="sm-mt-15 lg-mt-25">중소벤처기업진흥공단은 31일 오전 서울 강남구 저스트코타워점에서 비대면 해외진출지원 사업(K-비대면 사업) 온라인 설명회를 열었다고
+									밝혔다.
+									이번 설명회에는 국내에서 사업 참여기업 관계자 등 20여명이 오프라인으로 참석했고, 해외에서는 16개국 25개 중진공 해외거점 직원과 해외 바이어 등이 온라인으로
+									참가했다. </p>
+								<p class="sm-mt-15 lg-mt-25">1부에서는 ▲ 온라인 기술교류 상담회 ▲ 온라인 멘토링 ▲ 온라인 세미나 ▲ O2O(온·오프라인 연계) 수출 지원 등 K-비대면
+									사업의 세부
+									추진계획을 발표했다. </p>
+								<p class="sm-mt-15 lg-mt-25">또 2부에서는 해외거점별 신종 코로나바이러스 감염증(코로나19) 상황과 신규 유망산업 등 현지 시장 동향을 공유하고 포스트 코로나
+									시대에
+									중소벤처기업 수출 지원
+									방안을 논의했다. </p>
+								<p class="sm-mt-15 lg-mt-25">중진공의 K-비대면 사업에 대한 자세한 내용 확인과 참가 신청은 고비즈코리아
+									홈페이지(https://kr.gobizkorea.com)를 통해
+									가능하다. </p>
+							</div>
+							<div class="view_file">
+								<strong>첨부 파일</strong>
+								<ul class="view_add_file">
+									<li>
+										첨부된 파일명.hwp
+										<a href="#;" class="color_blue txt_underline fwr">[다운로드]</a>
+									</li>
+									<li>
+										첨부된 파일명.hwp
+										<a href="#;" class="color_blue txt_underline fwr">[다운로드]</a>
+									</li>
+									<li>
+										첨부된 파일명.hwp
+										<a href="#;" class="color_blue txt_underline fwr">[다운로드]</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="btn_wrap">
+							<div class="l">
+								<a href="사업소개-친환경스마트양식-친환경양식홍보자료-목록.html" class="btn bg_gray">목록</a>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

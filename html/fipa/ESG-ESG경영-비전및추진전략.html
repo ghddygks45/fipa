@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(8, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">비전 및 추진전략</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>ESG</li>
+								<li>ESG경영</li>
+								<li>비전 및 추진전략</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="vision_top_txt">
+								<div class="vision_logo"><strong>ESG경영 비전</strong></div>
+								<p>“어촌의 새로운 가치를 창출하는<br class="m_content"> <span class="color_blue">해양수산 ESG경영 선도 기관</span>”</p>
+							</div>
+						</div>
+						<div class="section">
+							<div class="vision_tit"><strong>전략과제</strong></div>
+							<div class="vision_keyword">
+								<div>
+									<strong class="bg01">E</strong>
+									<div class="con">
+										<div class="tit bg_green">환경<br>(Environment)</div>
+										<ul>
+											<li>1. 어촌 탄소 중립 선도</li>
+											<li>2. 해양 환경 보전</li>
+											<li>3. 청정 어장 조성</li>
+											<li>4. 녹색 경영</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<strong class="bg02">S</strong>
+									<div class="con">
+										<div class="tit bg_blue">사회<br>(Social)</div>
+										<ul>
+											<li>1. 어촌 삶의 질 개선</li>
+											<li>2. 일자리 창출</li>
+											<li>3. 안전한 일터 조성</li>
+											<li>4. 인권 경영</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<strong class="bg03">G</strong>
+									<div class="con">
+										<div class="tit bg_purple">지배구조<br>(Government)</div>
+										<ul>
+											<li>1. 이사회 활성화</li>
+											<li>2. 국민참여·소통</li>
+											<li>3. 청렴과 윤리</li>
+											<li>4. 투명 경영</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="vision_tit"><strong>실천과제</strong></div>
+							<div class="vision_task">
+								<ul class="task01">
+									<li>
+										<div class="tit">
+											<span>실천과제 1</span>
+											<strong>어촌 탄소중립 선도</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">친환경 선박 전환을 통한 이산화탄소 배출량 감축</span>
+													<ul class="list_arr">
+														<li>선박 DPF 장착 3척</li>
+													</ul>
+												</li>
+												<li><span class="bold">녹색 건축물 조성을 통한 어촌마을 탄소중립 실현</span>
+													<ul class="list_arr">
+														<li>어촌뉴딜 300, 일반농산어촌개발사업 신재생에너지 사용 건축물 5개 조성</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 2</span>
+											<strong>해양 환경 보전</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">해양 폐기물, 폐어구 수거를 통한 깨끗한 바다 조성</span>
+													<ul class="list_arr">
+														<li>폐기물 20,000톤 수거 어구 수거 면적 220,000ha 달성</li>
+													</ul>
+												</li>
+												<li><span class="bold">NGO 협력 민간 기부금 활용 환경 정화활동 실시</span>
+													<ul class="list_arr">
+														<li>민간참여 환경 정화활동 20회 실시 민간기부금 참여 단체 2개소로 확대</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 3</span>
+											<strong>청정 어장 조성</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">어장 환경 재생사업을 통한 지속 가능한 바다 조성</span>
+													<ul class="list_arr">
+														<li>어장환경 개성 면적 2,000ha 달성</li>
+													</ul>
+												</li>
+												<li><span class="bold">국민 참여형 교육 및 홍보로 수산자원 보호 인식 제고</span>
+													<ul class="list_arr">
+														<li>교육 및 홍보 참여인원 148만명 달성</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 4</span>
+											<strong>녹색 경영</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">녹색제품구매 확대를 통한 친환경 소비 순환 체계 구축</span>
+													<ul class="list_arr">
+														<li>녹색제품 구매 실적 28억원 달</li>
+													</ul>
+												</li>
+												<li><span class="bold">저공해 자동차 의무 구매를 통한 에너지 절감</span>
+													<ul class="list_arr">
+														<li>업무용 차량 구매(임차) 시 저공해 자동차량 의무 구매(임차)</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<ul class="task02">
+									<li>
+										<div class="tit">
+											<span>실천과제 1</span>
+											<strong>어촌 삶의 질 개선</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">어항 안전시설물 설치를 통한 국민 안전 보호</span>
+													<ul class="list_arr">
+														<li>어항 안전시설 설치 보수 14,500개소</li>
+													</ul>
+												</li>
+												<li><span class="bold">어촌 자원 활용 특화상품 개발로 어업 외 소득증대기여</span>
+													<ul class="list_arr">
+														<li>어촌뉴딜 300, 일반농산어촌개발사업 시행으로 주민만족도 80점 이상 달성</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 2</span>
+											<strong>일자리 창출</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">귀어귀촌인 정착 지원으로 어촌 인구유입 활성화</span>
+													<ul class="list_arr">
+														<li>귀어인 창업 및 주택 마련자금 지원 대상자 500건 달성</li>
+													</ul>
+												</li>
+												<li><span class="bold">친환경 스마트 양식 기술 이전으로 신규 일자리 창출</span>
+													<ul class="list_arr">
+														<li>기술 이전 교육 참여인원 200명 달성</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 3</span>
+											<strong>안전한 일터 조성</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">안전보건 경영체계 확립을 통한 중대재해 Zero 실현</span>
+													<ul class="list_arr">
+														<li>중대재해 발생 0건</li>
+													</ul>
+												</li>
+												<li><span class="bold">근로자 건강증진 활동 강화로 안심 일터 조성</span>
+													<ul class="list_arr">
+														<li>건강검진 이상소견자 건강 사후관리 월 1회 이상 실시</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 4</span>
+											<strong>인권 경영</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">인권경영체계 실효성 제고를 위한 인권영향평가 실시</span>
+													<ul class="list_arr">
+														<li>인권영향평가 결과 90점 이상 달성</li>
+													</ul>
+												</li>
+												<li><span class="bold">임직원 맞춤형 인권 교육 실시로 인권의식 증진</span>
+													<ul class="list_arr">
+														<li>교육 이수율 80% 달성</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<ul class="task03">
+									<li>
+										<div class="tit">
+											<span>실천과제 1</span>
+											<strong>이사회 활성화</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">이사회 정례화, 소위원회 활성화를 통한 이사진 경영 참여 확대</span>
+													<ul class="list_arr">
+														<li>비상임이사 참석률 향상<br>소위원회 연 5회 이상 개최</li>
+													</ul>
+												</li>
+												<li><span class="bold">이사회 전문성 · 개방성 강화</span>
+													<ul class="list_arr">
+														<li>분야별 전문가로 비상임이사 선임<br>매회 근로자 대표 이사회 참관 실시</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 2</span>
+											<strong>국민참여·소통</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">대국민 혁신아이디어 공모전 개최로 국민참여 확대</span>
+													<ul class="list_arr">
+														<li>혁신아이디어 9건 발굴</li>
+													</ul>
+												</li>
+												<li><span class="bold">FiPA 서포터즈 운영을 통한 국민 소통 활성화</span>
+													<ul class="list_arr">
+														<li>서포터즈 컨텐츠 70건 제작</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 3</span>
+											<strong>청렴과 윤리</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">부패방지경영시스템 인증으로 부패관리체계 고도화</span>
+													<ul class="list_arr">
+														<li>부패방지경영시스템(ISO37001)인증</li>
+													</ul>
+												</li>
+												<li><span class="bold">윤리경영위원회 구성 및 운영으로 윤리경영체계 확립</span>
+													<ul class="list_arr">
+														<li>윤리경영위원회 운영 정기화</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="tit">
+											<span>실천과제 4</span>
+											<strong>투명 경영</strong>
+										</div>
+										<div class="con">
+											<ul class="list_square">
+												<li><span class="bold">신속 정확한 경영공시, 사전정보공표확대로 투명성제고</span>
+													<ul class="list_arr">
+														<li>누리집 정보공개 카테고리 신설 공시오류 최소화</li>
+													</ul>
+												</li>
+												<li><span class="bold">비위행위 및 직장내 괴롭힘 방지를 위한 견제절차강화</span>
+													<ul class="list_arr">
+														<li>청렴 대책 및 갑질 근절 대책 마련</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

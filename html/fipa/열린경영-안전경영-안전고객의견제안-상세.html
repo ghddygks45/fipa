@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(9, 4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">안전제안</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>안전경영</li>
+								<li>안전제안</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="view_tit safe_view_tit">
+							<span class="que_selection">채택</span>
+							<strong>2022년 사업실명제 자료 <span class="post_new"><span class="blind">새 글</span></span></strong>
+							<ul class="list_square">
+								<li><span class="fwr color_black">작성자 :</span> 홍*동</li>
+								<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+								<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+							</ul>
+							<div class="r_area">
+								<span class="reply_y">답변완료</span>
+								<!-- <span class="reply_n">답변대기</span> -->
+							</div>
+						</div>
+
+						<div class="section lg-mt-40">
+							<h4 class="tit01">제안인 정보</h4>
+							<div class="board_write default_th">
+								<div class="row">
+									<div class="div_th">채택여부</div>
+									<div class="div_td">
+										<span class="bold color_green">채택</span> /
+										미채택
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">신청인</div>
+									<div class="div_td">홍*동</div>
+								</div>
+								<div class="row">
+									<div class="div_th">신청인 구분</div>
+									<div class="div_td">홍*동</div>
+								</div>
+								<div class="row">
+									<div class="div_th">휴대폰번호</div>
+									<div class="div_td">010 – 1**4 – 5**8</div>
+								</div>
+								<div class="row">
+									<div class="div_th">이메일</div>
+									<div class="div_td">chulydat@naver.com</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">공동 제안인 정보</h4>
+							<div class="board_write default_th">
+								<div class="row">
+									<div class="div_th">공동제안인</div>
+									<div class="div_td">홍*동</div>
+								</div>
+								<div class="row">
+									<div class="div_th">생년월일</div>
+									<div class="div_td">1983-08-01</div>
+								</div>
+								<div class="row">
+									<div class="div_th">기여도</div>
+									<div class="div_td">50 %</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">제안내용 작성</h4>
+							<div class="board_write default_th">
+								<div class="row">
+									<div class="div_th">제안제목</div>
+									<div class="div_td">한국어촌어항공단에 제안드립니다.</div>
+								</div>
+								<div class="row">
+									<div class="div_th">제안내용</div>
+									<div class="div_td">
+										안녕하세요, 평소 한국어촌어항공단에 관심이 많은 일반 시민입니다.<br>
+										이번에 좋은 생각이 떠올라서 우리 한국어촌어항공단에서도 시행해보면 어떨까 싶어서 제안드립니다.<br>
+										자세한 내용은 첨부파일 확인 부탁드립니다.
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">첨부파일</div>
+									<div class="div_td txt_td">
+										<ul class="view_add_file">
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_navy txt_underline fwr">[삭제]</a>
+											</li>
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_navy txt_underline fwr">[삭제]</a>
+											</li>
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_navy txt_underline fwr">[삭제]</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="#;" class="btn bg_green">수정</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">제안 답변</h4>
+							<div class="board_write default_th">
+								<div class="row">
+									<div class="div_th">답변자</div>
+									<div class="div_td">임꺽정 (안전보건팀)</div>
+								</div>
+								<div class="row">
+									<div class="div_th">답변일시</div>
+									<div class="div_td">2022-06-30 17:50:33</div>
+								</div>
+								<div class="row">
+									<div class="div_th">답변내용</div>
+									<div class="div_td">
+										안녕하세요, 평소 한국어촌어항공단에 관심이 많은 일반 시민입니다.<br>
+										이번에 좋은 생각이 떠올라서 우리 한국어촌어항공단에서도 시행해보면 어떨까 싶어서 제안드립니다.<br>
+										자세한 내용은 첨부파일 확인 부탁드립니다.
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">첨부파일</div>
+									<div class="div_td txt_td">
+										<ul class="view_add_file">
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_navy txt_underline fwr">[삭제]</a>
+											</li>
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_navy txt_underline fwr">[삭제]</a>
+											</li>
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_navy txt_underline fwr">[삭제]</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<div class="l">
+									<a href="열린경영-안전경영-안전고객의견제안-목록.html" class="btn bg_gray">목록</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

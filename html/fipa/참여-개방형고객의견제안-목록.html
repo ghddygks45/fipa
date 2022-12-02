@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">개방형 고객의견제안</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>개방형 고객의견제안</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_parti01 mb-0">
+							<strong class="tit">우리 한국어촌어항공단은 항상 국민 여러분의 말씀에 귀기울이고 있습니다.</strong>
+							<p>
+								[개방형 고객의견제안]은 고객 여러분의 제안의견에 적극적으로 소통하기 위한 공간입니다. 많은 참여 부탁드립니다.<br>
+								<span class="color_blue">※ [개방형 고객의견제안] 등록 시 본인인증을 하셔야 작성하실 수 있습니다.</span>
+							</p>
+						</div>
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="참여-개방형고객의견제안-나의제안현황.html" class="btn bg_green">나의 제안현항</a>
+								<a href="참여-개방형고객의견제안-등록.html" class="btn bg_blue">제안하기</a>
+							</div>
+						</div>
+						<div class="search_board select02 sm-mt-25 lg-mt-40">
+							<div class="inr">
+								<div class="select_wrap">
+									<div class="select_box">
+										<div>
+											<select name="" id="" title="검색 카테고리 선택">
+												<option value="">분류1</option>
+											</select>
+										</div>
+									</div>
+									<div class="select_box">
+										<div>
+											<select name="" id="" title="검색 카테고리 선택">
+												<option value="">분류2</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="input_box">
+									<input type="text" name="" id="" value="" placeholder="검색어를 입력해주세요." title="검색어 입력">
+									<button type="submit" class="btn_search">검색</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="board_top board_column">
+							<div class="post_category">
+								<button type="button" class="on latest">최신순</button>
+								<button type="button" class="like">공감순</button>
+								<button type="button" class="comment">답변순</button>
+							</div>
+							<div class="list_number">
+								<select name="" id="" title="목록 개수 선택">
+									<option value="">10개씩</option>
+								</select>
+								<button type="button">이동</button>
+							</div>
+						</div>
+
+						<ul class="list_opinion_offer">
+							<li>
+								<a href="참여-개방형고객의견제안-상세.html">
+									<span class="cate">Category #1</span>
+									<div class="txt">
+										<strong>한국어촌어항공단에 제안드립니다.</strong>
+										<p>안녕하세요, 저는 평소에 한국어촌어항공단에
+											많은 관심을 가지고 있는 한 사람입니다.
+											이번 홈페이지 개편에 따라…</p>
+									</div>
+									<div class="btm">
+										<div class="post_comment">
+											<span class="fwr color_black">댓글</span> 567개
+										</div>
+										<div class="post_like">
+											<span class="fwr color_black">공감</span> 100명
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="참여-개방형고객의견제안-상세.html">
+									<span class="cate">Category #1</span>
+									<div class="txt">
+										<strong>한국어촌어항공단에 제안드립니다.</strong>
+										<p>안녕하세요, 저는 평소에 한국어촌어항공단에
+											많은 관심을 가지고 있는 한 사람입니다.
+											이번 홈페이지 개편에 따라…</p>
+									</div>
+									<div class="btm">
+										<div class="post_comment">
+											<span class="fwr color_black">댓글</span> 567개
+										</div>
+										<div class="post_like">
+											<span class="fwr color_black">공감</span> 100명
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="참여-개방형고객의견제안-상세.html">
+									<span class="cate">Category #1</span>
+									<div class="txt">
+										<strong>한국어촌어항공단에 제안드립니다.</strong>
+										<p>안녕하세요, 저는 평소에 한국어촌어항공단에
+											많은 관심을 가지고 있는 한 사람입니다.
+											이번 홈페이지 개편에 따라…</p>
+									</div>
+									<div class="btm">
+										<div class="post_comment">
+											<span class="fwr color_black">댓글</span> 567개
+										</div>
+										<div class="post_like">
+											<span class="fwr color_black">공감</span> 100명
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="참여-개방형고객의견제안-상세.html">
+									<span class="cate">Category #1</span>
+									<div class="txt">
+										<strong>한국어촌어항공단에 제안드립니다.</strong>
+										<p>안녕하세요, 저는 평소에 한국어촌어항공단에
+											많은 관심을 가지고 있는 한 사람입니다.
+											이번 홈페이지 개편에 따라…</p>
+									</div>
+									<div class="btm">
+										<div class="post_comment">
+											<span class="fwr color_black">댓글</span> 567개
+										</div>
+										<div class="post_like">
+											<span class="fwr color_black">공감</span> 100명
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="참여-개방형고객의견제안-상세.html">
+									<span class="cate">Category #1</span>
+									<div class="txt">
+										<strong>한국어촌어항공단에 제안드립니다.</strong>
+										<p>안녕하세요, 저는 평소에 한국어촌어항공단에
+											많은 관심을 가지고 있는 한 사람입니다.
+											이번 홈페이지 개편에 따라…</p>
+									</div>
+									<div class="btm">
+										<div class="post_comment">
+											<span class="fwr color_black">댓글</span> 567개
+										</div>
+										<div class="post_like">
+											<span class="fwr color_black">공감</span> 100명
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="참여-개방형고객의견제안-상세.html">
+									<span class="cate">Category #1</span>
+									<div class="txt">
+										<strong>한국어촌어항공단에 제안드립니다.</strong>
+										<p>안녕하세요, 저는 평소에 한국어촌어항공단에
+											많은 관심을 가지고 있는 한 사람입니다.
+											이번 홈페이지 개편에 따라…</p>
+									</div>
+									<div class="btm">
+										<div class="post_comment">
+											<span class="fwr color_black">댓글</span> 567개
+										</div>
+										<div class="post_like">
+											<span class="fwr color_black">공감</span> 100명
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

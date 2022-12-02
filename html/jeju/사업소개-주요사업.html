@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/jeju/css/style.css">
+	<script src="../../asset/jeju/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/jeju/js/jquery-ui.js"></script>
+	<script src="../../asset/jeju/js/jQuery.print.js"></script>
+	<script src="../../asset/jeju/js/html2canvas.min.js"></script>
+	<script src="../../asset/jeju/js/jspdf.min.js"></script>
+	<script src="../../asset/jeju/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/jeju/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">주요사업</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>주요사업</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_visual_box section">
+							<div class="con">
+								<div class="tit">
+									<em>혼저옵서예,</em>
+									<strong>한국어촌어항공단 <span>제주지사</span>입니다.</strong>
+								</div>
+								<p>제주지사는 제주권역의 다양한 어촌 · 어항 · 어장 사업을<br>
+									보다 긴밀하고 효율적으로 수행하기 위해 설립되었습니다.
+								</p>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">국가어항 관리사업</h4>
+							<ul class="num_list02">
+								<li><span>①</span> 어항안전점검 : 제주권역 국가어항 기본시설에 대한 안전점검과 적정한 유지관리를 통하여 시설물의 기능과 안전 유지 및 재해예방 도모</li>
+								<li><span>②</span> 어항유지보수 : 국가어항 시설물 유지보수를 통해 어항시설 이용자의 안전 확보 및 시설물 내구연한 증대<br>
+									<ul class="list_square sm-mt-7 lg-mt-10">
+										<li>김녕항, 위미항, 모슬포항, 도두항, 신양항(추자)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">어촌뉴딜사업</h4>
+							<ul class="list_square">
+								<li>어촌 및 항․포구를 중심으로 인접한 배후 어촌마을을 포함한 통합개발로 사회․문화․경제․환경적으로 어촌지역의 활력 도모</li>
+								<li>[제주시] 함덕항,비양도항,고내항,하우목동권역,종달항,묵리항(추자)</li>
+								<li>[서귀포시] 하예항,태흥2리항,온평항,하효항,사계항,세화2리항(가마포구)</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">일반농산어촌개발사업</h4>
+							<ul class="list_square">
+								<li>어촌지역 주민 소득 및 기초생활수준 향상 및 어촌인구유지 및 특화 마을 조성 기여</li>
+								<li>[제주시] 한림읍 금능리</li>
+								<li>[서귀포시] 성산읍 신양리, 성산읍 고성리</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">어촌신활력증진사업 예비계획수립</h4>
+							<ul class="list_square">
+								<li>해양수산부 역점사업인『어촌신활력증진사업』,『CLEAN 국가어항 시범사업』의 공모에 효과적으로 대응하기 위해 경쟁력 있는 사업대상지 발굴</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">제주어촌특화지원센터 운영(jejubada.or.kr)</h4>
+							<ul class="list_square">
+								<li>특화역량강화(어촌마을/리더)</li>
+								<li>상품개발 및 사업관리(연구개발/어촌기초조사 및 예비후보군 발굴, 어촌특화상품 유통체계 구축)</li>
+								<li>정책지원(바다가꿈 프로젝트)</li>
+							</ul>
+							<ul class="img_list sm-mt-10 lg-mt-18">
+								<li><img src="../../asset/jeju/images/img_project01.jpg" alt="제주어촌특화지원센터 운영"></li>
+								<li><img src="../../asset/jeju/images/img_project02.jpg" alt="제주어촌특화지원센터 운영"></li>
+								<li><img src="../../asset/jeju/images/img_project03.jpg" alt="제주어촌특화지원센터 운영"></li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">제주귀어귀촌종합지원센터 운영(sealife.jejubada.or.kr)</h4>
+							<ul class="list_square">
+								<li>도시민 어촌유치 프로그램 운영</li>
+							</ul>
+							<ul class="img_list sm-mt-10 lg-mt-18">
+								<li><img src="../../asset/jeju/images/img_project04.jpg" alt="제주귀어귀촌종합지원센터 운영"></li>
+								<li><img src="../../asset/jeju/images/img_project05.jpg" alt="제주귀어귀촌종합지원센터 운영"></li>
+								<li><img src="../../asset/jeju/images/img_project06.jpg" alt="제주귀어귀촌종합지원센터 운영"></li>
+							</ul>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>CMS 통합관리자</title>
+	<link rel="shortcut icon" href="../../asset/incms/images/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../asset/incms/css/style.css" media="all">
+	<script src="../../asset/incms/js/jquery-1.12.0.min.js"></script>
+	<script src="../../asset/incms/js/calendar.js"></script>
+	<script src="../../asset/incms/js/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+		<article id="content">
+			<p id="page_loc">
+				<a href="#none" class="ico_home">HOME</a>
+				<span>&gt;</span>
+				<a href="#none">depth1</a>
+				<span>&gt;</span>
+				<a href="#none">depth2</a>
+				<span>&gt;</span>
+				<strong>depth3</strong>
+			</p>
+
+			<h2 id="tit_page">국가어항 현황 관리</h2>
+
+			<h3 class="tit1 list_status">일반정보 입력</h3>
+			<table class="tb_write">
+				<colgroup>
+					<col style="width:12%">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th><span class="req">필수입력</span> 관리기관</th>
+						<td>
+							<span><input type="checkbox" name="multi_itm_array" id="multi_itm_array1" value=""></span>
+							<span class="mgr6"><label for="multi_itm_array1">본사</label></span>
+							<span><input type="checkbox" name="multi_itm_array" id="multi_itm_array2" value=""></span>
+							<span class="mgr6"><label for="multi_itm_array2">동해지사</label></span>
+							<span><input type="checkbox" name="multi_itm_array" id="multi_itm_array3" value=""></span>
+							<span class="mgr6"><label for="multi_itm_array3">서남해지사</label></span>
+							<span><input type="checkbox" name="multi_itm_array" id="multi_itm_array4" value=""></span>
+							<span class="mgr6"><label for="multi_itm_array4">동남해지사</label></span>
+							<span><input type="checkbox" name="multi_itm_array" id="multi_itm_array5" value=""></span>
+							<span class="mgr6"><label for="multi_itm_array5">제주지사</label></span>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">필수입력</span> 촬영</th>
+						<td><input type="text" style="width: 100%;"></td>
+					</tr>
+					<tr>
+						<th><span class="req">필수입력</span> 항종</th>
+						<td>
+							<span><input type="checkbox" name="multi_itm_array" id="multi_itm_array4" value=""></span>
+							<span class="mgr6"><label for="multi_itm_array4">육지(국가어항)</label></span>
+							<span><input type="checkbox" name="multi_itm_array" id="multi_itm_array5" value=""></span>
+							<span class="mgr6"><label for="multi_itm_array5">도서(국가어항)</label></span>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">필수입력</span> 우편번호</th>
+						<td>
+							<input type="text" name="" id="" value="" readonly="readonly" placeholder="우편번호찾기를 선택하세요."
+								style="width:200px">
+							<a href="#none" class="btn" id="" onclick="zipDaumPopup();"><i class="fa fa-search"></i> 우편번호찾기</a>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">필수입력</span> 주소</th>
+						<td>
+							<input type="text" name="" id="" readonly="readonly" style="width:50%;" placeholder="주소를 입력하세요.">
+							<label for="adres_detail" class="tts">주소상세</label>
+							<input type="text" name="" id="" style="width:49%;" placeholder="주소상세를 입력하세요.">
+						</td>
+					</tr>
+					<tr>
+						<th>관힐지역</th>
+						<td>경상북도</td>
+					</tr>
+					<tr>
+						<th>관리청</th>
+						<td>영덕군</td>
+					</tr>
+					<tr>
+						<th>첨부파일</th>
+						<td>
+							<span class="attach">
+								<input type="text" name="" id="" style="width:160px" readonly="readonly">
+							</span>
+							<a href="#none" class="btn" id=""><i class="fa fa-search"></i> 찾아보기</a>
+							<a href="#" class="btn btn_md btn basic">다운로드</a>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">필수입력</span> 지정일</th>
+						<td>
+							<input type="text" name="bbs_regist_dt" id="bbs_regist_dt" readonly="readonly" style="width:100px;">
+							<a href="#divCalendar" class="btn_cal"
+								onclick="openCalendar(document.getElementById('bbs_regist_dt')); return false;">달력</a>
+						</td>
+					</tr>
+					<tr>
+						<th>등록일</th>
+						<td>
+							<input type="text" name="bbs_regist_dt" id="bbs_regist_dt" readonly="readonly" style="width:100px;">
+							<a href="#divCalendar" class="btn_cal"
+								onclick="openCalendar(document.getElementById('bbs_regist_dt')); return false;">달력</a>
+						</td>
+					</tr>
+					<tr>
+						<th>게시여부</th>
+						<td>
+							<input type="radio" name="notice_at" id="notice_at1" value="Y">
+							<label for="notice_at1">게시</label>
+							<input type="radio" name="notice_at" id="notice_at2" value="N" checked="checked">
+							<label for="notice_at2">미게시</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="mt25" style="overflow: hidden">
+				<h3 class="tit1 list_status fl">시설정보 입력</h3>
+				<button type="button" class="label bg_info fr mt10">+ 셀추가</button>
+			</div>
+			<table class="tb_write">
+				<tbody>
+					<tr>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+					</tr>
+					<tr>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="mt10" style="overflow: hidden">
+				<button type="button" class="label bg_error fr">- 셀삭제</button>
+			</div>
+
+			<div class="mt25" style="overflow: hidden">
+				<h3 class="tit1 list_status fl">어항정보 입력</h3>
+				<button type="button" class="label bg_info fr mt10">+ 셀추가</button>
+			</div>
+			<table class="tb_write">
+				<tbody>
+					<tr>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+					</tr>
+					<tr>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+						<td><input type="text" style="width: 100%;"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="mt10" style="overflow: hidden">
+				<button type="button" class="label bg_error fr">- 셀삭제</button>
+			</div>
+
+			<div class="btn_area">
+				<div class="fr">
+					<button type="button" class="btn btn_lg act"><i class="fa fa-save"></i> 등록</button>
+					<button type="button" class="btn btn_lg act"><i class="fa fa-save"></i> 수정</button>
+					<button type="button" class="btn btn_lg"><i class="fa fa-close"></i> 취소</button>
+				</div>
+			</div>
+		</article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

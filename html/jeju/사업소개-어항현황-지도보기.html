@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/jeju/css/style.css">
+	<script src="../../asset/jeju/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/jeju/js/jquery-ui.js"></script>
+	<script src="../../asset/jeju/js/jQuery.print.js"></script>
+	<script src="../../asset/jeju/js/html2canvas.min.js"></script>
+	<script src="../../asset/jeju/js/jspdf.min.js"></script>
+	<script src="../../asset/jeju/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/jeju/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어항현황</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>어항현황</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-어항현황-지도보기.html" class="active">지도로 보기</a></li>
+							<li><a href="사업소개-어항현황-목록보기.html">목록으로 보기</a></li>
+						</ul>
+						<div class="map_view_box">
+							<img src="../../asset/jeju/images/img_map_view.jpg" alt="" class="pc_content">
+							<img src="../../asset/jeju/images/img_map_view_m.jpg" alt="" class="m_content">
+							<div class="map_popup">
+								<button type="button" class="btn_close"><span class="blind">닫기</span></button>
+								<div class="tit"><span class="color_blue">[구노량항]</span> 지방항</div>
+								<div class="con">
+									<div class="img">
+										<img src="../../asset/jeju/images/map_img.jpg" alt="">
+									</div>
+									<div class="txt">
+										<ul class="list_square">
+											<li>경상남도 하동군 금남면 노량리 828</li>
+											<li><span class="fwr color_black">경도 : </span>127.87</li>
+											<li><span class="fwr color_black">위도 : </span>34.95</li>
+										</ul>
+										<a href="#;" class="btn md bg_green sm-mt-12 lg-mt-15">자세히 보기</a>
+									</div>
+								</div>
+							</div>
+							<div class="map_pin"><span class="blind">지도 핀</span></div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

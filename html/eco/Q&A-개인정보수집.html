@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <link rel="stylesheet" href="../../asset/fipa/css/style.css"> -->
+	<link rel="stylesheet" href="../../asset/eco/css/style.css">
+	<link rel="stylesheet" href="../../asset/eco/css/swiper.min.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+	<script src="../../asset/fipa/js/swiper-bundle.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/eco/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단 친환경·스마트 양식</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb6.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">Q&A</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>Q&A</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="top_info_box bg_info01">
+							<strong class="tit">한국어촌어항공단 질문과 답변</strong>
+							<p>궁금한 사항이 있으신 가요? 작은 궁금증이라도 성심 성의껏 답변 드리겠습니다.<br>
+								질문에 대한 답변은 선택하신 경로를 통해(SMS 또는 E-mail) 받아 보실 수 있습니다.</p>
+						</div>
+						<div class="section">
+							<h4 class="tit01">개인 정보 수집 및 이용 안내</h4>
+							<div class="privacy_agree">
+								<div class="agree_txt">
+									<p>
+										한국어촌어항공단이 취급하는 모든 개인정보는
+										개인정보보호법 등 관련 관련법령상의 개인정보보호 규정을
+										준수하여 수집/보유/처리되고 있습니다.
+										한국어촌어항공단은 개인정보보호법에 따라 이용자의
+										개인정보보호 및 권익을 보호하고 개인정보와 관련한
+										이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은
+										처리 방침을 두고 있습니다.
+									</p>
+									<p class="sm-mt-10 lg-mt-20"><strong>1조. 개인정보의 처리 및 보유기간, 처리목적, 항목</strong></p>
+									<p class="sm-mt-5 lg-mt-10">
+										한국어촌어항공단은 개인정보를 다음의 목적을 위해
+										처리합니다. 처리한 개인정보는 다음의 목적이외의
+										용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전
+										동의를 구할 예정입니다.
+									</p>
+								</div>
+								<div class="agree_check_box">
+									<p class="ag_txt">위 개인정보 수집 및 이용에 동의하십니까?</p>
+									<div class="ag_check">
+										<span class="rd-lb">
+											<input type="radio" id="rd1" name="radio1" class="blind" checked="">
+											<label for="rd1">동의합니다</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd2" name="radio1" class="blind">
+											<label for="rd2">동의하지 않습니다</label>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="Q&A-목록.html" class="btn bg_blue">확인</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

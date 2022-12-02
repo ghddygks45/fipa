@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(5, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어촌·어항 조사연구</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>국제협력 및 기술교육</li>
+								<li>어촌·어항 조사연구</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-국제협력및기술교육-어촌·어항조사연구-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-국제협력및기술교육-어촌·어항조사연구-성과및자료.html" class="active">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">주요성과</h4>
+							<div class="sub_section">
+								<h5 class="tit02">어항정책 수립을 위한 기초자료로 활용</h5>
+								<ul class="list_square">
+									<li>어항 통계자료의 일관성, 연속성, 신뢰성을 제고하여 어항개발사업의 성과 평가 체계를 구축을 지원하고 어항 정책 수립에 활용</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">어항정보시스템과의 연계를 통한 다양한 활용 가능성 제고</h5>
+								<ul class="list_square">
+									<li>어항관리시스템과 연계하여 어항 관계자들의 업무 효율성을 제고하고 어항 이용자에 대한 디지털 정보를 제공</li>
+									<li>공공정보의 개방, 공유를 통해 다양한 활용 가능성 제고</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">국가어항 기초자료 보고서</h5>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">관련자료</h4>
+							<ul class="list_report_data">
+								<li>
+									<img src="../../asset/fipa/images/img_report_data01.jpg" alt="어촌어항발전기본계획">
+									<div class="tit">어촌어항발전기본계획</div>
+								</li>
+								<li>
+									<img src="../../asset/fipa/images/img_report_data02.jpg" alt="국가어항지정타당성 조사">
+									<div class="tit">국가어항지정타당성 조사</div>
+								</li>
+								<li>
+									<img src="../../asset/fipa/images/img_report_data03.jpg" alt="국가어항 부지이용계획 재수립">
+									<div class="tit">국가어항 부지이용계획 재수립</div>
+								</li>
+								<li>
+									<img src="../../asset/fipa/images/img_report_data04.jpg" alt="국가어항 부지이용계획 재수립">
+									<div class="tit">국가어항 부지이용계획 재수립</div>
+								</li>
+								<li>
+									<img src="../../asset/fipa/images/img_report_data05.jpg" alt="어항설계기준개정">
+									<div class="tit">어항설계기준개정</div>
+								</li>
+								<li>
+									<img src="../../asset/fipa/images/img_report_data06.jpg" alt="어항정보시스템 구축 정보전략계획(ISP) 수립">
+									<div class="tit">어항정보시스템 구축 정보전략계획(ISP) 수립</div>
+								</li>
+								<li>
+									<img src="../../asset/fipa/images/img_report_data07.jpg" alt="국가어항 이용실태 모형개발 및 현황조사">
+									<div class="tit">국가어항 이용실태 모형개발 및 현황조사</div>
+								</li>
+								<li>
+									<img src="../../asset/fipa/images/img_report_data08.jpg" alt="구각어항 및 외곽시설 설계파 검토 및 안정성 평가">
+									<div class="tit">구각어항 및 외곽시설 설계파 검토 및 안정성 평가</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

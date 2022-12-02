@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 5);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">낚시산업 선진화</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>낚시산업 선진화</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-낚시산업선진화-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-낚시산업선진화-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-활력있는어촌-낚시산업선진화-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							<ul class="list_square">
+								<li>낚시전문교육 시행을 통해 낚시터업자, 낚시어선업자 및 선원에게 안전관리 및 수산자원보호 등에 대한 전문지식을 습득하게 함으로써 낚시인의 안전사고 예방 및 수생태계를 보호</li>
+								<li>수요자 중심의 맞춤형 낚시 관련 정보를 선제적·능동적으로 제공하여 국민의 알권리 충족과 건전한 낚시문화 조성, 낚시산업 지역경제 활성화 도모</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>2014년 1월 ~ 계속</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>교육운영팀</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>「낚시 관리 및 육성법」 제45조, 제47조 ,제52조</li>
+													<li>「낚시전문교육 및 교육기관 지정에 관한 고시」 제2조</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<div class="list_busi_info list_row">
+								<div class="bg_info_fishing01">
+									<strong class="tit">낚시전문교육</strong>
+									<ul class="list_square">
+										<li>「낚시 관리 및 육성법」에 따라 의무교육을 받아야 하는 낚시터업자, 낚시어선업자 및 선원에게 교육일정, 교육장소 등 실시계획을 통보하고 낚시인의 안전사고 예방 및 수생태계
+											보호를 위한 4시간 교육 실시</li>
+										<li>낚시어선 신규·재개자 전문교육 : 낚시어선업 최초 진입자 및 안전사고로 영업정지명령을 받은 후 영업을 재개하려는 낚시어선업자에게 낚시 관련 정책과 법령, 안전사고예방 및
+											대처법 등 실습이 포함된 21시간 교육을 미리 듣도록 하여 낚시인의 안전과 수산자원 보호<br>
+											* 관련근거 : 「낚시 관리 및 육성법」제47조제1항 및 제2항
+										</li>
+									</ul>
+								</div>
+								<div class="bg_info_fishing02 link">
+									<div class="txt">
+										<strong class="tit">낚시정보종합포털 운영</strong>
+										<ul class="list_square">
+											<li>낚시초보자부터 고수를 아우르는 낚시 활동을 위한 관련 종합 정보 제공*<br>
+												* 기존의 공급자 중심의 분산된 낚시정보를 낚시정보종합포털 한 곳에서 통합 제공</li>
+											<li>낚시전문교육 관련 표준·현행화된 정보를 통합 관리할 수 있는 시스템 구축으로 실시간 정보 공유·활용에 따른 업무효율성 및 국민편의 증대</li>
+											<li>낚시 관련 사업의 전략적 홍보지원 및 업무지원 시스템으로 활용</li>
+										</ul>
+									</div>
+									<a href="https://www.naksinuri.kr/" target="_blank"
+										class="btn bg_blue btn_link btn_link_w sm-mt-12">낚시 누리 바로가기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

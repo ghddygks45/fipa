@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">공공데이터 제공제도 안내</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>공공데이터 제공제도 안내</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">공공데이터 개방</h4>
+							<div class="sub_section">
+								<h5 class="tit02">공공데이터란</h5>
+								데이터베이스, 전자화된 파일 등 공공기관이 법령등에서 정하는 목적을 위하여 생성 또는 취득하여 관리하고 있는 광 또는 전자적 방식으로 처리된 자료 또는 정보를 말합니다.
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">개방이란</h5>
+								<ul class="list_square">
+									<li>공공기관이 이용자에게 ①공공데이터를 활용할 수 있는 형태로 제공하고, 제공받은 공공데이터를 ②영리적·비영리적으로 이용할 권한을 부여하는 것을 말합니다.</li>
+									<li>정부는 국민 누구나 공공데이터를 자유롭게 재이용할 수 있는 권리를 보장하겠습니다. 누구나 공공데이터를 활용 및 융복합하여 가상재화나 서비스를 생산, 이익을 창출토록 하겠습니다.
+										국민 삶의 질 제고와 신산업, 일자리 창출로 경제활성화에 기여하도록 하겠습니다.</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">문의처 및 담당자</h5>
+								<ul class="list_square">
+									<li>공공데이터 책임자 : 정보화전략팀 안경호 팀장 (Tel : 02-6098-0751)</li>
+									<li>공공데이터 담당자 : 정보화전략팀 임승민 과장 (Tel : 02-6098-0755)</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">공공데이터 제공목록</h4>
+							<div class="table">
+								<table>
+									<caption>공공데이터 제공목록 표입니다.</caption>
+									<colgroup>
+										<col style="width:20%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">공공데이터 명칭</th>
+											<td>전국농어촌체험휴양마을표준데이터</td>
+										</tr>
+										<tr>
+											<th scope="row">정보시스템명</th>
+											<td>농촌해양관광누리집바다여행(seantour.com)</td>
+										</tr>
+										<tr>
+											<th scope="row">BRM 분류체계</th>
+											<td>문화체육관광-관광</td>
+										</tr>
+										<tr>
+											<th scope="row">위치정보(URL)</th>
+											<td>https://seantour.com/seantour/travel/exp/</td>
+										</tr>
+										<tr>
+											<th scope="row">공공데이터 설명</th>
+											<td>전국 농어촌체험마을 정보(체험프로그램, 체험마을명 등)</td>
+										</tr>
+										<tr>
+											<th scope="row">제공대상유무</th>
+											<td>제공</td>
+										</tr>
+										<tr>
+											<th scope="row">실무담당자</th>
+											<td>정준영</td>
+										</tr>
+										<tr>
+											<th scope="row">실무담당자 연락처</th>
+											<td>02) 6098-0892</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="btn_wrap txt_c">
+							<a href="#;" class="btn bg_blue">공공데이터 이용신청 바로가기</a>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

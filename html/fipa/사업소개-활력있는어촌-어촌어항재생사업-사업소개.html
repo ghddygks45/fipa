@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 9);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어촌어항재생사업</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>어촌어항재생사업</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-어촌어항재생사업-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-어촌어항재생사업-조성계획·추진체계.html">조성계획 · 추진체계</a></li>
+							<li><a href="사업소개-활력있는어촌-어촌어항재생사업-관련자료.html">관련자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							<ul class="list_square">
+								<li>어촌이 보유한 핵심자원을 활용하여 차별화된 콘텐츠를 발굴하고 어촌․어항 통합개발을 통하여 사업효과 극대화 도모</li>
+								<li>어촌 및 항․포구를 중심으로 인접한 배후 어촌마을을 포함한 통합개발로 사회․문화․경제․환경적으로 어촌지역의 활력 도모</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>2019년 ~ 2022년 (각 3년)</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>어촌어항재생사업단</li>
+													<li>서남해지사 어촌어항재생팀</li>
+													<li>동남해지사 어촌어항재생팀</li>
+													<li>제주지사 사업운영팀</li>
+													<li>동해지사 사업운영팀</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>「어촌 · 어항법」 제47조의3, 47조의6 </li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_newdeal1_1.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_newdeal1_1_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<h5>유형별 특화사업</h5>
+									<dl>
+										<dt>지역특화사업</dt>
+										<dd>지역의 문화·예술·역사 등을 반영한 해당지역만의 고유시설</dd>
+										<dt>문화·관광시설</dt>
+										<dd>문화·복지, 경관개선, 주거개선 등을 위한 시설물</dd>
+										<dt>지역 소득증대</dt>
+										<dd>소득기반, 레저·체험, 휴식·휴양등을 위한 시설물</dd>
+									</dl>
+									<h5>공통사업</h5>
+									<dl>
+										<dt>접안시설 보강</dt>
+										<dd>경사식 선착장 정비, 물양장 정비 등</dd>
+										<dt>안전시설 설치</dt>
+										<dd>안전난간‧차막이 설치, 구조 사다리, CCTV</dd>
+										<dt>어항구역 경관개선</dt>
+										<dd>어구어망 보관창고, 경관조명 설치</dd>
+										<dt>어항 친수시설 설치</dt>
+										<dd>어부림 조성, 휴식공간(정자, 파고라 등)</dd>
+										<dt>여객 편의시설</dt>
+										<dd>대합실, 화장실 등</dd>
+										<dt>어촌어항재생 협의체 운영</dt>
+										<dd>협의체 구성 및 운영, 주민역량 강화 교육, 마을브랜드 개발</dd>
+									</dl>
+									<h5>타부처 연계사업</h5>
+									<dl>
+										<dt>행정안전부, 농림축산식품부</dt>
+										<dd>마을 지붕담장 경관 개선, 마을 안내판 및 이정표 설치</dd>
+										<dt>산림청</dt>
+										<dd>마을 생태숲 조성</dd>
+										<dt>국토교통부</dt>
+										<dd>주차장 조성</dd>
+										<dt>문화체육관광부</dt>
+										<dd>상징 조형물설치, 오토캠핑장 조성, 마을박물관 건립</dd>
+										<dt>환경부</dt>
+										<dd>오수 및 폐수 정화시설 설치, 노후 상수도 정비</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

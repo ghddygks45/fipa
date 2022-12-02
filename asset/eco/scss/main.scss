@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+@use 'base';
+@use 'vendors';
+@use 'layout';
+@use 'components';
+@use 'use'as *;
+
+
+.main {
+
+	@include res--pc {
+		background: url('../../eco/images/main/bg_main_cover.jpg') no-repeat center / 100% 100%;
+	}
+
+	.main_box {
+		padding: 135px 10px 55px;
+		background: url('../../eco/images/main/bg_main_cover_m.jpg') no-repeat center / 100% 100%;
+
+		@include res--pc {
+			padding: 230px 0 90px;
+			width: 1440px;
+			margin: 0 auto;
+			background: transparent;
+		}
+
+		.tit {
+			margin-bottom: 30px;
+			color: #222;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+
+			@include res--tablet {
+				margin-bottom: 35px;
+				font-size: 36px;
+			}
+		}
+
+		.main_sec01 {
+			text-align: center;
+
+			div[class^="box"] {
+				padding: 0 20px;
+				padding-bottom: calc(540 / 680 * 100%);
+				height: 0;
+				border-radius: 12px;
+
+				&+div[class^="box"] {
+					margin-top: 15px;
+				}
+
+				&.box01 {
+					background: url('../../eco/images/main/bg_box01_m.jpg') no-repeat center / contain;
+				}
+
+				&.box02 {
+					background: url('../../eco/images/main/bg_box02_m.jpg') no-repeat center / contain;
+				}
+
+				&.box03 {
+					background: url('../../eco/images/main/bg_box03_m.jpg') no-repeat center / contain;
+				}
+
+				@include res--tablet {
+					border-radius: 16px;
+					min-height: 380px;
+					padding-bottom: 0;
+
+					&.box01,
+					&.box02,
+					&.box03 {
+						background-size: 100% 380px;
+					}
+				}
+
+				.sub_tit {
+					padding-top: 25px;
+
+					@include res--tablet {
+						padding-top: 35px;
+					}
+				}
+
+				p {
+					margin: 10px 0 15px;
+
+					@include res--tablet {
+						margin: 15px 0 20px;
+					}
+				}
+
+				.move_link {
+					display: inline-block;
+					height: 32px;
+					background: url('../../eco/images/main/ico_link_arrow.png') no-repeat top 50% right 15px / 13px 12px;
+					color: #2471ac;
+					border: solid 1px #2471ac;
+					border-radius: 32px;
+					padding: 0 35px 0 15px;
+					font-weight: 500;
+					line-height: 30px;
+					transition: all 0.3s;
+
+					&:hover,
+					&:focus {
+						color: #fff;
+						background-color: #2471ac;
+						background-image: url('../../eco/images/main/ico_link_arrow_active.png')
+					}
+
+					@include res--tablet {
+						height: 44px;
+						line-height: 42px;
+						background: url('../../eco/images/main/ico_link_arrow.png') no-repeat top 50% right 22px;
+						padding: 0 47px 0 22px;
+					}
+				}
+			}
+
+			.sub_tit {
+				color: #222;
+				font-size: 15px;
+				font-weight: bold;
+
+				@include res--tablet {
+					font-size: 20px;
+				}
+			}
+
+			@include res--tablet {
+				display: flex;
+				flex-wrap: wrap;
+
+				div[class^="box"] {
+					flex: 1 1 30%;
+
+					&+div[class^="box"] {
+						margin-top: 0;
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+
+		.main_sec02 {
+			margin-top: 15px;
+
+			div[class^="box"] {
+				padding: 17px 20px;
+				border-radius: 12px;
+				min-height: 163px;
+
+				@include res--tablet {
+					border-radius: 16px;
+					padding: 25px 32px;
+				}
+
+				&+div[class^="box"] {
+					margin-top: 15px;
+				}
+
+				.move_link_type02 {
+					position: relative;
+					display: inline-block;
+					color: #fff;
+					font-weight: 400;
+					padding-right: 18px;
+					background: url('../../eco/images/main/ico_link_plus_m.png') no-repeat top 50% right 0 / 10px 10px;
+
+
+					&:before {
+						content: '';
+						position: absolute;
+						display: block;
+						width: 0;
+						height: 1px;
+						background: #fff;
+						left: 0;
+						bottom: -2px;
+						transition: all 0.3s;
+					}
+
+					&:hover,
+					&:focus {
+						&:before {
+							width: 100%;
+						}
+					}
+
+					@include res--tablet {
+						background: url('../../eco/images/main/ico_link_plus.png') no-repeat top 50% right 0;
+					}
+				}
+
+				&.box04 {
+					background: #00aaa0 url('../../eco/images/main/bg_box04.png') no-repeat bottom 17px right 17px / 60px 65px;
+
+					@include res--tablet {
+						background-size: auto;
+					}
+
+					p {
+						margin: 10px 0 15px;
+						color: #fff;
+
+						@include res--tablet {
+							margin: 15px 0 30px;
+						}
+					}
+				}
+
+				&.box05 {
+					background: #203d5a url('../../eco/images/main/bg_box05.png') no-repeat bottom 17px right 17px / 67px 65px;
+					color: #fff;
+
+					@include res--tablet {
+						background-size: auto;
+					}
+				}
+
+				.tel_box {
+					margin: 10px 0 15px;
+
+					@include res--tablet {
+						margin: 15px 0 20px;
+					}
+
+					>div {
+						display: flex;
+						align-items: center;
+
+						&:not(:last-child) {
+							margin-bottom: 5px;
+						}
+
+						.name {
+							margin-right: 10px;
+						}
+
+						.tel {
+							font-size: 16px;
+							font-weight: bold;
+
+							@include res--pc-ctn {
+								font-size: 22px;
+							}
+
+							>span {
+								color: #f5e31c;
+							}
+						}
+					}
+				}
+			}
+
+			.sub_tit_white {
+				color: #fff;
+				font-size: 15px;
+				font-weight: bold;
+
+				@include res--tablet {
+					font-size: 20px;
+				}
+			}
+
+
+			@include res--tablet {
+				display: flex;
+				flex-wrap: wrap;
+
+				div[class^="box"] {
+					flex: 1 1 40%;
+
+					&+div[class^="box"] {
+						margin-top: 0;
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+
+		@include res--pc {
+			display: flex;
+			flex-wrap: wrap;
+
+			.tit {
+				flex: 100%;
+			}
+
+			.main_sec01 {
+				flex: 1 1 1060px;
+
+				div[class^="box"] {
+					flex: 1 1 340px;
+					height: 490px;
+
+					&+div[class^="box"] {
+						margin-top: 0;
+						margin-left: 20px;
+					}
+
+					&.box01 {
+						background: url('../../eco/images/main/bg_box01.jpg') no-repeat center;
+					}
+
+					&.box02 {
+						background: url('../../eco/images/main/bg_box02.jpg') no-repeat center;
+					}
+
+					&.box03 {
+						background: url('../../eco/images/main/bg_box03.jpg') no-repeat center;
+					}
+
+					&.box01,
+					&.box02,
+					&.box03 {
+						background-size: auto;
+					}
+
+				}
+			}
+
+			.main_sec02 {
+				flex: 1 1 350px;
+				margin-left: 30px;
+				margin-top: 0;
+
+				div[class^="box"] {
+					flex: 1 1 350px;
+					height: 235px;
+
+					&+div[class^="box"] {
+						margin-top: 20px;
+						margin-left: 0;
+					}
+
+					&.box04,
+					&.box05 {
+						background-position: bottom 20px right 20px;
+						background-size: auto;
+					}
+				}
+			}
+
+		}
+
+	}
+}
+
+// @media screen and (min-width: 500px) {
+// 	.main {
+// 		.main_box {
+// 			.main_sec01 {
+// 				div[class^=box] {
+// 					min-height: 380px;
+// 					padding-bottom: 0;
+
+// 					&.box01,
+// 					&.box02,
+// 					&.box03 {
+// 						background-size: 100% 380px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

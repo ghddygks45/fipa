@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2, 3);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어항관리선 운영</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>쾌적한 어항</li>
+								<li>어항관리선 운영</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-쾌적한어항-어항관리선운영-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-쾌적한어항-어항관리선운영-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-쾌적한어항-어항관리선운영-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<div class="sub_section">
+								<h5 class="tit02">어항수역 폐기물 수거효율 강화</h5>
+								<ul class="list_square">
+									<li>어항관리선의 효율적 운항을 통한 폐기물 수거실적 증대 및 어항의 적정기능 유지</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">어항오염 사전예방 활동 강화</h5>
+								<ul class="list_square">
+									<li>어항오염 사전예방 및 어항관리선 승선체험 교육 실시, 어항정화 캠페인 전개(연 3회)</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">어항관리선 기능 · 역할 확대</h5>
+								<ul class="list_square">
+									<li>어항 수역 수질 환경 기초정보 수집 및 활용, 매몰 퇴적토사 응급 유지준설 확대 시행, 긴급 재난 지원 등</li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_ship02_1.jpg" alt="하단에 내용 참고 바랍니다.">
+								<a href="../../asset/fipa/images/img_ship02_1.jpg" class="btn_img_size">크게보기</a>
+								<div class="blind"></div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

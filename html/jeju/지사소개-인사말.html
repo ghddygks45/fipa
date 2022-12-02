@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/jeju/css/style.css">
+	<script src="../../asset/jeju/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/jeju/js/jquery-ui.js"></script>
+	<script src="../../asset/jeju/js/jQuery.print.js"></script>
+	<script src="../../asset/jeju/js/html2canvas.min.js"></script>
+	<script src="../../asset/jeju/js/jspdf.min.js"></script>
+	<script src="../../asset/jeju/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/jeju/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">인사말</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>지사소개</li>
+								<li>인사말</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_greeting_box">
+							<div class="txt">
+								<div class="tit">
+									안녕하십니까.
+									<div class="sm-mt-5 lg-mt-8"><span class="color_blue fwb">한국어촌어항공단</span> <span
+											class="color_green fwb">제주지사</span>를 방문해 주셔서
+										감사합니다.</div>
+								</div>
+							</div>
+						</div>
+						<div class="sm-mt-15 lg-mt-25">
+							<p>저희 제주지사는 제주권역의 다양한 어촌·어항·어장 사업을
+								보다 긴밀하고 효율적으로 수행하기 위해 설립되어 「활력있는
+								어촌」, 「쾌적한 어항」, 「풍요로운 어장」을 만들어 가고 있습니다.</p>
+							<p class="sm-mt-9 lg-mt-14">제주권역의 어항 시설물 안전 점검 및 유지보수, 어촌뉴딜사업
+								등의 사업을 수행하는 사업운영팀과 어촌체험마을 등을 중심으로 교육, 특화역량강화, 컨설팅 등을 <br class="pc_content"> 지원하는 제주어촌특화지원 센터, 성공적인
+								귀어귀촌을 위한 정착지원 프로그램을 운영하는 제주귀어귀촌종합지원센터로 구성해<br class="pc_content"> 각 위치에서 제주 어업인의 삶의 질 향상에 힘쓰고 있습니다.</p>
+							<p class="sm-mt-9 lg-mt-14">또한, 직접 소통하여 현장의 소리를 듣고 지자체 등 유관기관과의 심도있는 협의 과정을 통해 활력넘치고 안전한 제주의 어촌·어항·어장이 될 수
+								있도록<br class="pc_content"> 모든 제주지사 임직원이 책임과 역할을 다할 것입니다.</p>
+							<p class="sm-mt-9 lg-mt-14">제주 어촌·어항·어장의 발전을 위해 노력하는 한국어촌어항공단 제주지사에 많은 관심과 응원 부탁드립니다.</p>
+							<p class="sm-mt-9 lg-mt-14">감사합니다.</p>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

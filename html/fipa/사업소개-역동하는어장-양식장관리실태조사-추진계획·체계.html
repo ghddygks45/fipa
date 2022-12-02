@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">양식장 관리 실태조사</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>역동하는 어장</li>
+								<li>양식장 관리 실태조사</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-역동하는어장-양식장관리실태조사-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-역동하는어장-양식장관리실태조사-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-역동하는어장-양식장관리실태조사-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<ul class="list_square">
+								<li>(2022년 02월 ~ 2022년 03월) 조사표본 설계 및 조사 DB 관리시스템 구축</li>
+								<li>(2022년 04월 ~ 2022년 06월) 현장 실태조사 실시</li>
+								<li>(2022년 07월 ~ 2022년 08월) 조사자료 검증 및 분석</li>
+								<li>(2022년 09월 ~ 2022년 12월) 보고서 작성 및 결과 활용방안 도출</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_research_plan.jpg" alt="">
+								<a href="../../asset/fipa/images/img_research_plan.jpg" class="btn_img_size">크게보기</a>
+								<div class="blind">
+									<ul>
+										<li>해양수산부
+											<ul>
+												<li>사업계획 검토 및 승인/과업지시서시달
+													<ul>
+														<li>위탁 계약 체결 요청</li>
+													</ul>
+												</li>
+												<li>사업비 교부
+													<ul>
+														<li>계약체결 후 교부비 집행</li>
+													</ul>
+												</li>
+												<li>사업실적 검토 및 사업비 정산 확정</li>
+											</ul>
+										</li>
+										<li>지자체
+											<ul>
+												<li>양식장 기초자료
+													<ul>
+														<li>양식장의 일반현황, 생산현황, 경영현황, 관리현황 자료 협조</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>한국어촌 어항공단
+											<ul>
+												<li>사업계획안 수립
+													<ul>
+														<li>사업계획서 송부(양식장 관리 실태조사 운영 계획안/추진 전략등 수립)</li>
+													</ul>
+												</li>
+												<li>위탁계약 및 교부비 수령
+													<ul>
+														<li>위탁관계 체결 및 교부비 수령</li>
+													</ul>
+												</li>
+												<li>사업추진</li>
+												<li>DB 관리시스템 구축, 양식장 관련 기초자료 확보, 현장 실태조사 실시</li>
+												<li>조사자료검증 및 분석</li>
+												<li>사업실적 보고 및 사업비 정산
+													<ul>
+														<li>사업실적 보고서, 사업비정산서</li>
+														<li>성과지표 실적</li>
+														<li>조사결과 활용방안</li>
+														<li>실태조사 개선방안 마련</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>유관기관 (업체, 기관 등)
+											<ul>
+												<li>DB 구축 업체 동한 시스템 개발/관리
+													<ul>
+														<li>실태조사 데이터를 입력·분석·가공할 수 있는 DB 관리시스템 구축</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

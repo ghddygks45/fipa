@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">개방형 고객의견제안</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>개방형 고객의견제안</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">제안하기 접수 및 처리안내</h4>
+							<div class="privacy_agree">
+								<div class="agree_txt">
+									<p>
+										저희 한국어촌어항공단을 이용해주시는 고객님께 진심으로 감사드립니다.<br>
+										이 곳은 한국어촌어항공단이 운영하는 사업과 관련하여 고객 여러분이 스스로 제안하고, 그 문제점과 해결방안을 제안하는 곳입니다.
+									</p>
+									<p class="sm-mt-10 lg-mt-15">
+										<제안하기>는 다른 고객님들의 [공감]을 50개 이상을 받을 시 해당 부서의 부서장이 직접 답변을 달아드리며,<br>
+											[공감]받지 못했다 하더라도 해당 부서 직원이 최대 15일 안에 답변드릴 수 있도록 하겠습니다.
+									</p>
+									<p class="sm-mt-10 lg-mt-15">
+										제안해주신 의견에 대해서는 다른 모든 고객들이 열람하실 수 있으므로, 제안하기와 상반되는 일반 민원글 및 욕설, 홍보, 비방글에 대해서는 예고없이 삭제 또는
+										비공개로 전환될 수 있다는 점 참고 부탁드립니다. 또한 비공개 처리된 글은 수정 또는 삭제를 하실 수 없습니다.
+									</p>
+									<p class="sm-mt-5 lg-mt-10">
+										<strong class="fwr color_black">
+											※본 제안하기는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 , 「민원처리에 관한 법률」에 따라 운영됩니다.
+										</strong>
+									</p>
+								</div>
+								<div class="agree_check_box d_b">
+									<div class="ag_check">
+										<span class="ck-lb m-0">
+											<input type="checkbox" id="ck1" class="blind">
+											<label for="ck1">위 주의사항을 확인하였습니다.</label>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">개인정보 처리방침</h4>
+							<div class="privacy_agree">
+								<div class="agree_txt">
+									<ul class="list_square">
+										<li><strong class="fwr color_black">수집·이용 목적 : </strong>제안글에 대한 답변 및 안내를 위해 이용</li>
+										<li><strong class="fwr color_black">수집항목 : </strong>이름, 전화번호, 이메일</li>
+										<li><strong class="fwr color_black">보유·이용 기간 : </strong>수집된 개인정보는 제안시스템을 운영하는 기간동안 보관됩니다.</li>
+										<li><strong class="fwr color_black">동의거부고시 : </strong>개인정보 수집 ·이용 동의를 거부할 수 있으나, 제안글 게시는 제한됩니다.</li>
+									</ul>
+									<p class="sm-mt-5 lg-mt-10">
+										※ 위 목적 이외의 용도사용 및 제3자에게 제공하지 않습니다.
+									</p>
+								</div>
+								<div class="agree_check_box d_b">
+									<div class="ag_check">
+										<span class="ck-lb m-0">
+											<input type="checkbox" id="ck2" class="blind">
+											<label for="ck2">개인정보 수집에 동의합니다.</label>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">제안인 정보</h4>
+							<div class="board_write default_th">
+								<div class="row">
+									<div class="div_th">성명</div>
+									<div class="div_td">홍길동</div>
+								</div>
+								<div class="row">
+									<div class="div_th">휴대폰</div>
+									<div class="div_td">010-1234-5678</div>
+								</div>
+								<div class="row">
+									<div class="div_th">이메일</div>
+									<div class="div_td">
+										<div class="email_inp">
+											<span class="wr1">
+												<input type="text" class="email_inp1" title="이메일 아이디 입력"> @
+												<input type="text" class="email_inp2" title="이메일 계정 입력">
+											</span>
+											<span class="wr2">
+												<select name="" id="" title="이메일 계정 선택">
+													<option value="">직접입력</option>
+												</select>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<div class="tbl_tit">
+								<div class="l_con">
+									<h4 class="tit01">제안하기</h4>
+								</div>
+								<div class="r_con">
+									※ (<span class="color_red">*</span>) 표시는 필수입력 항목입니다.
+								</div>
+							</div>
+							<div class="board_write default_th">
+								<div class="row">
+									<div class="div_th">제안분류 <span class="bold color_red">*</span><span class="blind">필수</span> </div>
+									<div class="div_td">
+										<div class="tbl_select_box">
+											<span>
+												<select name="" id="" title="제안분류 선택">
+													<option value="">1차분류</option>
+												</select>
+											</span>
+											<span>
+												<select name="" id="" title="제안분류 선택">
+													<option value="">2차분류</option>
+												</select>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">제목 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td"><input type="text" class="w_full" title="제목을 입력하세요" placeholder="제목을 입력하세요"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">내용 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<textarea name="" id="" class="write_area" placeholder="문의 내용을 입력하세요"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">URL링크</div>
+									<div class="div_td"><input type="text" class="w_full" title="url을 입력하세요" placeholder="url을 입력하세요">
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">이미지 첨부</div>
+									<div class="div_td">
+										<div class="sm-mb-10 lg-mb-15">
+											<input type="file">
+											<button type="button" class="btn bg_gray md board_btn">추가</button>
+										</div>
+										<p>※ 이미지는 최대 5장까지 첨부하실 수 있습니다. (이미지 용량 3MB 이하)</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">첨부파일</div>
+									<div class="div_td txt_td">
+										<div class="sm-mb-10 lg-mb-15"><input type="file"></div>
+										<p>※ 첨부파일이 여러 개일 경우 한 개의 파일로 압축 후 등록해주시기 바랍니다.</p>
+										<ul class="view_add_file mt-10">
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_navy txt_underline fwr">[삭제]</a>
+											</li>
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_navy txt_underline fwr">[삭제]</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap">
+							<div class="l">
+								<a href="#;" class="btn bg_gray">목록</a>
+							</div>
+							<div class="r">
+								<a href="#;" class="btn bg_blue">등록</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

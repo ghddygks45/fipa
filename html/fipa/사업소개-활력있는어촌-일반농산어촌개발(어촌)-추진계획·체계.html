@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			currentPage(1, 1);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">일반농산어촌개발(어촌)</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>일반농산어촌개발(어촌)</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-일반농산어촌개발(어촌)-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-일반농산어촌개발(어촌)-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-활력있는어촌-일반농산어촌개발(어촌)-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<h5 class="tit02">일반농산어촌개발사업</h5>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>추진계획 표로 구분, 사업기간, 사업명, 주요내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:14%">
+										<col style="width:15%">
+										<col style="width:27%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">사업기간</th>
+											<th scope="col">사업명</th>
+											<th scope="col">주요내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">고창군</th>
+											<td>‘18 ~ ‘21</td>
+											<td>만돌권역 거점개발사업</td>
+											<td>기초생활기반 확충, 경관개선, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="3">남해군</th>
+											<td>‘18 ~ ‘21</td>
+											<td>남해읍(선소) 권역단위 거점개발사업</td>
+											<td>기초생활기반 확충, 경관개선, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘18 ~ ‘22</td>
+											<td>답하 마을단위 특화개발사업</td>
+											<td>기초생활기반 확충, 경관개선, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘19 ~ ‘22</td>
+											<td>갈현마을 특화개발사업</td>
+											<td>기초생활기반 확충, 경관개선, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">보령시</th>
+											<td>‘19 ~ ’24</td>
+											<td>은포3리 마을단위 특화개발사업</td>
+											<td>기초생활기반 확충, 경관개선</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘20 ~ ’24</td>
+											<td>은포4리 마을단위 특화개발사업</td>
+											<td>기본계획, 실시설계, 주민역량강화</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">부안군</th>
+											<td>‘18 ~ ’21</td>
+											<td>대리·전막 마을단위 특화개발사업</td>
+											<td>기초생활기반 확충, 경관개선, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘19 ~ ’23</td>
+											<td>격포항 권역단위 거점개발사업</td>
+											<td>기초생활기반 확충, 경관개선, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="3">삼척시</th>
+											<td>‘18 ~ ‘21</td>
+											<td>갈남 마을단위 특화개발사업</td>
+											<td>기본계획, 실시설계, 주민역량강화</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘19 ~ ’22</td>
+											<td>임원 마을단위 특화개발사업</td>
+											<td>기초생활기반 확충, 경관개선, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<td>’21</td>
+											<td>일반농산어촌개발 지역역량강화사업</td>
+											<td>교육, 컨설팅, 홍보 및 마케팅</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">통영시</th>
+											<td>‘19 ~ ’21</td>
+											<td>적덕 마을단위 특화개발사업</td>
+											<td>기본계획, 실시설계, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘19 ~ ’23</td>
+											<td>소태권역 거점개발사업</td>
+											<td>기본계획, 실시설계, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">태안군</th>
+											<td>‘20 ~ ’21</td>
+											<td>영목 마을단위 특화개발사업</td>
+											<td>기초생활기반 확충, 경관개선</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘20 ~ ’23</td>
+											<td>몽산포권역 어촌종합개발사업</td>
+											<td>기초생활기반 확충, 지연소득증대, 경관개선</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">제주시</th>
+											<td>‘21 ~ ’25</td>
+											<td>금능권역 어촌테마마을 조성사업</td>
+											<td>기초생활기반 확충, 경관개선, 주민역량강화 등</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘21 ~ ’22</td>
+											<td>지역역량강화사업</td>
+											<td>주민역량강화, 어촌재생 전략수립</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="3">서귀포시</th>
+											<td>‘21 ~ ’25</td>
+											<td>신양권역 어촌종합 개발사업</td>
+											<td>기초생활기반 확충, 지역경관개선, 주민역량강화</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘21 ~ ’24</td>
+											<td>고성리 마을단위 특화개발사업</td>
+											<td>기초생활기반 확충, 지역경관개선, 주민역량강화</td>
+										</tr>
+										<tr class="txt_c">
+											<td>‘21 ~ ’22</td>
+											<td>지역역량강화사업</td>
+											<td>주민역량강화, 경영컨설팅, 경관개선</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_busi_cont1_1.jpg" alt="하단에 내용 참고 바랍니다.">
+								<a href="../../asset/fipa/images/img_busi_cont1_1.jpg" class="btn_img_size">크게보기</a>
+								<div class="blind">
+									<ul>
+										<li>01.사업성 검토 및 사업신청
+											<ul>
+												<li>사업성검토 신청서 작성 (주민, 시, 군)</li>
+												<li>사업추진조직, 읍면(권역) 발전 협의회 구성 및 운영</li>
+											</ul>
+										</li>
+										<li>02.사업성 검토 (1차)
+											<ul>
+												<li>사업성 1차 검토 (도)</li>
+											</ul>
+										</li>
+										<li>03.사업성 검토 (2차)
+											<ul>
+												<li>사업성 2차 검토 (해수부)</li>
+											</ul>
+										</li>
+										<li>04.신규사업반영
+											<ul>
+												<li>신규사업반영</li>
+												<li>예산신청 (시,군 → 도 → 해수부)</li>
+											</ul>
+										</li>
+										<li>05.기본계획 수립
+											<ul>
+												<li>기본계획 수립</li>
+												<li>시,군 ↔ 도 ↔ 해수부<br>
+													※ [시,군] 와 [도] 보고 시 승인 후 보고<br>
+													※ [도]와 [해수부] 계획 수립간 필요시 협의</li>
+											</ul>
+										</li>
+										<li>06.시행계획 수립
+											<ul>
+												<li>시행계획 수립 및 변경</li>
+												<li>시,군 ↔ 도 ↔ 해수부<br>
+													※ [시,군] 와 [도] 보고 시 승인 후 보고<br>
+													※ [도]와 [해수부] 계획 수립간 필요시 협의</li>
+												<li>평가, 모니터링, 컨설팅 실시</li>
+											</ul>
+										</li>
+										<li>07.사업성 검토 (2차)
+											<ul>
+												<li>추진상황 점검</li>
+												<li>평가, 모니터링, 컨설팅 실시</li>
+											</ul>
+										</li>
+										<li>08.신규사업반영
+											<ul>
+												<li>준공검사 및 정산보고</li>
+												<li>주민 및 지자체 사후관리</li>
+												<li>해수부 주관 이행점검</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+@use '../use'as *;
+
+// sound-only
+.blind {
+	position: absolute;
+	left: -1000%;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	color: transparent;
+}
+
+// display
+.m_content {
+	display: block !important;
+
+	@include res--pc-ctn {
+		display: none !important;
+	}
+}
+
+.pc_content {
+	display: none !important;
+
+	@include res--pc-ctn {
+		display: block !important;
+	}
+}
+
+.d_b {
+	display: block !important;
+}
+
+.d_i_b {
+	display: inline-block !important;
+}
+
+.ofh {
+	overflow: hidden;
+}
+
+// font-weight
+.fwl {
+	font-weight: 300 !important;
+}
+
+.fwr {
+	font-weight: 400 !important;
+}
+
+.fwm {
+	font-weight: 500 !important;
+}
+
+.fwb {
+	font-weight: 600 !important;
+}
+
+.bold {
+	font-weight: 400;
+	color: #333;
+}
+
+// align
+.txt_l {
+	text-align: left !important;
+}
+
+.txt_c {
+	text-align: center !important;
+}
+
+.txt_r {
+	text-align: right !important;
+}
+
+.v_top {
+	vertical-align: top;
+}
+
+.v_mid {
+	vertical-align: middle !important;
+}
+
+.v_btm {
+	vertical-align: bottom;
+}
+
+@media print {
+
+	@page {
+		margin: 0;
+	}
+
+	body {
+		-webkit-print-color-adjust: exact;
+		//margin: 1.6cm;
+	}
+
+	/*----- Print -----*/
+	.accessibility,
+	.header,
+	.aside,
+	.location,
+	footer {
+		display: none !important;
+	}
+
+	.container {
+		padding: 0 !important;
+
+		.inner {
+			width: 1100px !important;
+			padding: 50px !important;
+			margin: 0 !important;
+		}
+	}
+
+	.content {
+		width: 100% !important;
+		margin: 0 auto !important;
+		float: none !important;
+	}
+}
+
+.no_img {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 158px;
+		height: 97px;
+		background: url(../images/img_default_logo.png) no-repeat 0 0 / 158px;
+	}
+
+	img[src*="img-view.do?"],
+	img[src*="/imgfile.do?"] {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.loading .txt {
+	width: 200px;
+}
+
+.list_brochure .no_img::before {
+	width: 137px;
+	height: 87px;
+	background-size: 137px;
+}
+
+.list_website .no_img img {
+	display: none;
+}

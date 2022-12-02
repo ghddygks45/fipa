@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">청정어장 재생사업</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>역동하는 어장</li>
+								<li>청정어장 재생사업</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-역동하는어장-청정어장재생사업-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-역동하는어장-청정어장재생사업-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-역동하는어장-청정어장재생사업-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>사업개요 표로 구분, 사업명, 사업기간, 주요내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 12%;">
+										<col>
+										<col style="width: 15%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">사업명</th>
+											<th scope="col">사업기간</th>
+											<th scope="col">주요내용</th>
+										</tr>
+									</thead>
+									<tbody class="txt_c">
+										<tr>
+											<th scope="row">고흥군</th>
+											<td rowspan="2">득량만 청정어장 재생사업</td>
+											<td rowspan="2">‘21-’22</td>
+											<td rowspan="7">어장환경정화, 오염퇴적물 처리, 어장사용관리, 역량강화교육, 해양환경 모니터링 시스템 구축, 진단 및 효과측정 등</td>
+										</tr>
+										<tr>
+											<th scope="row">보성군</th>
+										</tr>
+										<tr>
+											<th scope="row">남해군</th>
+											<td>강진만 청정어장 재생사업</td>
+											<td class="bor_r">‘22-’23</td>
+										</tr>
+										<tr>
+											<th scope="row">창원시</th>
+											<td>진동만 청정어장 재생사업</td>
+											<td class="bor_r">‘22-’23</td>
+										</tr>
+										<tr>
+											<th scope="row">여수시</th>
+											<td>가막만 청정어장 재생사업</td>
+											<td class="bor_r">‘22-’23</td>
+										</tr>
+										<tr>
+											<th scope="row">고흥군</th>
+											<td rowspan="2">여자만 청정어장 재생사업</td>
+											<td rowspan="2" class="bor_r">‘22-’23</td>
+										</tr>
+										<tr>
+											<th scope="row">보성군</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+
+							<div class="list_arr_step sm-pr-20">
+								<ul>
+									<li>
+										<div class="top bg_blue">
+											<h5 class="tit">해양수산부</h5>
+										</div>
+										<div class="btm regen01">
+											<strong>사업기획</strong>
+											<div class="cont">
+												<ul class="list_square">
+													<li>사업수요 조사</li>
+													<li>사업계획 수립</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="top bg_green">
+											<h5 class="tit">지자체</h5>
+										</div>
+										<div class="btm regen02">
+											<strong>사업신청</strong>
+											<div class="cont">
+												<ul class="list_square">
+													<li>사업신청</li>
+													<li>보조금 신청</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="top bg_navy">
+											<h5 class="tit">한국어촌어항공단</h5>
+										</div>
+										<div class="btm regen03">
+											<strong>사업관리</strong>
+											<div class="cont">
+												<ul class="list_square">
+													<li>사업시행 및 관리</li>
+													<li>수행상황 보고</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="top bg_pupple">
+											<h5 class="tit">용역수행사</h5>
+										</div>
+										<div class="btm regen04">
+											<strong>수행</strong>
+											<div class="cont">
+												<ul class="list_square">
+													<li>용역수행</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<!-- <div class="img_box">
+								<img src="../../asset/fipa/images/img_busi_oil_pc.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_busi_oil_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+
+								</div>
+							</div> -->
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

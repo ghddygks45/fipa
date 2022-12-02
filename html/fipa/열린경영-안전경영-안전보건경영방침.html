@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(9, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">안전보건경영방침</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>안전경영</li>
+								<li>안전보건경영방침</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="cus_txt service1 service_con service5">
+								<h5 class="txt_c sm-mb-20 lg-mb-35">안전보건경영방침</h5>
+								<p class="txt_c">한국어촌어항공단은 안전보건경영이 모든 경영 활동의 최우선 가치임을 표명하고,<br>
+									안전하고 쾌적한 일터를 조성하기 위해 다음과 같이 안전보건경영방침을 선언한다.
+								</p>
+								<div class="service_txt">
+									<ul>
+										<li>
+											<span>첫째</span>
+											<p>안전 · 보건관련 법규 및 지침을 철저히 준수하고, 안전보건활동을 최우선으로 이행하여 안전보건에 대한
+												사회적책임을 다한다. 최우선으로 이행하여 안전보건에 대한 사회적 책임을 다한다.</p>
+										</li>
+										<li>
+											<span>둘째</span>
+											<p>능동적으로 유해 · 위험요인을 발굴하고 위험성을 감소시키는 노력으로 예방중심의 안전보건관리에 최선을 다한다.</p>
+										</li>
+										<li>
+											<span>셋째</span>
+											<p>이해관계자가 함께 참여하는 안전보건을 위해 다양한 소통 채널을 운영하여, 안전문화 확산에 노력한다.</p>
+										</li>
+										<li>
+											<span>넷째</span>
+											<p>안전보건경영시스템의 목표 및 실행계획을 주기적으로 점검하여, 공단의 안전보건 역량을 지속적으로 강화한다.</p>
+										</li>
+									</ul>
+								</div>
+								<div class="service_btm">
+									2022년 1월 1일
+									<strong class="sm-mb-10 lg-mb-14 sm-mt-5 lg-mt-8">한국어촌어항공단 이사장 박경철</strong>
+									<img src="../../asset/fipa/images/img_sign.png" alt="박경철">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

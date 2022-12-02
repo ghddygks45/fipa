@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">개방형 고객의견제안</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>개방형 고객의견제안</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="view_wrap">
+								<div class="view_tit">
+									<strong><span class="color_blue">[Category #1]</span> 한국어촌어항공단에 제안드립니다.</strong>
+									<ul class="list_square">
+										<li><span class="fwr color_black">제안기간 :</span> 2022-07-01 ~ 2022-12-31</li>
+										<li><span class="fwr color_black">제안일 :</span> 이*철</li>
+									</ul>
+								</div>
+								<div class="view_con">
+									<div class="youtube_con">
+										<div class="video">
+											<img src="../../asset/fipa/images/img_youtube_thumb.jpg" alt="youtube">
+										</div>
+										<div class="txt">
+											#한국어촌어항공단 #신입직원브이로그
+											#직장인브이로그#출장브이로그
+											#공공기관브이로그 #경영기획본부
+											#신규직원브이로그 #공기업 #공공기관<br><br>
+											*모든 영상은 코로나19 방역수칙에
+											준수하여 촬영하였습니다.*<br><br>
+											한국어촌어항공단 신규 및 90년대생
+											직원 V-log 네번째 주인공!
+											한국어촌어항공단 경영기획본부 김덕우
+											사원님입니다!<br><br>
+											재밌고 이쁘게 영상 봐주시고, 많은 관심
+											부탁드립니다!
+										</div>
+									</div>
+									<div class="view_like">
+										<button type="button" class="active">100</button>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<div class="l">
+									<a href="참여-개방형고객의견제안-목록.html" class="btn bg_gray">목록</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">제안답변</h4>
+							<div class="board_write default_th">
+								<div class="row">
+									<div class="div_th">답변자</div>
+									<div class="div_td">이순신 팀장 (정보화전략팀)</div>
+								</div>
+								<div class="row">
+									<div class="div_th">답변내용</div>
+									<div class="div_td">이OO님, 안녕하세요. 한국어촌어항공단의 이순팀 팀장입니다.<br>
+										먼저, 저희 공단에 관심 가져주시고, 제안주셔서 진심으로 감사드립니다.</div>
+								</div>
+								<div class="row">
+									<div class="div_th">첨부파일</div>
+									<div class="div_td txt_td">
+										<ul class="view_add_file">
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_blue txt_underline fwr">[다운로드]</a>
+											</li>
+											<li>
+												첨부된 파일명.hwp
+												<a href="#;" class="color_blue txt_underline fwr">[다운로드]</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<div class="comment_input_box">
+								<div class="txt_box">
+									<textarea name="" id="" cols="30" rows="10" placeholder="댓글에 참여하시려면 본인인증이 필요합니다."></textarea>
+									<button type="button">댓글<br>참여</button>
+								</div>
+								<p class="sm-mt-10 lg-mt-15">※ 제안 내용과 관련없는 댓글 및 욕설, 홍보, 비방과 관련된 댓글은 예고없이 비공개 처리될 수 있음을 알려드립니다.</p>
+							</div>
+						</div>
+
+						<div class="section">
+							<div class="comment_top">
+								<div class="l">
+									<h4 class="tit01">댓글목록</h4>
+								</div>
+								<div class="r">
+									<div class="comment_align">
+										<button class="active">공감순</button>
+										<button>최신순</button>
+										<button>오래된순</button>
+									</div>
+								</div>
+							</div>
+							<div class="comment_list">
+								<div class="comment_box">
+									<div class="l">
+										<div class="info">
+											<span class="fwr color_black">홍**</span>
+											<span>2022-07-11</span>
+										</div>
+										<p>정말 좋은 의견이네요, 공감을 안 누를 수가 없네요~ 공감
+											꾸~욱 누르고 갑니다~</p>
+									</div>
+									<div class="r">
+										<span class="v_mid"><strong class="fwr color_black">댓글공감</strong> 2명</span>
+										<button type="button" class="btn_like ml-5"><span class="blind">공감</span></button>
+									</div>
+								</div>
+								<div class="comment_box">
+									<div class="l">
+										<div class="info">
+											<span class="fwr color_black">홍**</span>
+											<span>2022-07-11</span>
+										</div>
+										<p>정말 좋은 의견이네요, 공감을 안 누를 수가 없네요~ 공감
+											꾸~욱 누르고 갑니다~</p>
+									</div>
+									<div class="r">
+										<span class="v_mid"><strong class="fwr color_black">댓글공감</strong> 2명</span>
+										<button type="button" class="btn_like active ml-5"><span class="blind">공감</span></button>
+									</div>
+								</div>
+								<div class="comment_box non">
+									<strong class="fwm color_black">해당 댓글은 관리자의 의하여 비공개 처리되었습니다.</strong>
+									<p class="mt-5">※비공개 사유 : 욕설 또는 비방이 담긴 댓글입니다.</p>
+								</div>
+								<div class="comment_box">
+									<div class="l">
+										<div class="info">
+											<span class="fwr color_black">홍**</span>
+											<span>2022-07-11</span>
+										</div>
+										<p>정말 좋은 의견이네요, 공감을 안 누를 수가 없네요~ 공감
+											꾸~욱 누르고 갑니다~</p>
+									</div>
+									<div class="r">
+										<span class="v_mid"><strong class="fwr color_black">댓글공감</strong> 2명</span>
+										<button type="button" class="btn_like ml-5"><span class="blind">공감</span></button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 5);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">낚시산업 선진화</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>활력있는 어촌</li>
+								<li>낚시산업 선진화</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-활력있는어촌-낚시산업선진화-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-활력있는어촌-낚시산업선진화-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-활력있는어촌-낚시산업선진화-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<div class="sub_section">
+								<h5 class="tit02">낚시전문교육</h5>
+								<ul class="list_square">
+									<li><span class="fwr color_black">교육대상 : 약 9천여 명(낚시어선업자 및 선원, 낚시터업자)</span>
+										<ul class="list_arr">
+											<li>낚시어선 전문교육 약 7.3천여 명</li>
+											<li>낚시터 전문교육 약 0.8천여 명</li>
+											<li>낚시어선 신규·재개자 전문교육 약 0.4천여 명</li>
+										</ul>
+									</li>
+									<li><span class="fwr color_black">교육방법</span>
+										<ul class="list_arr">
+											<li>현장 및 온라인교육</li>
+										</ul>
+									</li>
+									<li><span class="fwr color_black">교육일정</span>
+										<ul class="list_arr">
+											<li>낚시전문교육: 연중 / 1회 4시간 이상</li>
+											<li>낚시어선 신규·재개자 전문교육: 연중(월 1~2회) / 1회 21시간 이상</li>
+										</ul>
+									</li>
+									<li><span class="fwr color_black">교육과정</span>
+										<div class="table mt-10">
+											<table>
+												<caption>교육과정 표로 교육과정명, 교육과목 정보 제공</caption>
+												<colgroup>
+													<col style="width:25%">
+													<col>
+												</colgroup>
+												<thead>
+													<tr class="txt_c">
+														<th scope="col">교육과정명</th>
+														<th scope="col">교육과목</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row" class="txt_c">낚시어선 전문교육 (4시간)</th>
+														<td>
+															<ul class="list_square">
+																<li>낚시어선 관련 법규 및 수산자원 보호</li>
+																<li>해상교통 관련 법규</li>
+																<li>선박 안전 및 운항</li>
+																<li>사고유형별 안전 및 비상조치</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row" class="txt_c">낚시터 전문교육 (4시간)</th>
+														<td>
+															<ul class="list_square">
+																<li>낚시 관련 정책 및 법규</li>
+																<li>어류생태 및 수질관리</li>
+																<li>낚시인 안전사고 인명구조 및 응급처치</li>
+																<li>낚시터 시설관리 및 운영</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row" rowspan="3" class="txt_c">낚시어선 신규·재개자 전문교육 (21시간)</th>
+														<td>
+															<strong class="fwr color_black">1일차</strong>
+															<ul class="list_square sm-mt-5 lg-mt-10">
+																<li>낚시어선 현황</li>
+																<li>낚시어선 관련 주요 법령 및 수산자원 보호</li>
+																<li>선박 특성 및 선박 운항 설비</li>
+																<li>일반 항법 원칙 및 해상교통 관련 법규</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<strong class="fwr color_black">2일차</strong>
+															<ul class="list_square sm-mt-5 lg-mt-10">
+																<li>항해 장비 및 기관 비상 운전</li>
+																<li>통신장비 사용법 및 출항 전 점검 사항</li>
+																<li>사고 유형 및 비상 대응조치</li>
+																<li>소화 훈련(휴대용소화기, 수소화 훈련 등)</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<strong class="fwr color_black">3일차</strong>
+															<ul class="list_square sm-mt-5 lg-mt-10">
+																<li>해상 생존 훈련 및 구명장비 사용법</li>
+																<li>응급처치 및 승객 안전관리</li>
+																<li>해양기사 및 충돌방지</li>
+															</ul>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p class="sm-mt-10 lg-mt-15">※ 관련근거 : 「낚시 관리 및 육성법」 제47조, 「낚시전문교육 및 교육기관 지정에 관한 고시」제2조</p>
+									</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">낚시정보종합포털 운영</h5>
+								<div class="list_busi_info list_row list_busi_bor">
+									<div class="bg_info_fishing03">
+										<strong class="tit">낚시누리</strong>
+										<ul class="list_square">
+											<li>기존의 공급자 중심의 분산된 낚시정보를 낚시종합포털 한 곳에서 낚시초보자부터 고수까지 낚시를 더 쉽고 편리하게 즐길 수 있는 낚시 활동을 위한 낚시 관련 토탈 정보 제공
+											</li>
+											<li>낚시전문교육 관련 표준·현행화된 정보를 통합 관리할 수 있는 시스템 구축으로 실시간 정보 공유·활용에 따른 업무효율성 및 국민편의 증대</li>
+											<li>낚시 관련 사업의 전략적 홍보지원 및 업무지원 시스템으로 활용</li>
+										</ul>
+										<a href="https://www.naksinuri.kr/" target="_blank"
+											class="btn bg_blue btn_link btn_link_w sm-mt-10 lg-mt-15">낚시 누리
+											바로가기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_fishing_system01.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_fishing_system01_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									낚시 전문교육 추진체계
+									<dl>
+										<dt>해양수산부</dt>
+										<dd>
+											<ul>
+												<li>사업시행지침 수립 및 시달</li>
+												<li>점검 및 평가</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>지자체</dt>
+										<dd>
+											<ul>
+												<li>교육대상자 관리</li>
+												<li>교육 미이수자 과태료 부과</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>한국어촌어항공단</dt>
+										<dd>
+											<ul>
+												<li>교육계획 수립</li>
+												<li>표준교재 편찬 및 교육관리</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>교육대상자</dt>
+										<dd>
+											<ul>
+												<li>교육신청 및 이수</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="img_box sm-mt-15 lg-mt-20">
+								<img src="../../asset/fipa/images/img_fishing_system02.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_fishing_system02_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									낚시정보종합포털운영 추진체계
+									<dl>
+										<dt>해양수산부</dt>
+										<dd>
+											<ul>
+												<li>사업시행지침 수립 및 시달</li>
+												<li>점검 및 평가</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>한국어촌어항공단</dt>
+										<dd>
+											<ul>
+												<li>세부사업계획 마련</li>
+												<li>사용자접근통제 및 설문조사 분석</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>사이트 운영업체</dt>
+										<dd>
+											<ul>
+												<li>사이트 활성화 및 기능 고도화</li>
+												<li>낚시관련 컨텐츠 제작 및 홍보</li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt>낚시관련 단체</dt>
+										<dd>
+											<ul>
+												<li>낚시정보 연계</li>
+												<li>사이트 홍보 및 캠페인</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

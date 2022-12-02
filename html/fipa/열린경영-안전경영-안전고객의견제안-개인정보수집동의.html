@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(9, 4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">안전제안</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>안전경영</li>
+								<li>안전제안</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab">
+							<li><a href="#;">안전제도란</a></li>
+							<li><a href="#;" class="active">안전 고객의견제안</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">개인 정보 수집 및 이용 안내</h4>
+							<div class="privacy_agree">
+								<div class="agree_txt">
+									개인정보 수집 및 이용안내 내용요청
+								</div>
+								<div class="agree_check_box">
+									<p class="ag_txt">위 개인정보 수집 및 이용에 동의하십니까?</p>
+									<div class="ag_check">
+										<span class="rd-lb">
+											<input type="radio" id="rd1" name="radio1" class="blind" checked="">
+											<label for="rd1">동의합니다</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd2" name="radio1" class="blind">
+											<label for="rd2">동의하지 않습니다</label>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="열린경영-안전경영-안전고객의견제안-목록.html" class="btn bg_blue">확인</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">제안 채택에 대한 동의안내</h4>
+							<div class="privacy_agree">
+								<div class="agree_txt">
+									제안 채택에 대한 동의안내 내용요청
+								</div>
+								<div class="agree_check_box">
+									<p class="ag_txt">위 개인정보 수집 및 이용에 동의하십니까?</p>
+									<div class="ag_check">
+										<span class="rd-lb">
+											<input type="radio" id="rd3" name="radio2" class="blind" checked>
+											<label for="rd3">동의합니다</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd4" name="radio2" class="blind">
+											<label for="rd4">동의하지 않습니다</label>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="열린경영-안전경영-안전고객의견제안-목록.html" class="btn bg_blue">확인</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">본인인증</h4>
+							<div class="cert">
+								<strong>휴대폰 본인인증</strong>
+								<a href="열린경영-안전경영-안전고객의견제안-목록.html" class="bg_blue btn md">본인인증하기</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

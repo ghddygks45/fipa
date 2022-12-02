@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/jeju/css/style.css">
+	<script src="../../asset/jeju/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/jeju/js/jquery-ui.js"></script>
+	<script src="../../asset/jeju/js/jQuery.print.js"></script>
+	<script src="../../asset/jeju/js/html2canvas.min.js"></script>
+	<script src="../../asset/jeju/js/jspdf.min.js"></script>
+	<script src="../../asset/jeju/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/jeju/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb3.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">익명신고센터</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>익명신고센터</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="top_info_box bg_anonymous">
+							<strong class="tit">한국어촌어항공단 익명신고 시스템</strong>
+							<p>
+								한국어촌어항공단은 신고자의 보호를 위하여 ‘부패비리
+								익명신고센터’인 케이휘슬을 상시 운영하고 있습니다.<br>
+								케이휘슬은 외부의 전문기관이 위탁 운영하는
+								익명제보시스템입니다.
+							</p>
+						</div>
+						<div class="section">
+							<h4 class="tit01">신고안내</h4>
+							<div class="sub_section">
+								<h5 class="tit02">신고대상 부패행위는 아래와 같습니다.</h5>
+								<ul class="list_square">
+									<li>공금횡령행위, 직무관련 금품, 향응 수수행위</li>
+									<li>부당한 이권개입, 특혜제공</li>
+									<li>알선 청탁 및 압력행사</li>
+									<li>부당한 예산 집행 및 낭비행위</li>
+									<li>성희롱, 성폭력 피해신고</li>
+									<li>직장 내 괴롭힘 등 갑질신고</li>
+									<li>기타 행동강령 위반 행위</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">신고자의 신분노출 염려하지 마십시오.</h5>
+								<ul class="list_square">
+									<li>본 시스템에서의 신고는 익명으로 이루어지고, IP추적이 불가하여 신분노출이 되지 않습니다.</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">신고방법</h5>
+								<ul class="list_square">
+									<li>신고내용은 육하원칙에 따라 반드시 사실에 근거한 내용으로 명확하게 작성하여야 합니다. 증빙자료나 확인 방법 등 참고자료를 첨부합니다.</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">신고자 유의사항</h5>
+								<strong class="fwr color_black">아래와 같은 신고는 접수되어도 처리되지 않습니다.</strong>
+								<ul class="list_square sm-mt-5 lg-mt-10">
+									<li>부패행위와 관련이 없는 단순 민원이나 불편사항</li>
+									<li>신고대상 또는 내용이 불명확한 신고</li>
+									<li>근거없는 비방과 음해</li>
+								</ul>
+								<p class="sm-mt-5 lg-mt-10">신고자는 위 사항을 확인하고 오로지 양심에 따라 신고서를 작성합니다.</p>
+							</div>
+						</div>
+						<div class="btn_wrap txt_c">
+							<a href="#;" class="btn bg_blue">익명시스템 바로가기</a>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 3);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb6.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">주요업무</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>기관소개</li>
+								<li>일반현황</li>
+								<li>주요업무</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">가고싶고 살고싶은 어촌구현</h4>
+							<div class="sub_section">
+								<h5 class="tit02">삶터와 쉼터가 공존하는 특색있는 어촌</h5>
+								<ul class="list_task_poligon">
+									<li class="bg01">
+										<div class="txt">
+											<strong>어촌·어항 재생</strong>
+											<ul class="list_square">
+												<li>
+													<span class="fwr color_black">어촌·어항재생사업추진지원단 운영 :</span>
+													어촌어항재생 사업운영 및 관리지원
+												</li>
+												<li>
+													<span class="fwr color_black">어촌어항재생 사업 위탁수행 : </span>
+													총 250개소중 130개소 위탁수행중
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="bg02">
+										<div class="txt">
+											<strong>어촌관광 활성화</strong>
+											<ul class="list_square">
+												<li>
+													<span class="fwr color_black">어촌체험마을 지원 : </span>
+													컨설팅, 등급결정, 마을 역량강화 등
+												</li>
+												<li>
+													<span class="fwr color_black">어촌체험마을 및 안심어촌 홍보 : </span>
+													어촌관광 콘텐츠 발굴 및 다양한 매체를 활용한 대국민 홍보
+												</li>
+												<li>
+													<span class="fwr color_black">바다해설사 양성 : </span>
+													어촌·해양 관광해설 전문가로써 252명 등록
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="bg03">
+										<div class="txt">
+											<strong>어촌지역개발 및 어촌주민 역량 강화</strong>
+											<ul class="list_square">
+												<li>일반농산어촌개발사업 추진</li>
+												<li>
+													<span class="fwr color_black">어촌주민 역량강화 : </span>
+													지역 특성과 주민수요 등 지역 특화에 중점
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">사람이 돌아오는 살고 싶은 어촌</h5>
+								<div class="list_busi_info">
+									<div class="bg_info_task01">
+										<strong class="tit">귀어귀촌 활성화 지원</strong>
+										<ul class="list_square">
+											<li>귀어귀촌 종합센터 운영 및 귀어귀촌 박람회 개최</li>
+											<li>귀어닥터 운영 : 수산 전문가 및 귀어 정착인을 활용한 1:1 컨설팅</li>
+										</ul>
+									</div>
+									<div class="bg_info_task02">
+										<strong class="tit">어촌특화지원센터 운영 (전국 4개소 운영 : 경남,제주,인천, 충남)</strong>
+										<ul class="list_square">
+											<li>어촌특화사업 발굴 : 어촌의 유·무형 자원을 활용한 융복합사업</li>
+											<li>소비촉진 지원 : 어촌 특화상품 유통체계 구축 및 판로개척 지원</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">국민이 신뢰하는 미래수산 구축</h4>
+							<div class="sub_section">
+								<h5 class="tit02">안전하고 활력넘치는 국민의 어항 구현</h5>
+								<ul class="list_square">
+									<li>
+										<span class="fwr color_black">어항시설 안전관리</span>
+										<ul class="list_arr">
+											<li>어항시설 안전점검 : 115개 국가어항 및 76개 지방어항 안전점검</li>
+											<li>어항시설 유지보수 : 국가어항 기본시설 유지보수와 안전시설 확대</li>
+											<li>국가어항 기초조사 : 국가어항 현황 및 이용실태를 DB화하여 어항정책 및 개발계획 수립에 활용</li>
+										</ul>
+									</li>
+									<li>
+										<span class="fwr color_black">어항관리선 운영</span>
+										<div class="task_box sm-mt-9 lg-mt-13">
+											<div class="bg01">
+												<strong>부유·침적폐기물 제거</strong>
+												연간 <span class="fwm">3만여톤</span> 수준<br>
+												수거·처리
+											</div>
+											<div class="bg02">
+												<strong>재난 등 지원</strong>
+												<span class="fwm">재해발생</span>시 지원<br>
+												태풍피해, 적조, 해파리·모자반 등
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">첨단기술로 실현하는 스마트 수산·어촌어항시설 안전관리</h5>
+								<ul class="list_square">
+									<li>
+										<span class="fwr color_black">스마트 어항 유지관리체계 구축(시범사업)</span>
+										<ul class="list_arr">
+											<li>동·서·남해 권역별 도서지역 국가어항 3개항에 안전·유지관리를 위한 원격 모니터링체계 구축(지능형 CCTV및 LiDAR센서 설치 등)</li>
+										</ul>
+									</li>
+									<li>
+										<span class="fwr color_black">어촌어항관리시스템 운영</span>
+										<ul class="list_arr">
+											<li>어촌·어항 이용 및 민원 업무 등의 운영관리, 어항의 안전·환경 ·건설 관리 업무지원 및 관련정보 개방을 위한 시스템 운영</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">수산업 미래대응을 위한 그린·스마트 전환</h5>
+								<ul class="list_square">
+									<li>
+										<span class="fwr color_black">연근해어장 생산성 개선 지원</span>
+										<ul class="list_arr">
+											<li>어장 개선 : 연근해 주요어장내 유실·침적어구 수거 및 교육 ·홍보</li>
+											<li>어장 재생 : 노후·과밀 어장에 대한 환경개선, 재배치 및 모니터링</li>
+										</ul>
+									</li>
+									<li>
+										<span class="fwr color_black">친환경·스마트 양식어업 육성지원</span>
+										<ul class="list_arr">
+											<li>사업관리 : 정부 지원 친환경 양식 지원자 대상 컨설팅, 모니터링</li>
+											<li>창업·기술지원 : 양식창업을 구상-실현까지 One-stop으로 지원</li>
+											<li>위탁수행 : 친환경·스마트 시스템 전환을 위한 위탁사업 수행</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">지속 가능한 수산업을 위한 인적기반 마련</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_task01.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_task01_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<div>
+										<h5>공공교육 강화로 지속 가능한 수산업 실현</h5>
+										<ul>
+											<li>낚시 전문교육 실시 - 낚시 안전 및 수산자원보호를 위한 낚시터 업자 및 낚시어선업자(선장, 선원 등 포함) 대상의 법정의무교육(4시간, 약 9천여명) 실시</li>
+											<li>수산분야 공익직불제 교육 시행 - 수산 공익직불제 수혜자(약 2만여명)를 대상으로 수산업·어촌 공익기능 증진을 위한 어업인의 역할과 준수사항 등 교육 시행</li>
+										</ul>
+									</div>
+									<div>
+										<h5>전문 수산인 육성을 위한 전주기적 교육</h5>
+										<ul>
+											<li>수산인 전문역량 종합교육 강화(추진 예정) -
+												수산분야 교육을 통합 실시함으로써 시너지 효과를 제고하고, 온라인·체험형 교육기반 조성으로 어업인 접근성과 교육기회 확대
+												<p>※ 어촌·어항·어장·양식 등 다양한 분야에서 교육 수요가 증대되고, 이를 충족시키기 위한 종합적인 교육 플랫폼 개발·운영 검토중</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">사회가치 구현과 혁신경영 실현</h4>
+							<div class="sub_section">
+								<div class="img_box">
+									<img src="../../asset/fipa/images/img_task02.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+									<img src="../../asset/fipa/images/img_task02_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+									<div class="blind">
+										<h5>사회적 가치의 확실한 성과 창출</h5>
+										<h6>사회가치 구현과 혁신경영 실현</h6>
+										<ul>
+											<li>일자리 창출 - 수산·어촌 분야의 기존 사업 확대 및 신규사업 발굴을 통해 지속가능한 양질의 일자리 창출</li>
+											<li>안전경영 - 공단 임직원과 건설현장 근로자의 안전·보건 관리체계 강화 및 위험성 분석을 통한 예방활동으로 안전사고 Zero 달성 노력</li>
+											<li>상생과 협력 - 공동화 현상이 진행중인 어촌지역에 대한 지원을 강화하고, 국민 의견수렴 채널(시민참여혁신단 등) 확대</li>
+											<li>환경관리 - 사무환경 개선, 온실가스 감축량 초과달성 등 시설관리를 통한 능률 제고 및 환경·에너지관리를 통한 정부지침 준수</li>
+											<li>공정거래 - 하도급지킴이, 상생결제시스템 등 공정거래 시스템 안정화로 중소기업· 사회적기업과의 상생·협력을 강화</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">투명·청렴 경영으로 본원적 공공가치 실현</h5>
+								<ul class="list_square">
+									<li>
+										<span class="fwr color_black">투명하고 청렴한 공단</span>
+										<ul class="list_arr">
+											<li>NCS 기반 블라인드 채용 정착(17) 및 성과관리의 투명성 제고 등을 통해 공직복무 최우수기관 지속유지</li>
+										</ul>
+									</li>
+									<li>
+										<span class="fwr color_black">인권경영 확산</span>
+										<ul class="list_arr">
+											<li>'19년 인권경영체계 구축 기반으로 '20년 실효성 강화 제도 보완, 인권영향평가* 환류 및 실행과제 추진으로 인권경영 문화확산</li>
+										</ul>
+									</li>
+									<li>
+										<span class="fwr color_black">상생과 협력</span>
+										<ul class="list_arr">
+											<li>제1기 FiPA 서포터즈'휘파랑이' 출범을 통해 국민과 함께 만들어가는 공단 실현</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit01">혁신을 통한 경영 효율성 제고</h4>
+							<ul class="list_busi_village task">
+								<li class="bg01">
+									<div class="tit"><strong>열린혁신</strong></div>
+									<div class="txt">FIPA 혁신 종합 추진계획(23개
+										과제)을 수립·시행·모니터링하고
+										혁신참여채널(국민,직원) 구축 및
+										시민참여혁신단 참여로 혁신
+										실행력 강화</div>
+								</li>
+								<li class="bg02">
+									<div class="tit"><strong>성숙한 노사관계</strong></div>
+									<div class="txt">노사 간의 신뢰 구축을 위한 다양한
+										활동과 노사집행부와의 상시
+										협의체 운영으로 갈등 해소 등
+										성숙한 노사관계 정립</div>
+								</li>
+								<li class="bg03">
+									<div class="tit"><strong>효율적인 경영관리</strong></div>
+									<div class="txt">일하는 방식 개선을 위한 4대 추진
+										전략(표준관리체계, 정보 프로세스
+										연계, ERP 고도화, 빅데이터 기반)
+										마련 및 소위원회, 현장 이사회
+										정례화 등</div>
+								</li>
+								<li class="bg04">
+									<div class="tit"><strong>소통과 화합</strong></div>
+									<div class="txt">의사소통 강화 프로그램 운영으로
+										임직원 간 상호 신뢰도 및 업무
+										효율성 향상으로 고객이 만족하는
+										공공기관 실현</div>
+								</li>
+								<li class="bg05">
+									<div class="tit"><strong>갈등관리</strong></div>
+									<div class="txt">계층별 교육 및 스트레스 해소
+										프로그램 지원 및 직무스트레스,
+										대인관계 등 상담 근로자 지원
+										프로그램 운영</div>
+								</li>
+								<li class="bg06">
+									<div class="tit"><strong>일·가정 양립</strong></div>
+									<div class="txt">근로시간 단축 및 가족 친화 문화
+										조성 및 선택적근로시간제 운영
+										개선을 통한 근로시간 단축 추진</div>
+								</li>
+								<li class="bg07">
+									<div class="tit"><strong>조직 적응력 강화</strong></div>
+									<div class="txt">실무형 OJT 교육, 참여형 교육
+										프로그램 마련을 통한 신규직원의
+										조기 적응 및 실무능력 제고</div>
+								</li>
+							</ul>
+							<div class="sm-mt-10 lg-mt-15">※ 조직 적응력 강화 : 경영·사업 분야별 업무 매뉴얼 고도화로 신규직원의 업무 이해도 제고 및 안정적 조기 정착 도모</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

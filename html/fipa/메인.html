@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/main.css">
+	<link rel="stylesheet" href="../../asset/fipa/css/swiper.min.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+	<script src="../../asset/fipa/js/swiper-bundle.js"></script>
+	<script src="../../asset/fipa/js/main.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FIPA 한국어촌어항공단</title>
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- id값은 팝업마다 다르게 줘야함 -->
+		<div class="main-layer-popup" id="popup1" style="top: 50px; left: 100px;" tabindex="0">
+			<div class="layer-popup">
+				<div class="top">
+					코로나 바이러스
+					<a href="#n" onclick="closePopup(this);return false;"><span class="blind">닫기</span></a>
+				</div>
+				<div class="pop-content">
+					<a href="#"><img src="../../asset/fipa/images/pop_img.gif" alt=""></a>
+					<div class="btm">
+						<a href="#n" onclick="PopupCloseDay(this);return false;">오늘 하루 보이지 않기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- id값은 팝업마다 다르게 줘야함 -->
+		<div class="main-layer-popup" id="popup2" style="top: 50px; left: 430px;" tabindex="0">
+			<div class="layer-popup">
+				<div class="top">
+					코로나 바이러스
+					<a href="#n" onclick="closePopup(this);return false;"><span class="blind">닫기</span></a>
+				</div>
+				<div class="pop-content">
+					<a href="#"><img src="../../asset/fipa/images/pop_img.gif" alt=""></a>
+					<div class="btm">
+						<a href="#n" onclick="PopupCloseDay(this);return false;">오늘 하루 보이지 않기</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="contents" class="contents">
+			<!-- main_quick_nav -->
+			<ul class="main_page_navi">
+				<li>
+					<a href="#sec01" class="navi01 active"><span>프로모션</span></a>
+				</li>
+				<li>
+					<a href="#sec02" class="navi02"><span>소식</span></a>
+				</li>
+				<li>
+					<a href="#sec03" class="navi03"><span>사업소개</span></a>
+				</li>
+				<li>
+					<a href="#sec04" class="navi04"><span>어항/어촌정보</span></a>
+				</li>
+				<li>
+					<a href="#sec05" class="navi05"><span>기관홍보/참여</span></a>
+				</li>
+			</ul>
+			<!-- // main_quick_nav -->
+
+			<!-- section 01 -->
+			<section id="sec01" class="sec01">
+				<h3 class="sec_tit blind">프로모션</h3>
+				<div class="main_slide swiper-container">
+					<div class="swiper-wrapper">
+						<div class="slide swiper-slide">
+							<a href="#;">
+								<img src="../../asset/fipa/images/img_main_visual01_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/fipa/images/img_main_visual01_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								Korea Fisheries Infrastructure Public Agency 활력있는 어촌! 쾌적한 어항! 역동하는 어장! 국가어항 안전점검과 유지보수, 관광 활성화를 통해 어업인과
+								국민들의 삶의 질 향상에 기여합니다. 자세히 보기
+							</div>
+						</div>
+						<div class="slide swiper-slide">
+							<a href="#;">
+								<img src="../../asset/fipa/images/img_main_visual02_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/fipa/images/img_main_visual02_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								Korea Fisheries Infrastructure Public Agency 활력있는 어촌! 쾌적한 어항! 역동하는 어장! 국가어항 안전점검과 유지보수, 관광 활성화를 통해 어업인과
+								국민들의 삶의 질 향상에 기여합니다. 자세히 보기
+							</div>
+						</div>
+						<div class="slide swiper-slide">
+							<a href="#;">
+								<img src="../../asset/fipa/images/img_main_visual03_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/fipa/images/img_main_visual03_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								Korea Fisheries Infrastructure Public Agency 활력있는 어촌! 쾌적한 어항! 역동하는 어장! 국가어항 안전점검과 유지보수, 관광 활성화를 통해 어업인과
+								국민들의 삶의 질 향상에 기여합니다. 자세히 보기
+							</div>
+						</div>
+						<div class="slide swiper-slide">
+							<a href="#;">
+								<img src="../../asset/fipa/images/img_main_visual04_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/fipa/images/img_main_visual04_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								Korea Fisheries Infrastructure Public Agency 활력있는 어촌! 쾌적한 어항! 역동하는 어장! 국가어항 안전점검과 유지보수, 관광 활성화를 통해 어업인과
+								국민들의 삶의 질 향상에 기여합니다. 자세히 보기
+							</div>
+						</div>
+						<div class="slide swiper-slide">
+							<a href="#;">
+								<img src="../../asset/fipa/images/img_main_visual05_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/fipa/images/img_main_visual05_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								Korea Fisheries Infrastructure Public Agency 활력있는 어촌! 쾌적한 어항! 역동하는 어장! 국가어항 안전점검과 유지보수, 관광 활성화를 통해 어업인과
+								국민들의 삶의 질 향상에 기여합니다. 자세히 보기
+							</div>
+						</div>
+					</div>
+					<button type="button" class="swiper-button-prev"><span class="blind">이전 슬라이드</span></button>
+					<button type="button" class="swiper-button-next"><span class="blind">다음 슬라이드</span></button>
+				</div>
+
+				<div class="inner">
+					<ul class="quick_menu">
+						<li><a href="어항어촌정보-어항-정의.html" class="bg01">어항정보</a></li>
+						<li><a href="어항어촌정보-어촌-정의-인천.html" class="bg02">어촌정보</a></li>
+						<li><a href="기관소개-이사장소개-인사말.html" class="bg03">인사말</a></li>
+						<li><a href="기관소개-조직도-조직도.html" class="bg04">조직도</a></li>
+						<li><a href="소식홍보-채용정보-목록.html" class="bg05">채용정보</a></li>
+						<li><a href="기관소개-찾아오시는길-본사.html" class="bg06">오시는길</a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- // section 01 -->
+			<!-- section 02 -->
+			<section id="sec02" class="sec02">
+				<div class="inner">
+					<h3 class="sec_tit">소식</h3>
+
+					<ul class="tab_nav">
+						<li><button type="button" class="tab_btn active" data-tab="sec02_tab01">전체</button></li>
+						<li><button type="button" class="tab_btn" data-tab="sec02_tab02">공지사항</button></li>
+						<li><button type="button" class="tab_btn" data-tab="sec02_tab03">소식지</button></li>
+						<li><button type="button" class="tab_btn" data-tab="sec02_tab04">언론보도</button></li>
+						<li><button type="button" class="tab_btn" data-tab="sec02_tab05">공모전</button></li>
+					</ul>
+				</div>
+
+				<div class="tab_wrap">
+					<!-- 전체 -->
+					<div id="sec02_tab01" class="tab_box swiper-container">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">소식지</div>
+									<div class="news_tit"><a href="#;">소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은?</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb no_img">
+									<img src="../../asset/fipa/images/bbs_thumbnail.jpg" alt="소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은? 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">공지사항</div>
+								<div class="news_tit"><a href="#;">2022년 우수 귀어귀촌인 및 漁울림마을 선정 안내</a></div>
+								<div class="news_cont">
+									해양수산부에서 추진하는 귀어귀촌 활성화
+									사업의 일환으로, 귀어귀촌인의 성공적인
+									어촌정착 및 귀어귀촌인·다문화인과 기존
+									주민의 공동체 문화 형성 등 우수사례를
+									발굴·포상하기 위한 "우수 귀어귀촌인 및
+									漁울림마을 선정 계획"을 아래와 같이 알려
+									드립니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge contest">공모전</div>
+									<div class="news_tit"><a href="#;">[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png"
+										alt="[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’ 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge press">언론보도</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge press">보도자료</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+							<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+							<button type="button" class="btn_play"><span class="blind">재생</span></button>
+							<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+						</div>
+					</div>
+					<!-- // 전체 -->
+					<!-- 공지사항 -->
+					<div id="sec02_tab02" class="tab_box swiper-container">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge notice">공지사항</div>
+									<div class="news_tit"><a href="#;">소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은?</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png" alt="소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은? 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">공지사항</div>
+								<div class="news_tit"><a href="#;">2022년 우수 귀어귀촌인 및 漁울림마을 선정 안내</a></div>
+								<div class="news_cont">
+									해양수산부에서 추진하는 귀어귀촌 활성화
+									사업의 일환으로, 귀어귀촌인의 성공적인
+									어촌정착 및 귀어귀촌인·다문화인과 기존
+									주민의 공동체 문화 형성 등 우수사례를
+									발굴·포상하기 위한 "우수 귀어귀촌인 및
+									漁울림마을 선정 계획"을 아래와 같이 알려
+									드립니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge notice">공지사항</div>
+									<div class="news_tit"><a href="#;">[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png"
+										alt="[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’ 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">공지사항</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">공지사항</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+							<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+							<button type="button" class="btn_play"><span class="blind">재생</span></button>
+							<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+						</div>
+					</div>
+					<!-- // 공지사항 -->
+					<!-- 소식지 -->
+					<div id="sec02_tab03" class="tab_box swiper-container">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">소식지</div>
+									<div class="news_tit"><a href="#;">소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은?</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png" alt="소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은? 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">소식지</div>
+								<div class="news_tit"><a href="#;">2022년 우수 귀어귀촌인 및 漁울림마을 선정 안내</a></div>
+								<div class="news_cont">
+									해양수산부에서 추진하는 귀어귀촌 활성화
+									사업의 일환으로, 귀어귀촌인의 성공적인
+									어촌정착 및 귀어귀촌인·다문화인과 기존
+									주민의 공동체 문화 형성 등 우수사례를
+									발굴·포상하기 위한 "우수 귀어귀촌인 및
+									漁울림마을 선정 계획"을 아래와 같이 알려
+									드립니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">소식지</div>
+									<div class="news_tit"><a href="#;">[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png"
+										alt="[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’ 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">소식지</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">소식지</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+							<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+							<button type="button" class="btn_play"><span class="blind">재생</span></button>
+							<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+						</div>
+					</div>
+					<!-- // 소식지 -->
+					<!-- 언론보도 -->
+					<div id="sec02_tab04" class="tab_box swiper-container">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge press">언론보도</div>
+									<div class="news_tit"><a href="#;">소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은?</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png" alt="소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은? 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge press">언론보도</div>
+								<div class="news_tit"><a href="#;">2022년 우수 귀어귀촌인 및 漁울림마을 선정 안내</a></div>
+								<div class="news_cont">
+									해양수산부에서 추진하는 귀어귀촌 활성화
+									사업의 일환으로, 귀어귀촌인의 성공적인
+									어촌정착 및 귀어귀촌인·다문화인과 기존
+									주민의 공동체 문화 형성 등 우수사례를
+									발굴·포상하기 위한 "우수 귀어귀촌인 및
+									漁울림마을 선정 계획"을 아래와 같이 알려
+									드립니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge press">언론보도</div>
+									<div class="news_tit"><a href="#;">[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png"
+										alt="[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’ 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge press">언론보도</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge press">언론보도</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+							<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+							<button type="button" class="btn_play"><span class="blind">재생</span></button>
+							<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+						</div>
+					</div>
+					<!-- // 언론보도 -->
+					<!-- 공모전 -->
+					<div id="sec02_tab05" class="tab_box swiper-container">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge contest">공모전</div>
+									<div class="news_tit"><a href="#;">소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은?</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png" alt="소멸위기를 맞은 우리어촌, 한국어촌어항공단의 노력은? 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge contest">공모전</div>
+								<div class="news_tit"><a href="#;">2022년 우수 귀어귀촌인 및 漁울림마을 선정 안내</a></div>
+								<div class="news_cont">
+									해양수산부에서 추진하는 귀어귀촌 활성화
+									사업의 일환으로, 귀어귀촌인의 성공적인
+									어촌정착 및 귀어귀촌인·다문화인과 기존
+									주민의 공동체 문화 형성 등 우수사례를
+									발굴·포상하기 위한 "우수 귀어귀촌인 및
+									漁울림마을 선정 계획"을 아래와 같이 알려
+									드립니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge contest">공모전</div>
+									<div class="news_tit"><a href="#;">[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/fipa/images/img_thumb01.png"
+										alt="[부산일보]어촌 방문객 2년 새 8.1% 증가…어촌어항재생300사업 효과 ‘톡톡’ 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge contest">공모전</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge contest">공모전</div>
+								<div class="news_tit"><a href="#;">“양식과 수경재배를 한 번에…아쿠아 포닉스 친환경 양식 기술 배워보자”</a></div>
+								<div class="news_cont">
+									한국어촌어항공단(이사장 박경철, 이하
+									공단)은 지난 17일(화)부터 20일(금)까지
+									4일간 국립수산과학원 첨단양식실증센터
+									에서 진행된 ‘아쿠아포닉스 친환경 양식
+									기술이전 기본과정 교육’을 성황리에
+									마쳤다고 밝혔다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+							<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+							<button type="button" class="btn_play"><span class="blind">재생</span></button>
+							<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+						</div>
+					</div>
+					<!-- // 공모전 -->
+				</div>
+			</section>
+			<!-- // section 02 -->
+			<!-- section 03 -->
+			<section id="sec03" class="sec03">
+				<div class="inner">
+					<h3 class="sec_tit">사업소개</h3>
+
+					<div class="tab_nav_wrap swiper-container">
+						<ul class="tab_nav swiper-wrapper">
+							<li class="swiper-slide"><button type="button" class="tab_btn active"
+									data-tab="sec03_tab01">어촌해양본부</button></li>
+							<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab02">어항본부</button></li>
+							<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab03">어장양식본부</button></li>
+							<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab04">어촌어항재생사업단</button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tab_wrap">
+						<!-- 어촌해양본부 -->
+						<div id="sec03_tab01" class="tab_box">
+							<div class="l">
+								<div class="tab_tit">활력 넘치는<br>어촌 생활공간 구현</div>
+								<div class="cont">
+									어촌지역 활성화 대책 등 어촌소멸 대응 정책<br class="pc_content">
+									방향에 맞추어 생활 사회 간접 자본(SOC)조성부터<br class="pc_content">
+									어촌관광·귀어귀촌 활성화를 통한 어촌지역<br class="pc_content">
+									신규 유입 유도를 통해 활력 넘치는 어촌<br class="pc_content">
+									생활공간을 구현하겠습니다.
+								</div>
+								<div class="link_btn"><a href="/fipa/cntnts/i-81/web.do">자세히 보기</a></div>
+							</div>
+							<div class="r">
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab01_01.jpg" alt="">
+										<span>어촌 체험마을</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab01_02.jpg" alt="">
+										<span>바다해설사</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab01_03.jpg" alt="">
+										<span>2022 귀어귀촌 박람회</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab01_04.jpg" alt="">
+										<span>생활기반 정비</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 어촌해양본부 -->
+						<!-- 어항본부 -->
+						<div id="sec03_tab02" class="tab_box">
+							<div class="l">
+								<div class="tab_tit">안전한 어항과<br>깨끗한 어장 조성</div>
+								<div class="cont">
+									안전과 환경에 대한 중요성이 부각됨에 따라,<br class="pc_content">
+									기반 시설 안전성 강화와 어업활동 영역(어항, 어장)<br class="pc_content">
+									내 환경 복원 및 개선을 통해 지속 가능한 어업에<br class="pc_content">
+									기여하겠습니다.
+								</div>
+								<div class="link_btn"><a href="/fipa/cntnts/i-107/web.do">자세히 보기</a></div>
+							</div>
+							<div class="r">
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab02_01.jpg" alt="">
+										<span>국가어항 안전점검</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab02_02.jpg" alt="">
+										<span>시설물 유지보수</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab02_03.jpg" alt="">
+										<span>폐어구 수거</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab02_04.jpg" alt="">
+										<span>청정어장 재생</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 어항본부 -->
+						<!-- 어장양식본부 -->
+						<div id="sec03_tab03" class="tab_box">
+							<div class="l">
+								<div class="tab_tit">친환경·스마트양식 및<br>수산인 인력 육성</div>
+								<div class="cont">
+									친환경·스마트 양식 등 민간의 새로운 기술을<br class="pc_content">
+									적극적으로 확산하고 수산업 종사자 대상<br class="pc_content">
+									공익·전문교육으로 수산업의 기술적·인적 지속<br class="pc_content">
+									가능성 확보에 기여하겠습니다.
+								</div>
+								<div class="link_btn"><a href="/fipa/cntnts/i-126/web.do">자세히 보기</a></div>
+							</div>
+							<div class="r">
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab03_01.jpg" alt="">
+										<span>스마트양식 클러스터 조성</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab03_02.jpg" alt="">
+										<span>낚시전문교육</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab03_03.jpg" alt="">
+										<span>공익직불제 교육</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab03_04.jpg" alt="">
+										<span>수산식품 인력양성</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 어장양식본부 -->
+						<!-- 어촌어항재생사업단 -->
+						<div id="sec03_tab04" class="tab_box">
+							<div class="l">
+								<div class="tab_tit">국민소득 3만불 시대에<br>
+									걸맞는 가고 싶고 살고 싶은 어촌 구현</div>
+								<div class="cont">
+									어촌·어항 통합개발로 어촌지역의 새로운 활력을<br class="pc_content">
+									제고하고 어촌의 자생력·경쟁력 강화 지원으로<br class="pc_content">
+									어촌지역의 지속 가능한 성장 토대 마련에<br class="pc_content">
+									기여하겠습니다.
+								</div>
+								<div class="link_btn"><a href="/fipa/cntnts/i-98/web.do">자세히 보기</a></div>
+							</div>
+							<div class="r">
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab04_01.jpg" alt="">
+										<span>해양교통 접근성 강화</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab04_02.jpg" alt="">
+										<span>안전관리 강화</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab04_03.jpg" alt="">
+										<span>해양레저 대중화</span>
+									</div>
+									<div class="img_box">
+										<img src="../../asset/fipa/images/img_section03_tab04_04.jpg" alt="">
+										<span>거버넌스 구축</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 어촌어항재생사업단 -->
+					</div>
+				</div>
+			</section>
+			<!-- // section 03 -->
+			<!-- section 04 -->
+			<section id="sec04" class="sec04">
+				<div class="inner">
+					<h3 class="sec_tit blind">어항/어촌정보</h3>
+					<div class="harbor">
+						<div class="sec_sub_tit">어항정보</div>
+						<div class="sub_txt">천연 또는 인공의 어항시설을 갖춘 산업근거지로서 어업인의 생명과 어선 등 재산을 보호하고, 수산물 유통기지의 역할을 합니다.</div>
+
+						<ul class="info_harbor">
+							<li>
+								<div>
+									<span class="count">115</span>개<br>
+									국가어항
+								</div>
+								<a href="#;" class="btn_harbor_map">지도</a>
+							</li>
+							<li>
+								<div>
+									<span class="count">289</span>개 <br>
+									지방어항
+								</div>
+								<a href="#;" class="btn_harbor_map">지도</a>
+							</li>
+							<li>
+								<div>
+									<span class="count">627</span>개 <br>
+									어촌 정주어항
+								</div>
+								<a href="#;" class="btn_harbor_map">지도</a>
+							</li>
+							<li>
+								<div>
+									<span class="count">2</span>개 <br>
+									마을 공동어항
+								</div>
+								<a href="#;" class="btn_harbor_map">지도</a>
+							</li>
+						</ul>
+
+						<ul class="link">
+							<li><a href="어항어촌정보-어항-정의.html">어항의 정의(역할 및 기능)</a></li>
+							<li><a href="어항어촌정보-어촌-어촌정책추진방향.html">어항정책 추진방향</a></li>
+							<li><a href="https://naraport.mof.go.kr" target="_blank">국가어항 편람</a></li>
+							<li><a href="#;">어항개발 50년</a></li>
+						</ul>
+					</div>
+
+					<div class="fishing_village">
+						<div class="sec_sub_tit">어촌정보</div>
+						<div class="sub_txt">‘어촌’이란 하천·호수 또는 바다에 인접하여 있거나 어항의 배후에 있는 지역 중 주로 수산업으로 생활하는 다음 각 목의 어느 하나에 해당하는 지역을
+							말합니다.
+						</div>
+						<ul class="goal_wrap">
+							<li>
+								<div class="r">
+									<div class="goal">24년 목표</div>
+									<div class="goal_value"><span class="count">85</span>%</div>
+								</div>
+								<div class="goal_txt">도시와 어촌 <br class="pc_content">소득비율</div>
+							</li>
+							<li>
+								<div class="r">
+									<div class="goal">24년 목표</div>
+									<div class="goal_value"><span class="count">2</span>억명</div>
+								</div>
+								<div class="goal_txt">어촌지역 <br class="pc_content">관광객 수</div>
+							</li>
+							<li>
+								<div class="r">
+									<div class="goal">24년 목표</div>
+									<div class="goal_value"><span class="count">77</span>점</div>
+								</div>
+								<div class="goal_txt">어촌어항 <br class="pc_content">종합 만족도</div>
+							</li>
+						</ul>
+						<ul class="link">
+							<li><a href="https://www.seantour.kr/newseantour/main/main.do" target="_blank">해양관광누리집 바다여행</a></li>
+							<li><a href="어항어촌정보-어촌-어촌체험휴양마을.html">어촌체험 휴양마을</a></li>
+							<li><a href="https://www.naksinuri.kr/" target="_blank">낚시정보 종합포털(낚시누리)</a></li>
+							<li><a href="https://www.sealife.go.kr/" target="_blank">귀어귀촌 홈페이지</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- // section 04 -->
+			<!-- section 05 -->
+			<section id="sec05" class="sec05">
+				<div class="inner">
+					<h3 class="sec_tit blind">기관홍보/참여</h3>
+
+					<div class="popupzone">
+						<div class="sec_sub_tit">팝업존</div>
+
+						<div class="popup_wrap swiper-container">
+							<div class="slide_unit">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+								<button type="button" class="btn_play"><span class="blind">재생</span></button>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+
+							<div class="swiper-wrapper">
+								<div class="slide swiper-slide">
+									<a href="#;">
+										<img src="../../asset/fipa/images/img_popup_thumb01.png"
+											alt='2022년 완도국제 해조류 박람회 "2022완도국제해조류박람회"가 코로나19의 확산 방지 및 군민과 관광객의 안전을 위해 취소되었음을 알려드립니다.'>
+									</a>
+								</div>
+								<div class="slide swiper-slide">
+									<a href="#;">
+										<img src="../../asset/fipa/images/img_popup_thumb01.png"
+											alt='2022년 완도국제 해조류 박람회 "2022완도국제해조류박람회"가 코로나19의 확산 방지 및 군민과 관광객의 안전을 위해 취소되었음을 알려드립니다.'>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="suggestion">
+							<div class="suggestion_tit">개방형 고객 의견제안</div>
+							<div class="suggestion_txt">
+								고객의 다양한 의견이 한국어촌어항공단의<br>
+								정책이 됩니다. 소중한 의견 부탁드립니다.
+							</div>
+							<a href="#;" class="btn_service">서비스 바로가기</a>
+						</div>
+					</div>
+
+					<div class="introduce">
+						<div class="introduce_tit">열린경영/기관소개</div>
+						<div class="introduce_txt">
+							살기 좋은 어촌과 풍요로운 바다공간,<br class="pc_content">
+							우리 한국어촌어항공단이 만들어 가겠습니다!
+						</div>
+
+						<ul class="introduce_link">
+							<li><a href="열린경영-경영공시.html" class="bg01">경영공시</a></li>
+							<li><a href="열린경영-윤리경영-윤리헌장.html" class="bg02">윤리경영</a></li>
+							<li><a href="열린경영-정보공개제도-정보공개청구절차안내.html" class="bg03">정보공개청구</a></li>
+							<li><a href="열린경영-인권경영-비전및추진전략.html" class="bg04">인권경영</a></li>
+							<li><a href="열린경영-사전정보공표-목록.html" class="bg05">사전정보공표</a></li>
+							<li><a href="기관소개-비전과전략.html" class="bg06">비전과 전략</a></li>
+							<li><a href="열린경영-공공데이터제공제도안내.html" class="bg07">공공데이터 개방</a></li>
+							<li><a href="기관소개-일반현황-설립목적.html" class="bg08">기관 일반현황</a></li>
+							<li><a href="열린경영-사회적가치-목록.html" class="bg09">사회적 가치</a></li>
+							<li><a href="기관소개-CI소개.html" class="bg10">CI 및 캐릭터</a></li>
+						</ul>
+					</div>
+
+					<div class="publication">
+						<div class="sec_sub_tit">정기간행물 및 홍보영상</div>
+						<div class="publication_wrap swiper-container">
+							<button type="button" class="swiper-button-prev"><span class="blind">이전 슬라이드</span></button>
+							<div class="swiper-wrapper">
+								<div class="img_slide swiper-slide">
+									<a href="#;">
+										<img src="../../asset/fipa/images/img_brochure.jpg" alt="2022년 한국어촌어항공단 브로슈어 표지">
+										<div class="publication_tit">2022년 한국어촌어항공단 브로슈어</div>
+									</a>
+								</div>
+								<div class="video_slide swiper-slide">
+									<iframe src="https://www.youtube.com/embed/E8YpMRIZD9c" title="YouTube video player" frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+									<a href="#;">
+										<div class="publication_tit">2022년 한국어촌어항공단 홍보영상</div>
+									</a>
+								</div>
+							</div>
+							<button type="button" class="swiper-button-next"><span class="blind">다음 슬라이드</span></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- // section 05 -->
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

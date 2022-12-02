@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 3);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">마을·양식어장 보전</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>역동하는 어장</li>
+								<li>마을·양식어장 보전</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-역동하는어장-마을·양식어장보전-사업소개.html" class="active">사업소개</a></li>
+							<li><a href="사업소개-역동하는어장-마을·양식어장보전-추진계획·체계.html">추진계획 · 체계</a></li>
+							<li><a href="사업소개-역동하는어장-마을·양식어장보전-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">사업목적</h4>
+							<ul class="list_square">
+								<li>FTA체결 등 국제 수산업 여건변화에 대비하여 지속가능한 친환경 양식어장 개발로 어업자원의 증강 및 김 양식산업 등의 경쟁력 강화를 통한 어업인 소득증대 도모</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업개요</h4>
+							<div class="table">
+								<table>
+									<caption>사업개요 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 120px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사업기간</th>
+											<td>
+												<ul class="list_square">
+													<li>2018년 2월 ~ 12월(연단위)</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사업부서</th>
+											<td>
+												<ul class="list_square">
+													<li>어장생태본부 어장생태팀</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">법적근거</th>
+											<td>
+												<ul class="list_square">
+													<li>「수산업법」 제86조</li>
+													<li>「수산자원관리법」 제41조 및 제61조</li>
+													<li>「수산생물 질병관리법」제20조</li>
+													<li>「해양환경관리법」 제18조</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">사업내용</h4>
+							<ul class="list_busi_village">
+								<li class="bg01">
+									<div class="tit"><strong>고품종 패류종패 살포</strong></div>
+									<div class="txt">관내 패류 생산량 증가에 따른 지역경제 활성화 기여</div>
+								</li>
+								<li class="bg02">
+									<div class="tit"><strong>주꾸미 산란장 조성</strong></div>
+									<div class="txt">서식지 및 산란장이 축소된 주꾸미 산란장 조성을 통한 자원회복 도모</div>
+								</li>
+								<li class="bg03">
+									<div class="tit"><strong>해면 수산자원조성</strong></div>
+									<div class="txt">화성 연안해역에 맞는 건강한 수산종자 방류로 자원회복 도모</div>
+								</li>
+								<li class="bg04">
+									<div class="tit"><strong>수산물포장재 지원</strong></div>
+									<div class="txt">수산물의 규격화 정량화로 유통비용 절감과 상거래 활성화</div>
+								</li>
+								<li class="bg05">
+									<div class="tit"><strong>고품질 김 양식시설 지원</strong></div>
+									<div class="txt">김 양식시설에 필요한 양식기자재 및 영양제, 관리선 등 구입비를 지원하여
+										어업인의 부담경감, 생산력 향상 및 어업소득 증대 도모</div>
+								</li>
+								<li class="bg06">
+									<div class="tit"><strong>김 양식어장 활성처리제 지원</strong></div>
+									<div class="txt">양질의 활성처리제 공급으로 김 양식어장 환경보존</div>
+								</li>
+								<li class="bg07">
+									<div class="tit"><strong>바다환경 지킴이</strong></div>
+									<div class="txt">지역 주민을 활용한 바다환경 지킴이 운영으로 해양환경 보전인식 제고와
+										일자리 창출에 따른 주민 소득증대 기여</div>
+								</li>
+								<li class="bg08">
+									<div class="tit"><strong>해양쓰레기 정화</strong></div>
+									<div class="txt">바다로부터 떠밀려 오거나 관광객이 버린 각종 쓰레기를 적기에 수거하여
+										깨끗한 어촌환경을 조성</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

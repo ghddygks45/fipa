@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">정보공개제도 안내</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>정보공개제도</li>
+								<li>정보공개제도 안내</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="top_info_box bg_info_free01">
+							<strong class="tit">정보공개제도</strong>
+							<p>
+								정보공개제도는 공공기관이 직무상 작성 또는 취득하여 관리하고 있는 정보를 수요자인 국민의 청구에 의하여 열람·사본·복제 등의 형태로 청구인에게 공개하거나 공공기관이 자발적으로 또는 법령
+								등의 규정에 의하여 의무적으로 보유하고 있는 정보를 배포 또는 공표 등의 형태로 제공하는 제도를 말합니다. 전자를 “청구공개”라 한 다면, 후 자는“정보제공”이라 할 수 있습니다.
+							</p>
+						</div>
+						<div class="section">
+							<h4 class="tit01">정보공개 청구권자</h4>
+							<div class="sub_section">
+								<h5 class="tit02">모든 국민</h5>
+								<ul class="list_square">
+									<li>모든 국민은 청구인 본인 또는 그 대리인을 통하여 공공기관에 정보공개를 청구할 수 있습니다.</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">법인, 단체</h5>
+								<ul class="list_square">
+									<li>법인과 단체의 경우는 대표자의 명의로 공공기관에 정보공개를 청구할 권리를 가지고 있습니다.</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">외국인</h5>
+								<ul class="list_square">
+									<li>청구권이 인정되는 외국인의 범위는 다음과 같습니다.
+										<ul class="list_arr">
+											<li>국내에 일정한 주소를 두고 거주하는 자</li>
+											<li>학술·연구를 위하여 일시적으로 체류하는 자</li>
+											<li>국내에 사무소를 두고 있는 법인 또는 단체</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">청구가능 및 비공개 대상정보</h4>
+							<div class="sub_section">
+								<h5 class="tit02">청구가능정보</h5>
+								<ul class="list_square">
+									<li>공공기관이 직무상 작성 또는 취득하여 관리하고 있는 문서(전자문서 포함)·도면·사진·필름·테이프·슬라이드 및 기타 이에 준하는 매체 등에 기록된 사항</li>
+									<li>공공기관의 기록물관리에 관한 법률상 기록물과의 관계 : “공공기관이 업무와 관련하여 생산 또는 접수한 문서·도서·대장·카드·도면·시청각물·전자문서 등 모든 형태의
+										기록정보자료”인 기록물은 모두 정보공개청구의 대상</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">비공개 대상정보</h5>
+								<ul class="list_square">
+									<li>다른 법령에 의하여 비밀로 유지되거나 비공개사항으로 규정된 정보</li>
+									<li>국가안전보장·국방·통일·외교관계 등 국가의 중대한 이익을 해할 우려가 있다고 인정되는 정보</li>
+									<li>국민의 생명·신체 및 재산의 보호에 관련된 정보</li>
+									<li>진행중인 재판에 관련된 정보와 범죄의 예방, 수사, 공소의 제기 및 유지, 형의 집행,교정,보안처분에 관한 사항으로서 직무수행을 현저히 곤란하게 하거나 형사 피고인의 공정한
+										재판을 받을 권리를 침해하는 정보</li>
+									<li>감사·감독·검사·시험·규제·입찰계약·기술개발·인사관리·의사결정과정 또는 내부 검토과정에 있는 사항으로서 업무의 공정한 수행이나 연구 개발에 현저한 지장을 초래하는 정보</li>
+									<li>이름·주민등록번호 등에 의하여 특정인을 식별할 수 있는 개인에 관한 정보</li>
+									<li>경영상ㆍ영업상 비밀에 관한 사항으로서 공개될 경우 법인 등의 정당한 이익을 현저히 해칠 우려가 있다고 인정되는 정보</li>
+									<li>공개될 경우 부동산 투기, 매점매석 등으로 특정인에게 이익 또는 불이익을 줄 우려가 있다고 인정되는 정보<br>
+										* 관련근거 : 공공기관의 정보공개에 관한 법률 9조제1항</li>
+								</ul>
+							</div>
+							<div class="btn_wrap txt_c">
+								<a href="#;" class="btn bg_blue">관련법령 바로가기</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

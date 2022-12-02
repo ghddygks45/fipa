@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(3, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb6.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">설립목적</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>기관소개</li>
+								<li>일반현황</li>
+								<li>설립목적</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">설립목적</h4>
+							<ul class="list_square">
+								<li>어촌 및 어항의 개발 및 관리, 어장의 효율적인 보전 및 이용, 관련 기술의 개발·연구, 관광 활성화 등을 효율적으로 수행하기 위함</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">설립근거</h4>
+							<ul class="list_square">
+								<li>어촌ㆍ어항법 제57조</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit01">성격</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_purpose.jpg"
+									alt="FiPA 한국어촌어항공단 - 특수법인(어촌 ·어항법), 공공기관(공운법), 보조기관(정부지원)" class="pc_content">
+								<img src="../../asset/fipa/images/img_purpose_m.jpg"
+									alt="FiPA 한국어촌어항공단 - 특수법인(어촌 ·어항법), 공공기관(공운법), 보조기관(정부지원)" class="m_content">
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">주요기능</h4>
+							<ul class="list_square">
+								<li>어촌ㆍ어항 및 어장에 관한 조사ㆍ연구 및 정보화</li>
+								<li>어촌ㆍ어항의 개발ㆍ관리 및 이와 관련된 기술개발과 국제협력</li>
+								<li>어촌 및 어항 관계자에 대한 교육ㆍ훈련</li>
+								<li>어촌종합개발사업 및 어항개발사업에 수반되는 조사ㆍ측량ㆍ설계ㆍ감리 및 기술에 관한 용역업무 또는 시설물 안전점검ㆍ유지ㆍ보수 및 준설에 관한 위탁업무</li>
+								<li>국가ㆍ지방자치단체 또는 공공단체가 위탁하는 사업</li>
+								<li>어촌ㆍ어항 및 연안수역의 정화ㆍ정비ㆍ조사와 관련된 사업</li>
+								<li>어촌ㆍ어항과 관련된 도서의 발간ㆍ보급 및 홍보</li>
+								<li>어촌ㆍ어항 및 어장과 관련된 관광자원의 개발ㆍ관리 및 관광 활성화 사업</li>
+								<li>그 밖에 공단의 목적달성을 위하여 필요한 사업</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2, 2);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb1.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">어항 유지보수</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>사업소개</li>
+								<li>쾌적한 어항</li>
+								<li>어항 유지보수</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="사업소개-쾌적한어항-어항유지보수-사업소개.html">사업소개</a></li>
+							<li><a href="사업소개-쾌적한어항-어항유지보수-추진계획·체계.html" class="active">추진계획 · 체계</a></li>
+							<li><a href="사업소개-쾌적한어항-어항유지보수-성과및자료.html">성과 및 자료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit01">추진계획</h4>
+							<div class="sub_section">
+								<h5 class="tit02">안전시설물 설치·보수 확대 및 손상된 기본시설물 긴급보수</h5>
+								<ul class="list_square">
+									<li>안전시설(안전난간 등) 신규설치·손괴보수</li>
+									<li>손상된 방파제, 물양장, 선착장 등 기본시설물 긴급보수</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">국민어항을 위한 안전시설 및 홍보 강화</h5>
+								<ul class="list_square">
+									<li>악천후시 자동으로 작동 가능한 기능 향상 가로등 유지보수</li>
+									<li>기능유지를 위한 권역별 계선주 일제 정비(남·서해권역)</li>
+									<li>물양장 내 구명사다리설치</li>
+									<li>국가어항 종합안내표지판 설치로 어항 정보제공 및 홍보 효과 제고</li>
+									<li>국가어항 알림 이정표 설치로 어항 이용자의 유입 효율성 향상</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">어항 사용자를 위한 기본시설의 재생</h5>
+								<ul class="list_square">
+									<li>방풍벽(정온도 확보) 설치 및 어선전용 방충재 설치</li>
+									<li>부잔교 정기적인 보수 및 개량보수</li>
+									<li>물양장 계단 및 법면부 보호를 위한 고무 계단 보호공 설치</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">깨끗하고 쾌적한 어항 조성</h5>
+								<ul class="list_square">
+									<li>관리청과 협의를 통해 쓰레기 집하장 및 관리 CCTV 설치</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">추진체계</h4>
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_maintain02.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/fipa/images/img_maintain02_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<ol>
+										<li>
+											01. 사업대상향 및 내용결정
+											<ul>
+												<li>투자우선순위 선정</li>
+												<li>지방해양수산청 및 현지의견 수렴</li>
+												<li>현지조사 및 사업설명회 개최</li>
+											</ul>
+										</li>
+										<li>
+											02.실시 설계
+											<ul>
+												<li>대상향 설계조사</li>
+												<li>유지보수 설계서 작성</li>
+											</ul>
+										</li>
+										<li>
+											03. 사업자선정 및 사업추진
+											<ul>
+												<li>발주방식 검토(지역제한, 관급 등)</li>
+												<li>공사시행 및 관리감독</li>
+											</ul>
+										</li>
+										<li>
+											04. 기성 및 준공
+											<ul>
+												<li>공사시행 및 관리감독</li>
+											</ul>
+										</li>
+										<li>
+											05. 실적 보고
+											<ul>
+												<li>분기보고(분기별 진행보고)</li>
+												<li>최종보고(정산, 결과보고)</li>
+											</ul>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

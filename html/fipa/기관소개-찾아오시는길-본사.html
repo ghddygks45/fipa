@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(6);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb6.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">찾아오시는 길</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>기관소개</li>
+								<li>찾아오시는 길</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_type2">
+							<li><a href="기관소개-찾아오시는길-본사.html" class="active">본사</a></li>
+							<li><a href="기관소개-찾아오시는길-서남해지사.html">서남해지사</a></li>
+							<li><a href="기관소개-찾아오시는길-동남해지사.html">동남해지사 (경남어촌특화지원센터)</a></li>
+							<li><a href="기관소개-찾아오시는길-제주지사.html">제주지사 (제주어촌특화지원센터)</a></li>
+							<li><a href="기관소개-찾아오시는길-충남어촌특화지원센터.html">충남어촌 특화지원센터</a></li>
+							<li><a href="기관소개-찾아오시는길-인천어촌특화지원센터.html">인천어촌 특화지원센터</a></li>
+							<li><a href="기관소개-찾아오시는길-어촌개발지원단.html">어촌개발지원단</a></li>
+							<li><a href="기관소개-찾아오시는길-어촌어항재생사업추진지원단.html">어촌어항재생 사업추진지원단</a></li>
+							<li><a href="기관소개-찾아오시는길-동해지사.html">동해지사</a></li>
+						</ul>
+						<div class="section">
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_directions.jpg" alt="">
+							</div>
+							<div class="address_box">
+								<div class="loc">
+									<strong>위치</strong>
+									서울시 금천구 가산디지털2로 53 (가산동) 한라시그마밸리 빌딩
+								</div>
+								<div class="tel">
+									<strong>전화번호 / 팩스</strong>
+									전화번호: 02–6098-0700<br class="pc_content">
+									<span>/</span>
+									팩스: 02–6098-0739
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">대중교통 전철 이용 시</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>대중교통 전철 이용 시 표로 하차 역명, 출구, 도보, 버스 정보 제공</caption>
+									<colgroup>
+										<col style="width:18%">
+										<col style="width:8%">
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">하차 역명</th>
+											<th scope="col">출구</th>
+											<th scope="col">도보</th>
+											<th scope="col">버스</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">
+												<span class="subway_line line01">1호선</span><br>
+												가산디지털단지역
+											</th>
+											<td><span class="subway_out">6</span></td>
+											<td>가산디지털단지역 6번출구 부터 1.4Km <a href="#;" class="color_blue txt_underline fwr">[지도보기]</a></td>
+											<td class="txt_l">
+												<ul class="list_square">
+													<li>금천05번 (가산한화비즈메트로 2차 정류장 하차)</li>
+													<li>571번 (디지털 3단지 사거리)</li>
+													<li>75번 (구로세관 정류장 하차)</li>
+												</ul>
+											</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">
+												<span class="subway_line line01">1호선</span><br>
+												독산역
+											</th>
+											<td><span class="subway_out">2</span></td>
+											<td>독산역 2번 출구 부터1.2Km <a href="#;" class="color_blue txt_underline fwr">[지도보기]</a></td>
+											<td class="txt_l">
+												<ul class="list_square">
+													<li>금천05번 (에이스태세라타워 정류장 하차)</li>
+													<li>27번 (마이크로오피스사거리앞 정류장 하차)</li>
+													<li>75번 (구로세관 정류장 하차)</li>
+												</ul>
+											</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">
+												<span class="subway_line line07">7호선</span><br>
+												가산디지털단지역
+											</th>
+											<td><span class="subway_out">5</span></td>
+											<td>가산디지털단지역 5번 출구 부터940M <a href="#;" class="color_blue txt_underline fwr">[지도보기]</a></td>
+											<td class="txt_l">
+												<ul class="list_square">
+													<li>금천05번 (가산한화비즈메트로 2차 정류장 하차)</li>
+													<li>571번 (디지털 3단지 사거리)</li>
+													<li>75번 (구로세관 정류장 하차)</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">대중교통 버스 이용 시</h4>
+							<div>※ 정류장을 클릭하면 해당 정류장 지도를 볼 수 있습니다.<br>
+								※ 버스노선을 클릭하면 해당 버스의 전체 노선을 볼 수 있습니다.</div>
+							<div class="table sm-mt-10 lg-mt-20">
+								<table class="m_scroll">
+									<caption>대중교통 버스 이용 시 표로 한국어촌어항공단 근처 정류장, 일반버스, 간선버스 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">한국어촌어항공단 근처 정류장</th>
+											<th scope="col">일반버스</th>
+											<th scope="col">간선버스</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row"><a href="#;" class="color_black">디지털3단지 사거리</a></th>
+											<td><a href="#;">5536번</a>, <a href="#;">5714번</a>, <a href="#;">21번</a>, <a href="#;">71-2번</a>
+											</td>
+											<td><a href="#;">503</a>, <a href="#;">504</a></td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row"><a href="#;" class="color_black">가산한화비즈메트로2차 (에이스태세라타워)</a></th>
+											<td><a href="#;">금천05번</a></td>
+											<td></td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row"><a href="#;" class="color_black">구로세관</a></th>
+											<td><a href="#;">27번</a>,<a href="#;">75번</a></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">자가용 이용시</h4>
+							<div>※주차 : 한라시그마밸리 빌딩 B1 ~ B3 무료주차 (담당 부서 : 경영지원팀 02-6098-0719)</div>
+							<div class="table sm-mt-10 lg-mt-20">
+								<table class="m_scroll">
+									<caption>자가용 이용시 표로 출발지, 경로 정보 제공</caption>
+									<colgroup>
+										<col style="width:175px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">출발지</th>
+											<th scope="col">경로</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="txt_c">서울역</td>
+											<td>서울역에서 출발 → 청파로(4.6km) → 여의대방로(5.9km) → 시흥대로(1.6km) → 공단 하차 <a href="#;"
+													class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+										<tr>
+											<td class="txt_c">용산역</td>
+											<td>용산역에서 출발 → 여의대방로(5.9km) → 시흥대로(1.6km) → 디지털로(1.3km) → 공단 하차 <a href="#;"
+													class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+										<tr>
+											<td class="txt_c">고속버스터미널역</td>
+											<td>강남고속버스터미널에서 출발 → 신반포로(1.8km)→ 현충로(2.1km) → 노들로(2.9km) → 여의대방로(3.4km) → 공단 하차 <a href="#;"
+													class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+										<tr>
+											<td class="txt_c">광명역</td>
+											<td>광명역에서 출발 → 덕안로(1.9km) → 하안로(1.3km) → 안양천로(1.3km) → 공단 하차 <a href="#;"
+													class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

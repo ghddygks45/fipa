@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb6.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">찾아오시는 길</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>기관소개</li>
+								<li>찾아오시는 길</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_type2">
+							<li><a href="기관소개-찾아오시는길-본사.html">본사</a></li>
+							<li><a href="기관소개-찾아오시는길-서남해지사.html">서남해지사</a></li>
+							<li><a href="기관소개-찾아오시는길-동남해지사.html">동남해지사 (경남어촌특화지원센터)</a></li>
+							<li><a href="기관소개-찾아오시는길-제주지사.html">제주지사 (제주어촌특화지원센터)</a></li>
+							<li><a href="기관소개-찾아오시는길-충남어촌특화지원센터.html">충남어촌 특화지원센터</a></li>
+							<li><a href="기관소개-찾아오시는길-인천어촌특화지원센터.html">인천어촌 특화지원센터</a></li>
+							<li><a href="기관소개-찾아오시는길-어촌개발지원단.html" class="active">어촌개발지원단</a></li>
+							<li><a href="기관소개-찾아오시는길-어촌어항재생사업추진지원단.html">어촌어항재생 사업추진지원단</a></li>
+							<li><a href="기관소개-찾아오시는길-동해지사.html">동해지사</a></li>
+						</ul>
+						<div class="section">
+							<div class="img_box">
+								<img src="../../asset/fipa/images/img_directions.jpg" alt="">
+							</div>
+							<div class="address_box">
+								<div class="loc">
+									<strong>위치</strong>
+									세종특별자치시 가름로 232 세종비즈니스센터 B동 404호 어촌개발지원단
+								</div>
+								<div class="tel">
+									<strong>전화번호 / 팩스</strong>
+									전화번호: 044–867-4851<br class="pc_content">
+									<span>/</span>
+									팩스: 044–868-4176
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">고속철도 이용 시</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>고속철도 이용 시 표로 하차 역명, 출구, 환승 (오송역 → 어촌개발지원단) 정보 제공</caption>
+									<colgroup>
+										<col style="width:18%">
+										<col style="width:8%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">하차 역명</th>
+											<th scope="col">출구</th>
+											<th scope="col">환승 (오송역 → 어촌개발지원단)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">
+												<span class="subway_line line01">KTX</span><br>
+												오송역
+											</th>
+											<td><span class="subway_out">1</span></td>
+											<td class="txt_l">
+												<ul class="list_square">
+													<li>B3번(오송역3,4 승차) → 정부세종청사북측 하차 → 201번(정부세종청사북측 승차) → 문화체육관광부 하차</li>
+													<li>B3번(오송역3,4 승차) → 정부세종청사북측 하차 → 52번(정부세종청사북측 승차) → 과학기술정보통신부 하차</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">대중교통 버스 이용 시</h4>
+							<div>※ 정류장을 클릭하면 해당 정류장 지도를 볼 수 있습니다.<br>
+								※ 버스노선을 클릭하면 해당 버스의 전체 노선을 볼 수 있습니다.</div>
+							<div class="table sm-mt-10 lg-mt-20">
+								<table class="m_scroll">
+									<caption>대중교통 버스 이용 시 표로 어촌개발지원단 근처 정류장, 지선버스, 간선버스 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">어촌개발지원단 근처 정류장</th>
+											<th scope="col">지선버스</th>
+											<th scope="col">간선버스</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row"><a href="#;" class="color_black">문화체육관광부(남측)</a></th>
+											<td><a href="#;">203번</a></td>
+											<td></td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row"><a href="#;" class="color_black">과학기술정보통신부</a></th>
+											<td><a href="#;">53번</a>, <a href="#;">205번</a></td>
+											<td><a href="#;">801번</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">자가용 이용시</h4>
+							<div class="table sm-mt-10 lg-mt-20">
+								<table class="m_scroll">
+									<caption>자가용 이용시 표로 출발지, 경로 정보 제공</caption>
+									<colgroup>
+										<col style="width:175px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">출발지</th>
+											<th scope="col">경로</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="txt_c">한국어촌어항공단</td>
+											<td>공단에서 출발 → 평택파주고속도로(28.3km) → 세종평택로(21.2km) → 세종평택로(21.5km) → 어촌개발지원단 하차
+												<a href="#;" class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+										<tr>
+											<td class="txt_c">서울역</td>
+											<td>서울역에서 출발 → 경부고속도로(88.6km) → 논산천안고속도로(20.2km)→ 정안세종로(15.7km) → 어촌개발지원단 하차
+												<a href="#;" class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+										<tr>
+											<td class="txt_c">강남고속버스터미널</td>
+											<td>강남고속버스터미널에서 출발 → 경부고속도로(116km)→ 가로수로(4.4km) → 세종오송로(9.6km) → 어촌개발지원단 하차
+												<a href="#;" class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+										<tr>
+											<td class="txt_c">대전역</td>
+											<td>대전역에서 출발 → 대전로(5.2km) → 천변도시화고속도로(3.9km) → 구즉세종로(10.2km) → 어촌개발지원단 하차
+												<a href="#;" class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

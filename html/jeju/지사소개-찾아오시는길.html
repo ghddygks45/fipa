@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/jeju/css/style.css">
+	<script src="../../asset/jeju/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/jeju/js/jquery-ui.js"></script>
+	<script src="../../asset/jeju/js/jQuery.print.js"></script>
+	<script src="../../asset/jeju/js/html2canvas.min.js"></script>
+	<script src="../../asset/jeju/js/jspdf.min.js"></script>
+	<script src="../../asset/jeju/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/jeju/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(4);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">오시는 길</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>지사소개</li>
+								<li>오시는 길 </li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<!-- * 카카오맵 - 지도퍼가기 -->
+							<!-- 1. 지도 노드 -->
+							<!-- <div id="daumRoughmapContainer1667284233505" class="root_daum_roughmap root_daum_roughmap_landing"></div> -->
+
+							<!--
+								2. 설치 스크립트
+								* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+							-->
+							<!-- <script charset="UTF-8" class="daum_roughmap_loader_script"
+								src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script> -->
+
+							<!-- 3. 실행 스크립트 -->
+							<!-- <script charset="UTF-8">
+								new daum.roughmap.Lander({
+									"timestamp": "1667284233505",
+									"key": "2cbu7",
+									"mapWidth": "1120",
+									"mapHeight": "450"
+								}).render();
+							</script> -->
+
+							<div class="address_box">
+								<div class="loc">
+									<strong>위치</strong>
+									제주특별자치도 제주시 첨단로 213-65(영평동) 제주종합비즈니스센터 2층 (제주지사 사업운영팀, 제주어촌특화지원센터)
+								</div>
+								<div class="tel">
+									<strong>전화번호 / 팩스</strong>
+									전화번호: 064-727-0268(사업운영팀), 064-727-1173(제주어촌특화지원센터)<br class="pc_content">
+									<span>/</span>
+									팩스: 064-727-0269(사업운영팀), 064-751-1176(제주어촌특화지원센터)
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">대중교통 전철 이용 시</h4>
+							<div>※ 경로를 클릭하면 최적경로를 볼 수 있습니다.<br>
+								※ 정류장을 클릭하면 해당 정류장 지도를 볼 수 있습니다.<br>
+								※ 버스노선을 클릭하면 해당 버스의 전체 노선을 볼 수 있습니다.
+							</div>
+							<div class="table sm-mt-10 lg-mt-20">
+								<table class="m_scroll">
+									<caption>대중교통 버스 이용 시 표로 경로 및 정류장, 지선버스, 간선버스, 공항버스(급행) 정보 제공</caption>
+									<colgroup>
+										<col style="width:35%">
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">경로 및 정류장</th>
+											<th scope="col">지선버스</th>
+											<th scope="col">간선버스</th>
+											<th scope="col">공항버스(급행)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row"><a href="#;" class="color_black">제주국제공항 → 제주종합비즈니스센터</a></th>
+											<td></td>
+											<td><a href="#;">365번</a></td>
+											<td><a href="#;">122</a>, <a href="#;">112</a>, <a href="#;">132</a></td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row"><a href="#;" class="color_black">제주국제자유도시 개발센터 정류장</a></th>
+											<td><a href="#;">425번</a>, <a href="#;">426번</a>, <a href="#;">471번</a></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">자가용 이용시</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>자가용 이용시 표로 출발지, 경로 정보 제공</caption>
+									<colgroup>
+										<col style="width:175px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">출발지</th>
+											<th scope="col">경로</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="txt_c">제주국제공항</td>
+											<td>제주종합비즈니스센터(15.04km, 약 32분 소요)<br>
+												- 제주국제공항에서 출발 → 연삼로(1.8km) → 오남로(3.2km) → 애조로(5.4km) → 첨단로(1.9km) → 제주종합비즈니스센터 2층 도착<br>
+												<a href="#;" class="color_blue txt_underline fwr">[길찾기]</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

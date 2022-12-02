@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(9, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">안전보건경영방침</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>안전경영</li>
+								<li>안전보건경영방침</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="vision_wrap">
+								<div class="slogan">
+									<div class="slogan_tit">
+										<h4>안전경영 비전</h4>
+									</div>
+									<p>“국민과 근로자의 <strong class="color_blue">안전과 건강을 최우선</strong>한 일터 조성”</p>
+								</div>
+								<div class="plan">
+									<div class="punch_tit">
+										<h5 class="tit">목표</h5>
+									</div>
+									<div class="goal">사망사고 ZERO 달성</div>
+								</div>
+								<div class="plan">
+									<div class="punch_tit">
+										<h5 class="tit">추진전략</h5>
+									</div>
+									<div class="strategy">
+										<ul class="list_task_poligon">
+											<li class="bg_vision01">
+												<div class="txt">
+													위험성 평가 및<br class="pc_content">
+													안전작업 가이드 준수로<br class="pc_content">
+													위험 감소 구체화
+												</div>
+											</li>
+											<li class="bg_vision02">
+												<div class="txt">
+													건설 현장 안전관리 및<br class="pc_content">
+													책임 강화로 산업재해<br class="pc_content">
+													예방 강화
+												</div>
+											</li>
+											<li class="bg_vision03">
+												<div class="txt">
+													도급 사업<br class="pc_content">
+													안전관리 체계 구축으로<br class="pc_content">
+													사업장 안전확보
+												</div>
+											</li>
+											<li class="bg_vision04">
+												<div class="txt">
+													안전보건 최우선<br class="pc_content">
+													경영체계 구축으로<br class="pc_content">
+													안전 우선문화 확산
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="plan">
+									<div class="punch_tit">
+										<h5 class="tit">분야 & 추진과제</h5>
+									</div>
+									<div class="assign">
+										<ul>
+											<li>
+												<div class="top bg_blue">
+													<strong>공단사업장</strong>
+												</div>
+												<div class="btm">
+													<ul class="list_square">
+														<li>위험성평가 내부체계 강화</li>
+														<li>중대재해 예방을 위한 안전점검 강화 이행</li>
+														<li>표준작업안전수칙 구축 및 단독작업 금지</li>
+														<li>안전작업허가제 및 작업중지 요청제</li>
+														<li>공단 작업장 특화 초기대응 매뉴얼 구체화, 내재화</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<div class="top bg_green">
+													<strong>건설현장</strong>
+												</div>
+												<div class="btm">
+													<ul class="list_square">
+														<li>건설공사 법적의무 철저 이행</li>
+														<li>건설현장 안전관리 취약분야 철저 관리</li>
+														<li>발주공사 적격 시공자 선정</li>
+														<li>발주공사 시공자의 위험성평가 강화 및 제재내재화</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<div class="top bg_blue">
+													<strong>기타 안전분야</strong>
+												</div>
+												<div class="btm">
+													<ul class="list_square">
+														<li>안전보건관리체계 안정화 및 고도화</li>
+														<li>안전지표 설정 및 안전경영 강화</li>
+														<li>안전경영 혁신과제 추진</li>
+														<li>근로자 안전보건교육 강화</li>
+														<li>근로자 건강에 대한 보건관리 강화</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

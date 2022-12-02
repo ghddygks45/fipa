@@ -1,0 +1,413 @@
+@use '../use'as *;
+
+.top_info_box {
+	margin-bottom: 25px;
+}
+
+.privacy_agree {
+	border: 1px solid #d9d9d9;
+}
+
+.agree_txt {
+	padding: 12px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.agree_check_box {
+	padding: 12px;
+	background: #f6f6f6;
+
+	.ag_txt {
+		margin-bottom: 3px;
+	}
+
+	.ag_check {
+		text-align: right;
+	}
+}
+
+.write_area {
+	height: 250px;
+}
+
+.complete_txt {
+	padding-top: 95px;
+	background: url(../images/bg_popup_complete.png) no-repeat 50% 15px / 65px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.cus_txt {
+	padding: 115px 17px 30px;
+	border: 3px solid #eee;
+	background-position: 50% 30px;
+	background-repeat: no-repeat;
+	background-size: 72px;
+
+	>h5 {
+		margin-bottom: 5px;
+		font-weight: 600;
+		font-size: 19px;
+		color: #203d5a;
+	}
+
+	>p {
+		margin-bottom: 20px;
+		font-weight: 400;
+		font-size: 14px;
+		color: #203d5a;
+	}
+}
+
+.service_txt {
+	background: #f6f6f6;
+}
+
+.service1 {
+	background-image: url(../images/bg_txt_service1.png);
+
+	.service_txt {
+		padding: 22px 17px;
+
+		li {
+			display: flex;
+			flex-direction: column;
+
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+
+			>span {
+				display: inline-flex;
+				width: 40px;
+				height: 40px;
+				margin-bottom: 10px;
+				border: 1px solid #3f83b6;
+				border-radius: 50%;
+				background: #fff;
+				align-items: center;
+				justify-content: center;
+				font-weight: 500;
+				color: #2471ac;
+			}
+		}
+	}
+}
+
+.service2 {
+	background-image: url(../images/bg_txt_service2.png);
+
+	.service_txt {
+		padding: 20px 17px;
+	}
+}
+
+.bg_lightblue {
+	background: #e6f3f8;
+}
+
+.color_green {
+	color: #08ada3 !important;
+}
+
+.cert {
+	padding: 108px 0 25px;
+	border: 1px solid #d9d9d9;
+	background: url(../images/bg_phone_certification.png) no-repeat 50% 25px / 70px;
+	text-align: center;
+
+	>strong {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 14px;
+		color: #222;
+	}
+}
+
+.check_wr_inp {
+	width: 32vw;
+	margin-left: 5px;
+}
+
+.btn_add {
+	height: 30px;
+	padding: 0 10px;
+	background: #00aaa0;
+	color: #fff;
+
+	&::before {
+		display: inline-block;
+		content: '＋';
+		margin-right: 5px;
+	}
+}
+
+.r_add {
+	display: flex;
+	align-items: flex-end;
+
+	.btn_add {
+		margin-left: auto;
+	}
+}
+
+.inp_w300 {
+	max-width: 300px;
+	width: 100%;
+}
+
+.inp_w100 {
+	max-width: 100px;
+	width: 100%;
+}
+
+.add_wr_box {
+	&+.add_wr_box {
+		margin-top: 20px;
+	}
+}
+
+.safe_view_tit {
+	.r_area {
+		text-align: right;
+
+		>span {
+			background: #fff;
+		}
+	}
+}
+
+.list_busi_info {
+	.bg_fish_port01 {
+		background-image: url(../images/bg_fish_port01.png);
+	}
+
+	.bg_fish_port02 {
+		background-image: url(../images/bg_fish_port02.png);
+	}
+
+	.bg_fish_port03 {
+		background-image: url(../images/bg_fish_port03.png);
+	}
+
+	.bg_fish_port04 {
+		background-image: url(../images/bg_fish_port04.png);
+	}
+
+	.bg_port_info01 {
+		background-image: url(../images/bg_port_info01.png);
+	}
+
+	.bg_port_info02 {
+		background-image: url(../images/bg_port_info02.png);
+	}
+
+	.bg_port_info03 {
+		background-image: url(../images/bg_port_info03.png);
+	}
+}
+
+.fis_lr {
+	margin-top: 10px;
+
+	.r {
+		margin-top: 10px;
+	}
+}
+
+.no_data {
+	display: flex;
+	height: 220px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #d9d9d9;
+
+	>p {
+		display: inline-block;
+		padding-top: 100px;
+		background: url(../images/ico_no_data.png) no-repeat 50% 0 / 90px;
+		font-weight: 500;
+		color: #222;
+	}
+}
+
+.list_busi_info {
+	.bg_info_oil01 {
+		background-image: url(../images/bg_info_oil01.png);
+	}
+
+	.bg_info_oil02 {
+		background-image: url(../images/bg_info_oil02.png);
+	}
+
+	.bg_info_oil03 {
+		background-image: url(../images/bg_info_oil03.png);
+	}
+}
+
+@include res--pc-ctn {
+	.top_info_box {
+		margin-bottom: 40px;
+	}
+
+	.agree_txt {
+		padding: 20px 24px;
+	}
+
+	.agree_check_box {
+		display: flex;
+		justify-content: space-between;
+		padding: 15px 24px;
+
+		.ag_txt {
+			margin-bottom: 3px;
+		}
+
+		.ag_check {
+			text-align: right;
+		}
+	}
+
+	.complete_txt {
+		padding-top: 123px;
+		background-position-y: 0;
+		background-size: auto;
+		font-size: 16px;
+
+		.str {
+			font-weight: 500;
+			font-size: 18px;
+			color: #222;
+		}
+	}
+
+	.cus_txt {
+		padding: 173px 50px 50px;
+		border-width: 4px;
+		background-position-y: 50px;
+		background-size: auto;
+
+		>h5 {
+			margin-bottom: 9px;
+			font-size: 28px;
+		}
+
+		>p {
+			margin-bottom: 35px;
+			font-size: 17px;
+		}
+	}
+
+	.service1 {
+		.service_txt {
+			padding: 30px 50px 30px 97px;
+
+			li {
+				flex-direction: row;
+				align-items: center;
+
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+
+				>span {
+					width: 60px;
+					height: 60px;
+					margin: 0 20px 0 0;
+					flex: 0 0 60px;
+				}
+			}
+		}
+	}
+
+	.service2 {
+		.service_txt {
+			padding: 30px;
+		}
+	}
+
+	.bg_safe {
+		background-image: url(../images/bg_txt_safe.png);
+	}
+
+	.cert {
+		padding: 164px 0 40px;
+		background-size: auto;
+		background-position-y: 40px;
+
+		>strong {
+			margin-bottom: 15px;
+			font-size: 18px;
+		}
+	}
+
+	.check_wr_inp {
+		width: 300px;
+	}
+
+	.btn_add {
+		height: 34px;
+		padding: 0 15px;
+
+		&::before {
+			display: inline-block;
+			content: '＋';
+			margin-right: 5px;
+		}
+	}
+
+	.add_wr_box {
+		&+.add_wr_box {
+			margin-top: 30px;
+		}
+	}
+
+	.safe_view_tit {
+		position: relative;
+
+		>strong {
+			display: inline-block;
+		}
+
+		.r_area {
+			position: absolute;
+			right: 26px;
+			top: 50%;
+			margin-top: -18px;
+			text-align: left;
+		}
+	}
+
+	.fis_lr {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 16px;
+
+		.l,
+		.r {
+			width: 550px;
+			margin-top: 0;
+		}
+
+		img {
+			width: auto;
+		}
+	}
+
+	.fisi_port_info {
+		>div {
+			width: 360px;
+		}
+	}
+
+	.bg_fish_age {
+		background-image: url(../images/bg_fish_age.png);
+	}
+
+	.no_data {
+		>p {
+			padding-top: 116px;
+			background-size: auto;
+		}
+	}
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>CMS 통합관리자</title>
+	<link rel="shortcut icon" href="../../asset/incms/images/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../asset/incms/css/style.css" media="all">
+	<script src="../../asset/incms/js/jquery-1.12.0.min.js"></script>
+	<script src="../../asset/incms/js/calendar.js"></script>
+	<script src="../../asset/incms/js/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+		<article id="content">
+			<p id="page_loc">
+				<a href="#none" class="ico_home">HOME</a>
+				<span>&gt;</span>
+				<a href="#none">depth1</a>
+				<span>&gt;</span>
+				<a href="#none">depth2</a>
+				<span>&gt;</span>
+				<strong>depth3</strong>
+			</p>
+
+			<h2 id="tit_page">SMS 통보설정</h2>
+
+			<ul class="tab_menu">
+				<li><a href="#">고객발송</a></li>
+				<li class="on"><a href="#">담당자 발송</a></li>
+			</ul>
+
+			<table class="tb_write">
+				<caption>등록</caption>
+				<colgroup>
+					<col style="width:250px">
+					<col>
+					<col style="width:120px">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>상황</th>
+						<th>메시지 내용</th>
+						<th>관리</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="ac">고객의견제안 등록 시<br>(30명 이상 공감)</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">고객의견 제안에 30명 이상 공감받은 게시물이 등록되었습니다. 게시판을 통해 확인하시기 바랍니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+					<tr>
+						<th class="ac">질문과 답변 [글] 등록 시</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">질문과 답변 게시판에 신규 게시물이 등록되었습니다. 처리기한은 담당부서 접수시로 부터 3일 입니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+					<tr>
+						<th class="ac">모니터링 제안 등록 시</th>
+						<td>
+							<textarea name="" id=""
+								style="height: 90px;">모니터링 게시판에 제안 의견 게시물이 등록되었습니다. 해당 게시판을 통해 확인하시기 바랍니다.</textarea>
+							<div class="ar mt5 bold">[49] / 80byte</div>
+						</td>
+						<td>
+							<a href="#" class="btn btn_sm act">적용</a>
+							<a href="#" class="btn btn_sm btn nav">삭제</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

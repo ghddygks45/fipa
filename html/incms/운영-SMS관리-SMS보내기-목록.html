@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>CMS 통합관리자</title>
+	<link rel="shortcut icon" href="../../asset/incms/images/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../asset/incms/css/style.css" media="all">
+	<script src="../../asset/incms/js/jquery-1.12.0.min.js"></script>
+	<script src="../../asset/incms/js/calendar.js"></script>
+	<script src="../../asset/incms/js/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+		<article id="content">
+			<p id="page_loc">
+				<a href="#none" class="ico_home">HOME</a>
+				<span>&gt;</span>
+				<a href="#none">depth1</a>
+				<span>&gt;</span>
+				<a href="#none">depth2</a>
+				<span>&gt;</span>
+				<strong>depth3</strong>
+			</p>
+
+			<h2 id="tit_page">SMS 보내기</h2>
+
+			<div class="sms-cau mb40">
+				<strong>주의사항</strong>
+				서버에서 사용하는 특수문자 &lt;, &gt;, ‘, “는 사용하실 수 없습니다.<br>
+				사용하실 경우 서버 내부오류로 인해 발송이 안됩니다.
+			</div>
+
+			<div class="sms_box">
+				<div class="l">
+					<h3 class="tit1 list_status">SMS 발송내역 입력</h3>
+					<div class="sms_write mgb30">
+						<textarea name="" id="" placeholder="내용을 입력해주세요."></textarea>
+						<div class="txt_byte">
+							<span id="te_sum_bytes">0 / 80</span>
+							<span id="te_sum_bytes_total">bytes (SMS)</span>
+						</div>
+					</div>
+					<table class="tb_write mt20">
+						<colgroup>
+							<col style="width:80px">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>발신번호</th>
+								<td>
+									<input type="text" style="width: 150px;">
+									<a href="#" class="btn btn.nav">보내기</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="r">
+					<h3 class="tit1 list_status">받는 사람</h3>
+					<table class="tb_write mt10">
+						<colgroup>
+							<col style="width:160px">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>검색</th>
+								<td>
+									<select id="subject" style="width: 115px;">
+										<option>선택</option>
+									</select>
+									<input type="text" style="width: 200px;" title="검색어">
+									<a href="#" class="btn btn.nav">검색</a>
+								</td>
+							</tr>
+							<tr>
+								<th>개별추가</th>
+								<td>
+									<input type="text" style="width: 115px;" placeholder="이름">
+									<input type="text" style="width: 200px;" placeholder="전화번호">
+									<a href="#" class="btn act">추가</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<ul class="tab_menu mt40 mb0">
+						<li class="on"><a href="#">부서별</a></li>
+						<li><a href="#">개인그룹</a></li>
+					</ul>
+
+					<!-- 부서별 목록 -->
+					<div class="send_list">
+						<ul class="send_dep1">
+							<li>
+								<a href="#n" class="open">경영기획본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: block;">
+									<li>
+										<a href="#;" class="open">기획조정실</a>
+										<span>
+											<input type="checkbox">
+										</span>
+										<ul class="send_dep3" style="display: block;">
+											<li>
+												<a href="#;" class="open">재무관리팀</a>
+												<span>
+													<input type="checkbox">
+												</span>
+												<ul class="send_dep4" style="display: block;">
+													<li>
+														- 홍길동 | 010-1234-5678
+														<span>
+															<input type="checkbox">
+														</span>
+													</li>
+													<li>
+														- 홍길동 | 010-1234-5678
+														<span>
+															<input type="checkbox">
+														</span>
+													</li>
+													<li>
+														- 홍길동 | 010-1234-5678
+														<span>
+															<input type="checkbox">
+														</span>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어촌해양본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- // 부서별 목록 -->
+
+					<!-- 개인그룹 목록 -->
+					<div style="display: none;">
+						<ul class="send_dep1">
+							<li>
+								<a href="#n">경영기획본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										<a href="#;">기획조정실</a>
+										<span>
+											<input type="checkbox">
+										</span>
+										<ul class="send_dep3" style="display: none;">
+											<li>
+												- 홍길동 | 010-1234-5678
+												<span>
+													<input type="checkbox">
+												</span>
+											</li>
+											<li>
+												- 홍길동 | 010-1234-5678
+												<span>
+													<input type="checkbox">
+												</span>
+											</li>
+											<li>
+												- 홍길동 | 010-1234-5678
+												<span>
+													<input type="checkbox">
+												</span>
+											</li>
+											<li>
+												- 홍길동 | 010-1234-5678
+												<span>
+													<input type="checkbox">
+												</span>
+											</li>
+											<li>
+												- 홍길동 | 010-1234-5678
+												<span>
+													<input type="checkbox">
+												</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어촌해양본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#n">어항본부</a>
+								<span>
+									<input type="checkbox">
+								</span>
+								<ul class="send_dep2" style="display: none;">
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+									<li>
+										- 홍길동 | 010-1234-5678
+										<span>
+											<input type="checkbox">
+										</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- // 개인그룹 목록 -->
+
+					<div class="ar mt10">
+						<a href="#" class="btn btn_md act">추가</a>
+					</div>
+
+					<h3 class="tit1 list_status">수신 대상</h3>
+					<table class="tb_list">
+						<caption>목록</caption>
+						<colgroup>
+							<col style="width:170px">
+							<col style="width:170px">
+							<col>
+							<col style="width:150px">
+						<thead>
+							<tr>
+								<th>부서</th>
+								<th>이름</th>
+								<th>휴대폰번호</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>기획조정실</td>
+								<td>홍길동</td>
+								<td>010-1234-567811</td>
+								<td><button type="button" class="label bg_error">삭제</button></td>
+							</tr>
+							<tr>
+								<td>기획조정실</td>
+								<td>홍길동</td>
+								<td>010-1234-567811</td>
+								<td><button type="button" class="label bg_error">삭제</button></td>
+							</tr>
+							<tr>
+								<td>기획조정실</td>
+								<td>홍길동</td>
+								<td>010-1234-567811</td>
+								<td><button type="button" class="label bg_error">삭제</button></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<script>
+						// 전화번호 트리메뉴
+						$('.send_dep1 > li > a, .send_dep2 > li > a, .send_dep3 > li > a').on('click', function () {
+							$(this).toggleClass('open');
+						});
+					</script>
+
+
+				</div>
+			</div>
+
+		</article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

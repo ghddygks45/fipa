@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(6);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb5.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">사회적 가치</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>열린경영</li>
+								<li>사회적 가치</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="search_board">
+							<div class="inr">
+								<div class="select_box">
+									<div>
+										<select name="" id="" title="검색 카테고리 선택">
+											<option value="">제목</option>
+										</select>
+									</div>
+								</div>
+								<div class="input_box">
+									<input type="text" name="" id="" value="" placeholder="검색어를 입력해주세요." title="검색어 입력">
+									<button type="submit" class="btn_search">검색</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="board_top">
+							<div class="total">
+								전체 <span>2,106</span>건
+							</div>
+							<div class="list_number">
+								<select name="" id="" title="목록 개수 선택">
+									<option value="">10개씩</option>
+								</select>
+								<button type="button">이동</button>
+							</div>
+						</div>
+
+						<div class="list_board list_card_img ">
+							<div class="board_box">
+								<div class="img">
+									<a href="열린경영-사회적가치-상세.html">
+										<img src="../../asset/fipa/images/img_news01.jpg" alt="">
+									</a>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="열린경영-사회적가치-상세.html">설명절 계기 관내 사회복지시설 위문활동 실시</a>
+										<span class="post_new"><span class="blind">새 글</span></span>
+									</div>
+									<div class="con">
+										<a href="열린경영-사회적가치-상세.html">설명절 맞이하여 관내 이웃들을 찾아 행복나눔 실천!” 한국어촌어항공단은 설 명절을 맞이하여 관내 이웃들을 찾아따뜻한 손길을
+											전하며 행복</a>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="img">
+									<a href="열린경영-사회적가치-상세.html">
+										<img src="../../asset/fipa/images/img_news02.jpg" alt="">
+									</a>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="열린경영-사회적가치-상세.html">연말맞이 사회복지시설 위문···이웃사랑 실천!</a>
+										<span class="post_new"><span class="blind">새 글</span></span>
+									</div>
+									<div class="con">
+										<a href="열린경영-사회적가치-상세.html">한국어촌어항협회 ‘노사공동 사회봉사단’은 연말을 맞이하여 관내 사회복지시설을 방문하여 따뜻한 손길을 전했다.
+											한국어촌어항협회(이사장 류청</a>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="img">
+									<a href="열린경영-사회적가치-상세.html">
+										<img src="../../asset/fipa/images/img_news03.jpg" alt="">
+									</a>
+								</div>
+								<div class="txt">
+									<div class="tit">
+										<a href="열린경영-사회적가치-상세.html">관내 복지시설 및 전통시장 방문</a>
+										<span class="post_new"><span class="blind">새 글</span></span>
+									</div>
+									<div class="con">
+										<a href="열린경영-사회적가치-상세.html">한국어촌어항협회(이사장 류청로)는 연말연시를 맞이해 구랍 31일 금천구 시흥동에 위치한 사회복지시설인 ‘섭리의 집’ 을 방문해
+											위문품과 함께</a>
+									</div>
+									<ul class="list_square">
+										<li><span class="fwr color_black">작성일 :</span> 2022.07.06</li>
+										<li><span class="fwr color_black">조회수 :</span> 1,852</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

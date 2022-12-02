@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb4.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">자주묻는 질문</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>참여</li>
+								<li>질문과 답변</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab tab_type2">
+							<li><a href="#;" class="active">전체</a></li>
+							<li><a href="#;">부담금</a></li>
+							<li><a href="#;">재직기간</a></li>
+							<li><a href="#;">재직중급여</a></li>
+							<li><a href="#;">퇴직급여</a></li>
+							<li><a href="#;">재해보상</a></li>
+							<li><a href="#;">대여</a></li>
+							<li><a href="#;">연계급여</a></li>
+							<li><a href="#;">심사청구결정례</a></li>
+							<li><a href="#;">기타</a></li>
+						</ul>
+
+						<div class="search_board">
+							<div class="inr">
+								<div class="select_box">
+									<div>
+										<select name="" id="" title="검색 카테고리 선택">
+											<option value="">제목</option>
+										</select>
+									</div>
+								</div>
+								<div class="input_box">
+									<input type="text" name="" id="" value="" placeholder="검색어를 입력해주세요." title="검색어 입력">
+									<button type="submit" class="btn_search">검색</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="board_top">
+							<div class="total">
+								전체 <span>2,106</span>건
+							</div>
+							<div class="list_number">
+								<select name="" id="" title="목록 개수 선택">
+									<option value="">10개씩</option>
+								</select>
+								<button type="button">이동</button>
+							</div>
+						</div>
+
+						<div class="faq_list">
+							<ul>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<span class="color_blue bold">[부담금]</span>
+										NCS가 뭔가요?
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										국가직무능력표준(NCS)은 『자격기본법』 에서 “산업현장
+										에서 직무를 성공적으로 수행하기 위하여 요구되는 지식·
+										기술·소양 등의 내용을 국가가 산업부문별, 수준별로
+										체계화한 것” 이라 정의하고 있으며, 우리나라 대부분의
+										직업에서 필요한 직무능력을 담고 있는 “산업현장의 지침
+										서” 라고 할 수 있습니다.
+									</div>
+								</li>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<span class="color_blue bold">[부담금]</span>
+										NCS가 뭔가요?
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										국가직무능력표준(NCS)은 『자격기본법』 에서 “산업현장
+										에서 직무를 성공적으로 수행하기 위하여 요구되는 지식·
+										기술·소양 등의 내용을 국가가 산업부문별, 수준별로
+										체계화한 것” 이라 정의하고 있으며, 우리나라 대부분의
+										직업에서 필요한 직무능력을 담고 있는 “산업현장의 지침
+										서” 라고 할 수 있습니다.
+									</div>
+								</li>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<span class="color_blue bold">[부담금]</span>
+										NCS가 뭔가요?
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										국가직무능력표준(NCS)은 『자격기본법』 에서 “산업현장
+										에서 직무를 성공적으로 수행하기 위하여 요구되는 지식·
+										기술·소양 등의 내용을 국가가 산업부문별, 수준별로
+										체계화한 것” 이라 정의하고 있으며, 우리나라 대부분의
+										직업에서 필요한 직무능력을 담고 있는 “산업현장의 지침
+										서” 라고 할 수 있습니다.
+									</div>
+								</li>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<span class="color_blue bold">[부담금]</span>
+										NCS가 뭔가요?
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										국가직무능력표준(NCS)은 『자격기본법』 에서 “산업현장
+										에서 직무를 성공적으로 수행하기 위하여 요구되는 지식·
+										기술·소양 등의 내용을 국가가 산업부문별, 수준별로
+										체계화한 것” 이라 정의하고 있으며, 우리나라 대부분의
+										직업에서 필요한 직무능력을 담고 있는 “산업현장의 지침
+										서” 라고 할 수 있습니다.
+									</div>
+								</li>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<span class="color_blue bold">[부담금]</span>
+										NCS가 뭔가요?
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										국가직무능력표준(NCS)은 『자격기본법』 에서 “산업현장
+										에서 직무를 성공적으로 수행하기 위하여 요구되는 지식·
+										기술·소양 등의 내용을 국가가 산업부문별, 수준별로
+										체계화한 것” 이라 정의하고 있으며, 우리나라 대부분의
+										직업에서 필요한 직무능력을 담고 있는 “산업현장의 지침
+										서” 라고 할 수 있습니다.
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

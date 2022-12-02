@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(2, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb2.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">정의</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>어항/어촌 정보</li>
+								<li>어촌</li>
+								<li>정의</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit01">어촌의 개념</h4>
+							<div class="sub_section">
+								<h5 class="tit02">어촌의 정의</h5>
+								‘어촌’이란 하천·호수 또는 바다에 인접하여 있거나 어항의 배후에 있는 지역 중 주로 수산업으로 생활하는 다음 각 목의 어느 하나에 해당하는 지역을 말함
+								<ul class="list_square sm-mt-5 lg-mt-10">
+									<li>가. 읍·면의 전 지역</li>
+									<li>나. 동의 지역 중 「국도의 계획 및 이용에 관한 법률」 제36조 제1항 제1호에 따라 지정된 상업지역 및 공업지역을 제외한 지역</li>
+								</ul>
+								<div class="sm-mt-10 lg-mt-15">※ 관련근거 : 「수산업·어촌 발전 기본법」 제3조 제6호</div>
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">어촌의 공간적 범위</h5>
+								「수산업·어촌 발전기본법」 제3조 및 「어촌·어항법」 제2조에서 규정하고 있는 ‘어촌’ 즉, 하천·호수 또는 바다에 인접하여 있거나 어항의 배후에 있는 지역 중 상업지역 및 공업지역을
+								제외한 지역을 계획 수립의 한 범위로 하고 있음
+							</div>
+							<div class="sub_section">
+								<h5 class="tit02">어촌의 위상</h5>
+								어촌은 우리나라 면적의 16.8%를 차지하고 있으며, 인구는 9.6%로 정주 및 생산 공간을 이루고 있음(’17년 74개 시군구, 492개 읍면동 기준)
+								<div class="fis_lr">
+									<div class="l">
+										<div class="img_box">
+											<img src="../../asset/fipa/images/img_fis_vil1_pc.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+											<img src="../../asset/fipa/images/img_fis_vil1_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+											<div class="blind">
+												어촌의 공간적 범위
+												어촌지역은 전국 228개 시군구 중 74개, 전국 3,500개 읍면동 중 492개에 달함
+											</div>
+										</div>
+										<p class="sm-mt-10 lg-mt-13">※ 어촌지역은 전국 228개 시군구 중 74개, 전국 3,500개 읍면동 중 492개에 달함</p>
+									</div>
+									<div class="r">
+										<div class="img_box">
+											<img src="../../asset/fipa/images/img_fis_vil2_pc.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+											<img src="../../asset/fipa/images/img_fis_vil2_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+											<div class="blind">
+												어촌의 위상
+												어촌은 우리나라 면적의 16.8%를 차지하고 있으며, 인구는 9.6%로 정주 및 생산 공간을 이루고 있음(’17년 74개 시군구, 492개 읍면동 기준)
+											</div>
+										</div>
+										<p class="sm-mt-10 lg-mt-13">※ 우리나라 전체 면적 약 100,339㎢ 중 16.8%인 16,904㎢를 차지하며, 전국 인구 약 5,200만 명 중
+											9.6%인 약 500만
+											명이거주하고 있음</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">어항의 역할과 기능</h4>
+							<div class="list_busi_info fisi_port_info">
+								<div class="bg_port_info01">
+									<strong class="tit">수산물의 생산ㆍ유통기지</strong>
+									<ul class="list_square">
+										<li>수산물 위판 및 판매, 출하 기지</li>
+										<li>냉동ㆍ냉장 등 수산물 보관</li>
+										<li>수산물 가공공장 등 상품 생산기지</li>
+									</ul>
+								</div>
+								<div class="bg_port_info02">
+									<strong class="tit">지역사회 기반시설</strong>
+									<ul class="list_square">
+										<li>어촌주민의 생활 기반 및 정주여건 조성</li>
+										<li>어촌지역 경제의 중심지</li>
+										<li>도서, 벽지의 어촌과 외부 사회를 잇는 교통, 정보의 기지</li>
+									</ul>
+								</div>
+								<div class="bg_port_info03">
+									<strong class="tit">관광ㆍ체험ㆍ교육시설</strong>
+									<ul class="list_square">
+										<li>바다낚시, 방파제 산책, 문화공연, 관광유람, 마리나 등 어촌ㆍ해양 관광의 중심지</li>
+										<li>어촌의 문화ㆍ생활을 활용한 바다체험 학습장소</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit01">시ㆍ도별 어촌현황</h4>
+							<div class="category_tab">
+								<ul>
+									<li><a href="#;">인천</a></li>
+									<li><a href="#;">부산</a></li>
+									<li><a href="#;" class="active">울산</a></li>
+									<li><a href="#;">강원도</a></li>
+									<li><a href="#;">경기도</a></li>
+									<li><a href="#;">충청남도</a></li>
+									<li><a href="#;">전라북도</a></li>
+								</ul>
+							</div>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>시ㆍ도별 어촌현황(울산광역시) 표로 시·도, 시·군·구, 읍.면.동 정보 제공</caption>
+									<colgroup>
+										<col style="width:15%;">
+										<col style="width:20%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">시·도</th>
+											<th scope="col">시·군·구</th>
+											<th scope="col">읍.면.동</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th rowspan="4" scope="row">울산광역시</th>
+											<td>울주군(2)</td>
+											<td>서생면, 온산읍</td>
+										</tr>
+										<tr class="txt_c">
+											<td>남구(8)</td>
+											<td>선암동, 신정1동, 신정2동, 신정3동, 신정4동, 신정5동, 대현동, 수암동</td>
+										</tr>
+										<tr class="txt_c">
+											<td>동구(3)</td>
+											<td>일산동, 방어동, 남목3동</td>
+										</tr>
+										<tr class="txt_c">
+											<td>북구(1)</td>
+											<td>강동동</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+
+					<!-- 만족도 평가 -->
+					<div w3-include-html="_include/research.html"></div>
+					<!-- // 만족도 평가 -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>

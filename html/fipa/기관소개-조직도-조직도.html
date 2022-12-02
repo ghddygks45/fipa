@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/fipa/css/style.css">
+	<script src="../../asset/fipa/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/fipa/js/jquery-ui.js"></script>
+	<script src="../../asset/fipa/js/jQuery.print.js"></script>
+	<script src="../../asset/fipa/js/html2canvas.min.js"></script>
+	<script src="../../asset/fipa/js/jspdf.min.js"></script>
+	<script src="../../asset/fipa/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/fipa/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>FiPA 한국어촌어항공단</title>
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			setTimeout(function () {
+				currentPage(4, 1);
+			}, 300);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- [include] : header.html  -->
+		<div w3-include-html="_include/header.html"></div>
+		<!-- // 개발 언어로 header.html을 include 해주세요. -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- lnb -->
+				<aside class="aside" w3-include-html="_include/lnb6.html"></aside>
+				<!-- // lnb -->
+
+				<!-- content -->
+				<div class="content">
+
+					<div class="content_top">
+						<h3 class="depth_tit">조직도</h3>
+
+						<!-- [include] : share.html -->
+						<div w3-include-html="_include/share.html"></div>
+						<!-- // 개발 언어로 share.html을 include 해주세요. -->
+
+						<!-- location -->
+						<div class="location">
+							<ul>
+								<li><a href="#;" class="btn_home"><span class="blind">홈</span></a></li>
+								<li>기관소개</li>
+								<li>조직도</li>
+								<li>조직도</li>
+							</ul>
+						</div>
+						<!-- // location -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="organization">
+							<div class="org1">
+								<div class="org_box1">
+									<a href="#n" class="chairman">이사장</a>
+									<ul class="side_org">
+										<li><a href="#n">이사회</a></li>
+										<li><a href="#n">노동조합</a></li>
+									</ul>
+								</div>
+								<div class="org_box2">
+									<a href="#n" class="org_tit bg_blue">감사실</a>
+								</div>
+								<div class="org_box3">
+									<h4 class="org_tit bg_blue btm_line">
+										<a href="#n">경영기획본부</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">기획조정실</a></li>
+										<li><a href="#n">안전보건실</a></li>
+										<li><a href="#n">ESG혁신팀</a></li>
+										<li><a href="#n">인재경영팀</a></li>
+										<li><a href="#n">재무관리팀</a></li>
+										<li><a href="#n">정보화전략팀</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="org2">
+								<div class="org_a">
+									<h4 class="org_tit bg_green btm_line top_line">
+										<a href="#n">어촌해양본부</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">어촌해양마케팅팀</a></li>
+										<li><a href="#n">어촌해양개발팀</a></li>
+										<li><a href="#n">귀어귀촌종합센터</a></li>
+										<li><a href="#n">어촌개발지원단</a></li>
+										<li><a href="#n">인천어촌특화지원센터</a></li>
+										<li><a href="#n">충남어촌특화지원센터</a></li>
+										<li><a href="#n">충남귀어귀촌지원센터</a></li>
+									</ul>
+								</div>
+								<div class="org_a">
+									<h4 class="org_tit bg_green btm_line top_line">
+										<a href="#n">어항본부</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">어항안전팀</a></li>
+										<li><a href="#n">어항정화팀</a></li>
+									</ul>
+								</div>
+								<div class="org_a">
+									<h4 class="org_tit bg_green btm_line top_line">
+										<a href="#n">어장양식본부</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">어장산업팀</a></li>
+										<li><a href="#n">어항정화팀</a></li>
+										<li><a href="#n">첨단양식팀</a></li>
+										<li><a href="#n">교육운영팀</a></li>
+									</ul>
+								</div>
+								<div class="org_a">
+									<h4 class="org_tit bg_green btm_line top_line">
+										<a href="#n">어촌어항재생사업단</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">어촌어항재생총괄팀</a></li>
+										<li><a href="#n">어촌어항재생팀</a></li>
+										<li><a href="#n">어촌어항재생지원단</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="org2">
+								<div class="org_a">
+									<h4 class="org_tit bg_navy btm_line top_line">
+										<a href="#n">동남해 지사<br>(창원)</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">어항안전팀</a></li>
+										<li><a href="#n">어촌어항재생팀</a></li>
+										<li><a href="#n">수산사업팀</a></li>
+										<li><a href="#n">경남어촌특화지원센터</a></li>
+										<li><a href="#n">경남귀어귀촌지원센터</a></li>
+									</ul>
+								</div>
+								<div class="org_a">
+									<h4 class="org_tit bg_navy btm_line top_line">
+										<a href="#n">서남해 지사<br>(목포)</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">어항안전팀</a></li>
+										<li><a href="#n">어촌어항재생팀</a></li>
+										<li><a href="#n">수산사업팀</a></li>
+									</ul>
+								</div>
+								<div class="org_a">
+									<h4 class="org_tit bg_navy btm_line top_line">
+										<a href="#n">제주 지사<br>(제주)</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">사업운영팀</a></li>
+										<li><a href="#n">제주어촌특화지원센터</a></li>
+										<li><a href="#n">제주귀어귀촌지원센터</a></li>
+									</ul>
+								</div>
+								<div class="org_a">
+									<h4 class="org_tit bg_navy btm_line top_line">
+										<a href="#n">동해 지사<br>(강릉)</a>
+									</h4>
+									<ul class="list_square">
+										<li><a href="#n">사업운영팀</a></li>
+										<li><a href="#n">강원귀어귀촌지원센터</a></li>
+										<li><a href="#n">강원귀어학교</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="기관소개-조직도-부서별직원안내-전체-목록.html" class="btn bg_blue btn_arrow">부서별 연락처</a>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+
+					<!-- [include] : 만족도 평가 -->
+					<div class="research" w3-include-html="_include/research.html"></div>
+					<!-- // 개발 언어로 include 해주세요. -->
+
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : footer.html -->
+		<div w3-include-html="_include/footer.html"></div>
+		<!-- // 개발 언어로 footer.html을 include 해주세요. -->
+	</div>
+</body>
+
+</html>
